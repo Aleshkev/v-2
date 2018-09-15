@@ -1,6 +1,8 @@
+*This license only applies to source code.*
+
 MIT License
 
-Copyright (c) 2018 
+Copyright (c) 2018+ Jonasz Aleszkiewicz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

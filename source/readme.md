@@ -1,6 +1,4 @@
-# Jonas Aleshkevich's personal site
-
-Well, the title explains it all.
+# Build process
 
 To waste a large amount of time, I created my own build process in Python.
 

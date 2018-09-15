@@ -8,7 +8,7 @@ import builder
 if __name__ != '__main__':
     raise RuntimeError("Why would you import this? Did you mean `builder.py`?")
 
-RELEASE = True
+RELEASE = 'release' in sys.argv
 
 CONTENT = './content'
 THEME = './theme'

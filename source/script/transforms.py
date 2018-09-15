@@ -39,7 +39,8 @@ def anchor_headings(document: CommonMark.node.Node):
             chunks.append(node.literal)
 
 
-def resolve_links(document: CommonMark.node.Node, document_url: str, extension: str = '.html'):
+def resolve_links(document: CommonMark.node.Node, document_url: str, extension: str = '.html',
+                  keep_extension: bool = True):
     # TODO: I have no idea if this will work with subdirectories, probably not.
     # TODO: This won't work with links to sections, e.g. about-me.md#interests
     for node, entering in document.walker():
@@ -47,7 +48,10 @@ def resolve_links(document: CommonMark.node.Node, document_url: str, extension: 
             continue
         node: CommonMark.node.Node
         if node.t == 'link':
-            node.destination = re.sub('.md$', extension, urllib.parse.urljoin(document_url, node.destination))
+            node.destination = re.sub(r'\.md$', extension,
+                                      urllib.parse.urljoin(document_url, node.destination))
+            if not keep_extension:
+                node.destination = re.sub(re.escape(extension) + '$', '', node.destination)
         if node.t == 'image':
             node.destination = urllib.parse.urljoin(document_url, node.destination)
 

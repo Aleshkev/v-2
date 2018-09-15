@@ -10,7 +10,7 @@
 
 Nazywam się Jonasz Aleszkiewicz. Obecnie mam 16 lat i chodzę do [XIV LO im. S. Staszica](https://staszic.waw.pl), klasy 1A, czyli kl. matex.
 
-Dzisiejszymi dniami głównie robię zadania z matematyki i algorytmiki, jeżdżę czasami na obozy informatyczne. Jestem laureatem [LOGII](logia.oeiizk.waw.pl/) i paru pobocznych konkursów, takich jak MOI lub OIG.
+Dzisiejszymi dniami głównie robię zadania z matematyki i algorytmiki, jeżdżę czasami na obozy informatyczne. Jestem laureatem [LOGII](http://logia.oeiizk.waw.pl/) i paru pobocznych konkursów, takich jak MOI lub OIG.
 
 Jeżeli macie jakieś *interesujące lub ważne* pytania, sugestie lub informacje, możecie wysłać mi wiadomość:
 

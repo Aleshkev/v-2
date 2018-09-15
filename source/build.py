@@ -24,4 +24,4 @@ except FileNotFoundError:
     pass
 
 
-builder.render(pathlib.Path(CONTENT), pathlib.Path(THEME), ROOT_URL, pathlib.Path(OUTPUT))
+builder.render(pathlib.Path(CONTENT), pathlib.Path(THEME), ROOT_URL, pathlib.Path(OUTPUT), not RELEASE)

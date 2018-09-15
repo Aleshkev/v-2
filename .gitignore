@@ -1,0 +1,5 @@
+.idea/
+.webassets-cache/
+
+__pycache__/
+*.py[cod]

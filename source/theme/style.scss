@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+$rem: 14px;
+$line: $rem * 1.5;
+
+$text-primary: #424242;
+$text-accent: #3B28CC;
+$text-links: #1155cc;
+$header-title: #D93737;
+$header-accent: #CB8145;
+
+// Main layout
+// ===
+
+html {
+  font: $rem 'Source Code Pro', monospace;
+  line-height: $line;
+  color: $text-primary;
+}
+body {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+// Text
+// ===
+
+// Headings
+// ---
+h1, h2, h3, h4, h5, h6, p, blockquote {
+  margin: 1rem 0;
+}
+h1 {
+  font-size: 2rem;
+}
+h2, h3 {
+  font-size: 1.1rem;
+  margin-top: 1.9rem;
+  color: $text-accent;
+}
+h3 {
+  font-weight: normal;
+}
+h5, h6 {
+  font-size: 1rem;
+}
+
+// Paragraph elements
+// ---
+p {
+  -webkit-hyphens: auto;
+  //text-align: justify;  // I'm sorry, typography people, but it looks a bit better to me.
+}
+
+// A special case, allowing a size of an image to be set inside Markdown (see content/about-me.md for an example).
+div > p > img {
+  width: 100%;
+}
+
+// Links.
+a {
+  color: $text-links;
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+}
+
+// Lists.
+ul {
+  list-style-type: none;
+  padding-left: 2ch;
+  li {
+    &::before {
+      position: absolute;
+      content: "-";
+      margin-left: -2ch;
+    }
+  }
+}
+ol {
+  padding-left: 3ch;  // TODO: This assumes lists are never more than 9 items long.
+}
+
+// Block quotes. They look so generic, they are used in many more ways in practice.
+blockquote {
+  padding-left: 2ch;
+
+  &::before {
+    position: absolute;
+    margin-left: -2ch;
+    content: ">";
+    color: $text-links;
+  }
+}
+
+// Horizontal rule.
+hr {
+  border: none;
+  height: 0.1ex;
+  background-color: $text-primary;
+  margin: 1.5em 0;
+}
+
+// Header
+// ===
+
+header {
+  max-width: 60ch;
+  margin: 1em auto;
+
+  color: $header-accent;
+  text-align: center;
+
+  a {
+    color: inherit;
+  }
+
+  h1 a {
+    color: $header-title;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      display: inline;
+      margin-left: 2ch;  // TODO: This assumes previous <li> contains a single space at the end, making the gap 3ch.
+      &::before {
+        content: " \00B7 ";
+      }
+    }
+    li:first-child {
+      margin-left: 0;
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  // TODO: This fixes the spaces at the ends of lines sabotaging centering of text, but is an ugly hack.
+  h1 {
+    padding-left: 1ch;
+  }
+  ul li:last-child {
+    padding-left: -1ch;
+  }
+}
+
+// Footer
+// ===
+footer {
+  margin: 3em auto;
+  color: $text-accent;
+}

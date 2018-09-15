@@ -16,3 +16,34 @@ Pierwszym krokiem do rewolucji jest zmiana (w pojęciu J. Stalina). Dlatego post
 1. Ustawienie wszystkich kolorów na najbliższy kolor w jakiejś profesjonalnie przygotowanej palecie kolorów, które widać zarówno na czarnym, jak i białym tle:
     1. zachowuje to wszystkie argumenty ruchu konserwatywnego o mnemotechnice;
     2. żaden kolor nie będzie się różnił na tyle, żeby trzeba było na nowo go zapamiętać.
+
+## Inne nurty
+
+<div style="float: right;">
+
+![Część propagandy polichromatyzmu](manifest-polichromatyzm.png)
+
+</div>
+
+#### Polichromatyzm konserwatywny
+Próbuje zachować obecny stan rzeczy, reprezentowany przez administratorów przeciwnych zmianom.
+
+
+
+Jest w oczywisty sposób wrogiem ludu i rewolucji, niegodny zaufania.
+
+#### Polichromatyzm radykalny
+Zachowanie podziału na kolory, ale zmienienie wszystkich kolorów.
+
+Jest niepotrzebny i wcale nie lepszy od polichromatyzmu konserwatywnego.
+
+#### Adminoodpoczywistycyzm (adminoodpoczywizm)
+"Dajcie odpocząć adminom, to że jest ich coraz więcej nie znaczy że zbierają siły na ustawianie systemu kolorków od nowa."; "Tym samym odłączam się od zwykłych konserwatywnych polichromatystów. I mam te same poglądy ale inną nazwę"
+
+Administratorzy poświęcają więcej czasu na argumentację swojej przegranej pozycji niż prawdziwą, konstruktywną zmianę, więc jest to tylko alternatywne wytłumaczenie polichromatyzmu konserwatywnego.
+
+#### Opcja Oligochromatyczna
+"Ludzie z dowolnej klasy mają taki sam kolor poza tymi którzy pełnią jakąś funkcję dodatkową."
+
+Jest kompromisem pomiędzy mono- a polichromatyzmem, jednak nadal nie likwiduje wszystkich podziałów społecznych.
+

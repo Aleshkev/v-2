@@ -48,7 +48,7 @@ def resolve_links(document: CommonMark.node.Node, document_url: str, extension: 
             continue
         node: CommonMark.node.Node
         if node.t == 'link':
-            if re.match('^[a-z]{3,4}://', node.destination):
+            if re.match('^[a-z]+://', node.destination):
                 continue
             node.destination = re.sub(r'\.md$', extension,
                                       urllib.parse.urljoin(document_url, node.destination))

@@ -47,3 +47,7 @@ Administratorzy poświęcają więcej czasu na argumentację swojej przegranej p
 
 Jest kompromisem pomiędzy mono- a polichromatyzmem, jednak nadal nie likwiduje wszystkich podziałów społecznych.
 
+#### Radykalny centryzm kolorystyczny
+Nurt przeciwny wszystkim nurtum mającym silne opinie, wykluczając samego siebie.
+
+Jest nielogiczny i hipokrytyczny.

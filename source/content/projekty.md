@@ -8,7 +8,7 @@ Projekt tak innowacyjny, postępowy i genialny, że ma [własną stronę](taw-ch
 
 ## Run oitimetool: the challenge
 
-Napisane dzięki pomocy Kubina szczegółowe instrukcje jak uruchomić oitimetool. [Dostępne online](https://aleshkev.github.io/oitimetool-challenge/index).
+Napisane dzięki pomocy Kubina szczegółowe instrukcje jak uruchomić oitimetool. [Dostępne online](https://aleshkev.github.io/oitimetool-challenge/).
 
 ## Inne
 

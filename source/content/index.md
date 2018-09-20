@@ -1,5 +1,11 @@
+<div lang="pl">
 
-Witajcie na mojej oficjalnej stronie. Ma ona charakter informacyjny, ale jej głównym celem jest sprawienie, żeby jakieś konto założone przez "kolegów" ze szkoły podstawowej podszywających się pode mnie zniknęło z pierwszej strony wyników wyszukiwania.
+# Jonasz Aleszkiewicz
 
-Całość strony jest obrazem nędzy i braku materialnych osiągnięć. Sekcje [projekty](projekty.md) i [taw-check](taw-check.md) są na razie puste i czekają na lepsze czasy. Nieuzasadniona próba internacjonalizacji tej strony to [jedna podstrona po angielsku](about-me.md), z czego 80% miejsca zajmuje moje narzekanie na własne imię i nazwisko. \
-Z zalet, to... hmm... nie ma złych ciasteczek i ta strona cię nie szpieguje! Sceptyk powie: "nie chciało się wam nawet użyć Google Analytics?". Tak.
+Możecie poczytać [o mnie](o-mnie.md) (nawet [po angielsku](about-me.md)), zobaczyć [moje projekty](projekty.md) lub [zadania](zadania.md), zacząć się przygotowywać na nadejście [taw-check](taw-check.md).
+
+## Kontakt
+
+Email: j.aleszkiewicz<span style="display: none;">[remove this]</span>@gmail.com -- adres sprawdzany praktycznie codziennie.
+
+GitHub: [Aleshkev](https://github.com/Aleshkev) -- wszystkie moje publiczne projekty.

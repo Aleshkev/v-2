@@ -12,10 +12,6 @@ Nazywam się Jonasz Aleszkiewicz. Obecnie mam 16 lat i chodzę do [XIV LO im. S.
 
 Dzisiejszymi dniami głównie robię zadania z matematyki i algorytmiki, jeżdżę czasami na obozy informatyczne. Jestem laureatem [LOGII](http://logia.oeiizk.waw.pl/) i paru pobocznych konkursów, takich jak MOI lub OIG.
 
-Jeżeli macie jakieś *interesujące lub ważne* pytania, sugestie lub informacje, możecie wysłać mi wiadomość:
-
-> j.aleszkiewicz<span style="display: none;">[usuń ten tekst, razem z nawiasami]</span>@gmail.com
-
 ## Zainteresowania
 
 Jeżeli przeglądacie tę stronę w nadziei na znalezienie tematu na rozmowę ze mną, to znaleźliście idealne miejsce!
@@ -57,4 +53,4 @@ Ta wersja mojej gry była napisana w j. Python, używając Pygame. Po całym do�
 
 ### Webdev
 
-Tak jak nie jestem zwolennikem "walki z kompilatorem" w C++, tak przeglądarki, HTML i CSS NIE POZOSTAWIAJĄ MI INNEGO WYBORU. Za każdym razem gdy uda mi się wygrać z kaskadowym arkuszem stylów, otwieram stronę w innej przeglądarce i wygląda *inaczej*. "AGHH", sobie myślę, i spędzam kolejne parę dni nad problemem; w końcu zwykle porzucam cały projekt. *Jedynym* do tej pory wyjątkiem jest ta właśnie strona; tylko dzięki latom obniżania moich oczekiwań, co zresztą widać.
+Tak jak nie jestem zwolennikem "walki z kompilatorem" w C++, tak przeglądarki, HTML i CSS NIE POZOSTAWIAJĄ MI INNEGO WYBORU. Za każdym razem jakaś różnica między implementacjami funkcji w różnych przeglądarkach wpędza mnie w głęboką depresję i porzucenie całego projektu. *Jedynym* do tej pory wyjątkiem jest ta właśnie strona; tylko dzięki latom obniżania moich oczekiwań, co zresztą widać.

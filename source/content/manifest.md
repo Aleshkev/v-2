@@ -2,6 +2,8 @@
 
 Widmo wisi nad serwerem. Widmo monochromatyzmu. Wszystkie potęgi starego porządku połączyły się w spisek przeciwko temu widmu. 
 
+![Administrator dzielący populację aby nią łatwiej kontrolować](manifest-dyskryminacja.png)
+
 Historia całego serwera jest historią walki klas. Użytkownicy i administratorzy, matexy i biolchemy, pozostawali w stałym do siebie przeciwieństwie, prowadzili nieustanną -- zwykle do tej pory ukrytą -- walkę. Nie ma wątpliwości, że skończy się ona rewolucyjnym przekształceniem serwera lub jego całkowitą dekadencją.
 
 Front Monochromatyczny jest ostatnią szansą, aby stara władza administracji opamiętała się i posłuchała głosu ludu. Ludu, wołającego o zmianę.

@@ -7,7 +7,7 @@ import CommonMark
 import jinja2
 import webassets.ext.jinja2
 
-import transforms
+from . import transforms
 
 
 def render(content: pathlib.Path, theme: pathlib.Path, root_url: Optional[str] = None,

@@ -3,7 +3,7 @@ import pathlib
 import sys
 import shutil
 
-import builder
+from script import builder
 
 if __name__ != '__main__':
     raise RuntimeError("Why would you import this? Did you mean `builder.py`?")

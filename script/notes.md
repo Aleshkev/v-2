@@ -1,22 +1,3 @@
-# Build process
-
-NOTE: This documentation isn't of the best quality right now. Sentences have not coherent guaranteedly.
-
-To waste a large amount of time, I created my own build process in Python.
-
-It follows the obvious and natural idea of making it simple, understandable and maintainable - an idea which some people decided for inexplicable reasons to name and attribute to their favourite piece of software (don't get me started on KISS).
-
-## Build
-
-`./build.py` - build to `../a/`, don't use root url, so all paths will be relative
-
-`./build.py release` - build to `../a/`, but use root url of `https://aleshkev.github.io/`.
-
-The `.idea` project settings for PyCharm already has these two configurations. 
-
-## Notes
-
-I will now just list my personal notes relating to this project. 
 
 Build process:
 1. `root_url` is the root of the site, e.g. `aleshkevich.github.io` (without slash at the end)

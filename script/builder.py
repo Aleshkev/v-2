@@ -10,8 +10,8 @@ import webassets.ext.jinja2
 from . import transforms
 
 
-def render(content: pathlib.Path, theme: pathlib.Path, root_url: Optional[str] = None,
-           output: Optional[pathlib.Path] = None, html_extensions: bool = True):
+def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
+           output: pathlib.Path, html_extensions: bool = True):
     assert root_url.endswith('/')
 
     content = content.absolute().resolve()
@@ -68,4 +68,4 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: Optional[str] =
         if file.suffix == '.md' or file.name in exclude:
             continue
         logging.info(f"Copying {file}")
-        shutil.copy(file, output / file.name)
+        shutil.copy(str(file), str(output / file.name))

@@ -13,7 +13,7 @@ RELEASE = 'release' in sys.argv
 CONTENT = './content'
 THEME = './theme'
 ROOT_URL = 'https://aleshkev.github.io/a/' if RELEASE else './'
-OUTPUT = '../a/'
+OUTPUT = './a/'
 
 
 logging.basicConfig(level=logging.INFO)

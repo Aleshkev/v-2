@@ -2,7 +2,7 @@
 
 # O mnie
 
-<div style="float: left; width: 6em;">
+<div style="float: left; width: 7em;">
 
 ![logo "A"](aleshkevich-logo.png)
 

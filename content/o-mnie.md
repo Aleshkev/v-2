@@ -27,7 +27,8 @@ Więcej na temat moich projektów można znaleźć na [stronie z projektami](pro
 
 Mój poziom tutaj wykracza niewiele poza popularnonaukowe anegdoty, ale chętnie porozmawiam np. o tym, dlaczego ang. 'island' pisze się przez 's'.
 
-Jestem zwolennikem technokratycznego preskryptywizmu i standardyzacji języka.
+Jestem zwolennikiem technokratycznego preskryptywizmu i standardyzacji języka.
+<!-- To powyżej to nie błąd ortograficzny, bo zamiana standaryzacja -> standardyzacja to jedna z tych rzeczy, które bym ustandardyzował. To głębokie przesłanie. -->
 
 Znam *podstawy* Esperanto, kilka słów z Anglisha.
 
@@ -36,6 +37,7 @@ Znam *podstawy* Esperanto, kilka słów z Anglisha.
 Temat tak rzadki, że nie spotkałem nigdy osoby, która by o nim kiedykolwiek wcześniej słyszała.
 
 Próbowałem kiedyś nauczyć się systemu Nowej Stenografji Polskiej, ale w końcu okazało się to zbyt czasochłonne. Zresztą i tak obecnie piszę więcej formuł matematycznych niż polskiego tekstu. Ostatecznie ograniczyłem się do stworzenia własnej, uproszczonej wersji alfabetu łacińskiego. 
+<!-- To "stenografja", bo to książka sprzed reformy ortograficznej. -->
 
 ### Odpowiadanie na brainly.pl
 
@@ -53,4 +55,4 @@ Ta wersja mojej gry była napisana w j. Python, używając Pygame. Po całym do�
 
 ### Webdev
 
-Tak jak nie jestem zwolennikem "walki z kompilatorem" w C++, tak przeglądarki, HTML i CSS NIE POZOSTAWIAJĄ MI INNEGO WYBORU. Za każdym razem jakaś różnica między implementacjami funkcji w różnych przeglądarkach wpędza mnie w głęboką depresję i porzucenie całego projektu. *Jedynym* do tej pory wyjątkiem jest ta właśnie strona; tylko dzięki latom obniżania moich oczekiwań, co zresztą widać.
+Tak jak nie jestem zwolennikiem "walki z kompilatorem" w C++, tak przeglądarki, HTML i CSS NIE POZOSTAWIAJĄ MI INNEGO WYBORU. Za każdym razem jakaś różnica między implementacjami funkcji w różnych przeglądarkach wpędza mnie w głęboką depresję i porzucenie całego projektu. *Jedynym* do tej pory wyjątkiem jest ta właśnie strona; tylko dzięki latom obniżania moich oczekiwań, co zresztą widać.

@@ -1,6 +1,14 @@
 <div lang="pl">
 
-# Inne Projekty
+# Projekty
+
+## Algoritmika
+
+Repozytorium z moimi rozwiązaniami zadań algorytmicznych. Dostępne [na GitHubie](https://github.com/Aleshkev/algoritmika).
+
+## Taw-check
+
+Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 
 ## Run oitimetool: the challenge
 
@@ -10,7 +18,7 @@ Napisane dzięki pomocy Kubina szczegółowe instrukcje jak uruchomić oitimetoo
 
 Na razie tajemnica.
 
-## Jeszcze bardziej inne
+## Inne
 
 Niektóre projekty nie są udostępnione publicznie. *Z różnych powodów*.
 

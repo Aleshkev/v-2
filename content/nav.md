@@ -3,5 +3,4 @@
 - [o mnie](o-mnie.md)
 - [zadania](zadania.md)
 - [algoritmika](https://github.com/Aleshkev/algoritmika)
-- [taw-check](taw-check.md)
-- [inne projekty](inne-projekty.md)
+- [projekty](projekty.md)

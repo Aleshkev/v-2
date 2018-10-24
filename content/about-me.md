@@ -6,11 +6,11 @@
 
 </div>
 
-I'm Jonas Aleshkevich. Currently, I am 16, live in Warsaw, the capital of Poland (a nation-state in eastern Europe). I attend XIV Higher Secondary School in Warsaw, one of the best in the country.
+I'm Jonas Aleshkevich. Currently, I am 16, live in Warsaw, the capital of Poland (a nation-state in eastern Europe). I attend XIV Higher Secondary School in Warsaw, one of the best in the country.
 
 ## My name, explained
 
-TL;DR: Jonasz Aleszkiewicz = Jonas Aleshkevich, pronounce 'J' as /j/ (as in **y**et).
+TL;DR: Jonasz Aleszkiewicz = Jonas Aleshkevich, pronounce 'J' as /j/ (as in **y**et).
 
 > Someone whose name isn't recognized by MS Word can't be *that* much of a threat!
 >
@@ -21,6 +21,6 @@ As I'm from Poland and I currently live there, my official name is Jonasz Aleszk
 
 As a solution, I spell my name 'Jonas Aleshkevich'. Pronounce it however you like, but I'd be glad if 'J' in 'Jonas' was pronounced /j/ (as in **y**et), **not** /d͡ʑ/ or /d͡ʒ/ (as in **j**et).
 
-> [Quick sidenote: I sometimes call this form 'a transliteration' -- it obviously isn't one if you know what this word means, but I couldn't find a better term; and most people don't know the difference anyway.]
+> [Quick sidenote: I sometimes call this form 'a transliteration' -- it obviously isn't one if you know what this word means, but I couldn't find a better term; and most people don't know the difference anyway.]
 
-Unfortunately for me, because 'Aleshkevich' is not my official name, it can't be used in official documents. And everywhere someone demands the name matches the official documents. Not much is left, but whenever possible I use 'Aleshkevich'.
+Unfortunately for me, because 'Aleshkevich' is not my official name, it can't be used in official documents. And everywhere someone demands the name matches the official documents. Not much is left, but whenever possible I use 'Aleshkevich'.

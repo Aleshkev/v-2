@@ -1,6 +1,6 @@
 ## Manifest Frontu Monochromatycznego
 
-Widmo wisi nad serwerem. Widmo monochromatyzmu. Wszystkie potęgi starego porządku połączyły się w spisek przeciwko temu widmu. 
+Widmo wisi nad serwerem. Widmo monochromatyzmu. Wszystkie potęgi starego porządku połączyły się w spisek przeciwko temu widmu.
 
 ![Administrator dzielący populację aby nią łatwiej kontrolować](manifest-dyskryminacja.png)
 

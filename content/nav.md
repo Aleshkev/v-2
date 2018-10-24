@@ -2,5 +2,5 @@
 - [about me](about-me.md)
 - [o mnie](o-mnie.md)
 - [zadania](zadania.md)
-- [algoritmika](https://github.com/Aleshkev/algoritmika)
 - [projekty](projekty.md)
+- [taw-check](taw-check.md)

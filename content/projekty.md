@@ -10,14 +10,6 @@ Repozytorium z moimi rozwiązaniami zadań algorytmicznych. Wszystkie kody źró
 
 Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 
-
-
-## Arveth
-
-Projekt, który ma za zadanie opisać w wygodnym i podręcznym pliku HTML (który może być pobrany do użytku offline) wszystkie nieoczywiste funkcjonalności G++, które mogą być użyte na Olimpiadzie Informatycznej.
-
-Najnowsza wersja jest zwykle [dostępna online](https://aleshkev.github.io/arveth/).
-
 ## Run oitimetool: the challenge
 
 Napisane dzięki pomocy Kubina [szczegółowe instrukcje jak uruchomić oitimetool](https://aleshkev.github.io/oitimetool-challenge/) (uwaga! link może wkrótce się zmienić; w planach mam złączenie tego z Arvethem).

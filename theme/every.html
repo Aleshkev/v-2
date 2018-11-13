@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -7,12 +8,12 @@
     <meta name="keywords" content="{{ keywords }}">
     <meta name="description" content="{{ description }}">
     <meta name="author" content="{{ author }}"/>
-    <link rel="shortcut icon" href="{{ root_url }}aleshkevich-logo.png"/>
+    <link rel="shortcut icon" href="{{ root_url }}aleshkevich-logo.png" media="all"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&amp;subset=latin-ext" rel="stylesheet" media="all">
 
     {% assets filters="scss, cssmin", output="style.min.css", "style.scss" %}
-    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" media="all"/>
     {% endassets %}
 </head>
 

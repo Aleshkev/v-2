@@ -57,8 +57,8 @@ p {
 }
 
 // A special case, allowing a size of an image to be set inside Markdown (see content/about-me.md for an example).
-div > p > img {
-  width: 100%;
+div > p > img, div > p > * > img {
+  max-width: 100%;
 }
 
 // Links.

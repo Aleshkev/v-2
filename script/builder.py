@@ -4,6 +4,7 @@ import shutil
 import logging
 
 import CommonMark
+import htmlmin
 import jinja2
 import webassets.ext.jinja2
 
@@ -61,8 +62,11 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
         transforms.resolve_links(ast, root_url + md_file.stem + '.html', keep_extension=html_extensions)
 
         out = content / output / (md_file.stem + '.html')
-        out.write_text(every.render(root_url=root_url, title=title, content=renderer.render(ast),
-                                    nav=nav, footer=footer), 'utf-8')
+
+        out_html = every.render(root_url=root_url, title=title, content=renderer.render(ast), nav=nav, footer=footer)
+        out_html_min = htmlmin.minify(out_html)
+
+        out.write_text(out_html_min, 'utf-8')
 
     for file in content.glob('*'):
         if file.suffix == '.md' or file.name in exclude:

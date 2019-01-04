@@ -4,7 +4,7 @@
 :nofooter:
 Jonas Aleshkevich <https://github.com/Aleshkev[@Aleshkev]>; Kubin <https://github.com/KubinGH/[@KubinGH]>
 
-NOTE: If you know some better way, let us know by posting https://github.com/Aleshkev/oitimetool-challenge/issues[an issue on GitHub].
+NOTE: After our small success, https://github.com/sio2project/sio2jail[SIO2Jail] was introduced, making the whole oitimetool obsolete.
 
 .Limitations: why can't we just run oitimetool on our favorite system?
 . Oitimetool requires pintool

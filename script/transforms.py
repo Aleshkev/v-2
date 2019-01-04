@@ -2,11 +2,11 @@ from typing import *
 import re
 import urllib.parse
 
-import CommonMark, CommonMark.node
+import commonmark, commonmark.node
 import slugify
 
 
-def print_ast(document: CommonMark.node.Node):
+def print_ast(document: commonmark.node.Node):
     indent = 0
     for node, entering in document.walker():
         if entering:
@@ -21,17 +21,17 @@ def print_ast(document: CommonMark.node.Node):
             indent += 1 if entering else -1
 
 
-def anchor_headings(document: CommonMark.node.Node):
+def anchor_headings(document: commonmark.node.Node):
     in_heading = False
     chunks = []
     for node, entering in document.walker():
-        node: CommonMark.node.Node
+        node: commonmark.node.Node
         if node.t == 'heading':
             if entering:
                 chunks = []
             else:
                 slug = slugify.slugify(' '.join(chunks))
-                new = CommonMark.node.Node('html_inline', None)
+                new = commonmark.node.Node('html_inline', None)
                 new.literal = f'<a id="{slug}"></a>'
                 node.prepend_child(new)
             in_heading = entering
@@ -39,14 +39,14 @@ def anchor_headings(document: CommonMark.node.Node):
             chunks.append(node.literal)
 
 
-def resolve_links(document: CommonMark.node.Node, document_url: str, extension: str = '.html',
+def resolve_links(document: commonmark.node.Node, document_url: str, extension: str = '.html',
                   keep_extension: bool = True):
     # TODO: I have no idea if this will work with subdirectories, probably not.
     # TODO: This won't work with links to sections, e.g. about-me.md#interests
     for node, entering in document.walker():
         if entering:
             continue
-        node: CommonMark.node.Node
+        node: commonmark.node.Node
         if node.t == 'link':
             if re.match('^[a-z]+://', node.destination):
                 continue
@@ -58,11 +58,11 @@ def resolve_links(document: CommonMark.node.Node, document_url: str, extension: 
             node.destination = urllib.parse.urljoin(document_url, node.destination)
 
 
-def get_title(document: CommonMark.node.Node) -> Optional[str]:
+def get_title(document: commonmark.node.Node) -> Optional[str]:
     in_title = False
     chunks = []
     for node, entering in document.walker():
-        node: CommonMark.node.Node
+        node: commonmark.node.Node
         if node.t == 'heading' and node.level == 1:
             if entering:
                 chunks = []

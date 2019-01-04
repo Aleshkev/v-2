@@ -3,7 +3,7 @@ import pathlib
 import shutil
 import logging
 
-import CommonMark
+import commonmark
 import htmlmin
 import jinja2
 import webassets.ext.jinja2
@@ -29,8 +29,8 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
     templates.assets_environment = webassets.Environment(output, root_url, load_path=[theme])
     every = templates.get_template('every.html')
 
-    parser = CommonMark.Parser()
-    renderer = CommonMark.HtmlRenderer()
+    parser = commonmark.Parser()
+    renderer = commonmark.HtmlRenderer()
 
     logging.info("Loading and rendering [nav]")
     nav_ast = parser.parse((content / 'nav.md').read_text('utf-8'))

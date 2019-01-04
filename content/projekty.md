@@ -12,13 +12,11 @@ Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 
 ## SIO2 Experience Enhancements
 
-Zestaw userscriptów dla lepszego użytkowania SIO2/OIOIOI. Czasami dodaję tam nawet jakiś nowy skrypt. [GitHub.](https://github.com/Aleshkev/sio2-experience-enhancements)
+Zestaw userscriptów do przeglądarki dla lepszego użytkowania SIO2/OIOIOI [na GitHubie.](https://github.com/Aleshkev/sio2-experience-enhancements)
 
-## Run oitimetool: the challenge
+## How to install and use oitimetool in modern times?
 
-Napisane dzięki pomocy Kubina [szczegółowe instrukcje jak uruchomić oitimetool](https://aleshkev.github.io/oitimetool-challenge/) (uwaga! link może wkrótce się zmienić; w planach mam złączenie tego z Arvethem).
-
-Niestety, akurat gdy udało nam się to uruchomić, SIO2 (i chyba OI?) przeszło na [sio2jail](https://github.com/sio2project/sio2jail).
+Napisane dzięki pomocy Kubina [szczegółowe instrukcje jak uruchomić oitimetool](https://aleshkev.github.io/a/oitimetool). Niestety przestarzałe od czasu pojawienia się o wiele lepszego SIO2Jail.
 
 ## Afterdeals
 

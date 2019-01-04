@@ -10,6 +10,10 @@ Repozytorium z moimi rozwiązaniami zadań algorytmicznych. Wszystkie kody źró
 
 Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 
+## SIO2 Experience Enhancements
+
+Zestaw userscriptów dla lepszego użytkowania SIO2/OIOIOI. Czasami dodaję tam nawet jakiś nowy skrypt. [GitHub.](https://github.com/Aleshkev/sio2-experience-enhancements)
+
 ## Run oitimetool: the challenge
 
 Napisane dzięki pomocy Kubina [szczegółowe instrukcje jak uruchomić oitimetool](https://aleshkev.github.io/oitimetool-challenge/) (uwaga! link może wkrótce się zmienić; w planach mam złączenie tego z Arvethem).

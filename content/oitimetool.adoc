@@ -1,0 +1,146 @@
+= How to install and use oitimetool in modern times?
+:source-highlighter: highlightjs
+:revdate: 2018-09-09
+:nofooter:
+Jonas Aleshkevich <https://github.com/Aleshkev[@Aleshkev]>; Kubin <https://github.com/KubinGH/[@KubinGH]>
+
+NOTE: If you know some better way, let us know by posting https://github.com/Aleshkev/oitimetool-challenge/issues[an issue on GitHub].
+
+.Limitations: why can't we just run oitimetool on our favorite system?
+. Oitimetool requires pintool
+.. Different version of pintool on Linux (2.14-71313) and different one on Windows (2.13-61206).
+.. The 2.13 version for Windows is not available for download anymore.
+. pintool 2.14 for Linux requires Linux kernel < 4.0 and support for IA32.
+
+== The outdated Ubuntu method
+
+.Install Ubuntu 13.10
+. Install http://old-releases.ubuntu.com/releases/13.10/ubuntu-13.10-desktop-i386.iso[Ubuntu 13.10 32-bit i386] (http://old-releases.ubuntu.com/releases/13.10/[index]) in a virtual machine.
+.. Don't check "Download updates while installing" in installer.
+
+.Repair package manager
+. Open `/etc/apt/sources.list`.
+. Make file look like the one in <<sources-list, source below>>.
+. `sudo apt-get update`
+. To test if all went well, use `sudo apt-get upgrade`. This should update `openssl` and Firefox should be able to open GitHub website by now.
+** If this doesn't work, try `sudo apt-get dist-upgrade`.
+
+.Download oitimetool and pintool.
+. Download oitimetool from https://github.com/accek/oitimetool-bin/zipball/master[official repository] (https://github.com/olimpiada/oitimetool-bin[readme]) and unpack all contents to `~/oitime/`.
+. Save `pintool` from https://software.intel.com/sites/landingpage/pintool/downloads/pin-2.14-71313-gcc.4.4.7-linux.tar.gz[official page] (https://software.intel.com/en-us/articles/pin-a-binary-instrumentation-tool-downloads[index]) as `~/oitime/pin-2.14-71313-gcc-4.4.7-linux.tar.gz`.
+. `cd ~/oitime/`
+. `./oitimetool test-programs/primes-gcc34` should now work. Yay! if it does.
+** If this doesn't work, try `chmod +x ./oitimetool`, `chmod +x test-programs/*` and then try the above again.
+
+.Install g++
+. `sudo apt-get build-essential`
+
+[#sources-list]
+.sources.list
+[source,bash]
+----
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://old-releases.ubuntu.com/ubuntu/ saucy main restricted
+deb-src http://old-releases.ubuntu.com/ubuntu/ saucy main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+deb http://old-releases.ubuntu.com/ubuntu/ saucy-updates main restricted
+deb-src http://old-releases.ubuntu.com/ubuntu/ saucy-updates main restricted
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+#deb http://old-releases.ubuntu.com/ubuntu/ saucy universe
+#deb-src http://old-releases.ubuntu.com/ubuntu/ saucy universe
+#deb http://old-releases.ubuntu.com/ubuntu/ saucy-updates universe
+#deb-src http://old-releases.ubuntu.com/ubuntu/ saucy-updates universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+#deb http://old-releases.ubuntu.com/ubuntu/ saucy multiverse
+#deb-src http://old-releases.ubuntu.com/ubuntu/ saucy multiverse
+#deb http://old-releases.ubuntu.com/ubuntu/ saucy-updates multiverse
+#deb-src http://old-releases.ubuntu.com/ubuntu/ saucy-updates multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb http://old-releases.ubuntu.com/ubuntu/ saucy-backports main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ saucy-backports main restricted universe multiverse
+
+#deb http://security.ubuntu.com/ubuntu saucy-security main restricted
+#deb-src http://security.ubuntu.com/ubuntu saucy-security main restricted
+#deb http://security.ubuntu.com/ubuntu saucy-security universe
+#deb-src http://security.ubuntu.com/ubuntu saucy-security universe
+#deb http://security.ubuntu.com/ubuntu saucy-security multiverse
+#deb-src http://security.ubuntu.com/ubuntu saucy-security multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu saucy partner
+# deb-src http://archive.canonical.com/ubuntu saucy partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+#deb http://extras.ubuntu.com/ubuntu saucy main
+#deb-src http://extras.ubuntu.com/ubuntu saucy main
+----
+
+== The modern old kernel approach
+Surely, there must be _some_ Linux distribution which uses 3.x kernel, but is still supported, so package system doesn't need to be fixed, right?
+
+It looked like after half-hour of searching, I found an https://distrowatch.com/search.php?pkg=linux&relation=less&pkgver=4.0&distrorange=InLatest#pkgsearch[ideal search query]. The most popular distribution was CentOS, and I had heard its name before, so it looked perfect.
+
+Long story short, pintool doesn't work with some obsure exception.
+
+.Some obsure exception
+[source,bash]
+----
+A: Source/pin/injector_nonmac/auxvector.cpp: CopyAux: 291: unexpected AUX VEC type 26
+
+################################################################################
+## STACK TRACE
+################################################################################
+addr2line -C -f -e "/home/j/Downloads/olimpiada-oitimetool-bin-c671d44/pin-2.14-71313-gcc.4.4.7-linux/ia32/bin/pinbin" 0x566a728b 0x566a80f6 0x566a83e1 0x5690c3a7 0x56911972 0x56913809 0x56902e59 0x5690801f 0x568f6202 0x56901cc1 0xf74211b3
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+??
+??:0
+Detach Service Count: 1
+Pin 2.14
+Copyright (c) 2003-2015, Intel Corporation. All rights reserved.
+@CHARM-VERSION: $Rev: 71293 $
+@CHARM-BUILDER: BUILDER
+@CHARM-COMPILER: gcc 4.4.7
+@CHARM-TARGET: ia32
+@CHARM-CFLAGS:  __OPTIMIZE__=1  __NO_INLINE__=__NO_INLINE__
+./oitimetool: line 57:  5000 Aborted                 (core dumped) "$PIN_DIR/pin" $OPTIONS "$PIN_DIR0/oitimetool$LIB_SUFFIX" $OITIMETOOL_ARGS -- $*
+----

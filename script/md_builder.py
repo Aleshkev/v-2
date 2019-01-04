@@ -11,6 +11,9 @@ import webassets.ext.jinja2
 from . import transforms
 
 
+logger = logging.getLogger(__name__)
+
+
 def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
            output: pathlib.Path, html_extensions: bool = True):
     assert root_url.endswith('/')
@@ -19,10 +22,10 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
     theme = theme.absolute().resolve()
     output = output.absolute().resolve()
 
-    logging.info(f"Rendering {content}")
-    logging.info(f"theme:    {theme}")
-    logging.info(f"root_url: {root_url}")
-    logging.info(f"output:   {output}")
+    logger.info(f"Rendering Markdown from: {content}")
+    logger.info(f"theme:    {theme}")
+    logger.info(f"root_url: {root_url}")
+    logger.info(f"output:   {output}")
 
     templates = jinja2.Environment(loader=jinja2.FileSystemLoader([theme]),
                                    extensions=[webassets.ext.jinja2.AssetsExtension])
@@ -32,27 +35,25 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
     parser = commonmark.Parser()
     renderer = commonmark.HtmlRenderer()
 
-    logging.info("Loading and rendering [nav]")
+    logger.info("Loading and rendering [nav]")
     nav_ast = parser.parse((content / 'nav.md').read_text('utf-8'))
     transforms.resolve_links(nav_ast, root_url, keep_extension=html_extensions)
     nav = renderer.render(nav_ast)
 
-    logging.info("Loading and rendering [footer]")
+    logger.info("Loading and rendering [footer]")
     footer_ast = parser.parse((content / 'footer.md').read_text('utf-8'))
     transforms.resolve_links(footer_ast, root_url, keep_extension=html_extensions)
     footer = renderer.render(footer_ast)
 
-    logging.info("Loading [site-name]")
+    logger.info("Loading [site-name]")
     site_name = (content / 'site-name.txt').read_text('utf-8').strip()
-
-    exclude = ('nav.md', 'footer.md', 'site-name.txt')
 
     # TODO: Handle not-flat structure of markdown files.
     for md_file in content.glob('*.md'):
-        if md_file.name in exclude:
+        if md_file.name in ('nav.md', 'footer.md', 'site-name.txt'):
             continue
 
-        logging.info(f"Rendering {md_file}")
+        logger.info(f"Rendering {md_file}")
         ast = parser.parse(md_file.read_text('utf-8'))
 
         title = transforms.get_title(ast)
@@ -64,12 +65,6 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
         out = content / output / (md_file.stem + '.html')
 
         out_html = every.render(root_url=root_url, title=title, content=renderer.render(ast), nav=nav, footer=footer)
-        out_html_min = htmlmin.minify(out_html)
 
-        out.write_text(out_html_min, 'utf-8')
+        out.write_text(out_html, 'utf-8')
 
-    for file in content.glob('*'):
-        if file.suffix == '.md' or file.name in exclude:
-            continue
-        logging.info(f"Copying {file}")
-        shutil.copy(str(file), str(output / file.name))

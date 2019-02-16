@@ -50,7 +50,7 @@ def resolve_links(document: commonmark.node.Node, document_url: str, extension: 
         if node.t == 'link':
             if re.match('^[a-z]+://', node.destination):
                 continue
-            node.destination = re.sub(r'\.md$', extension,
+            node.destination = re.sub(r'\.(md|adoc)$', extension,
                                       urllib.parse.urljoin(document_url, node.destination))
             if not keep_extension:
                 node.destination = re.sub(re.escape(extension) + '$', '', node.destination)

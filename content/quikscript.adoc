@@ -1,13 +1,13 @@
-= Polski QuickScript
+= Polski Quikscript
 Jonasz Aleszkiewicz
 :nofooter:
 :revdate: 2019-02-16
 :source-highlighter: coderay
 
-Inspirowany oryginalnym angielskim https://www.omniglot.com/pdfs/quikscriptmanual.pdf[QuickScriptem] (http://home.earthlink.net/~sbartok1632/quik/qprojects/qfonts.htm[czcionka]), z dodanymi dodatkowymi polskimi literami. 
+Inspirowany oryginalnym angielskim https://www.omniglot.com/pdfs/quikscriptmanual.pdf[Quikscriptem] (http://home.earthlink.net/~sbartok1632/quik/qprojects/qfonts.htm[czcionka]), z przeszuflowanymi literami żeby się nadawał do polskomowy. 
 
-.Alfabet QuickScript przystosowany do j. polskiego
-image:polski-quickscript.png[]
+.Alfabet przystosowany do j. polskiego
+image:quikscript.png[]
 
 == Technikalia
 

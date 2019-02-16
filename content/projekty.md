@@ -2,6 +2,16 @@
 
 # Projekty
 
+## Teksty
+
+Napisane w charakterystycznym stylu, który wszyscy kochamy, różne dokumenty, które trudno docenić w całości bez kontekstu: jeżeli mnie spotkacie IRL, możecie o kontekst spytać.
+
+- [Manifest Monochromatyczny](manifest.md)
+- [How to install and use oitimetool in modern times?](oitimetool.adoc) -- napisane dzięki pomocy Kubina szczegółowe instrukcje jak uruchomić oitimetool. Niestety przestarzałe od czasu pojawienia się o wiele lepszego SIO2Jail.
+- [Saga o Stack Exchange](se.md)
+- [Polski Quikscript](quikscript.adoc)
+- [Zadania z biblioteczkami considered harmful](deathlib.adoc)
+
 ## Algoritmika
 
 Repozytorium z moimi rozwiązaniami zadań algorytmicznych. Wszystkie kody źródłowe dostępne [na GitHubie](https://github.com/Aleshkev/algoritmika).
@@ -13,10 +23,6 @@ Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 ## SIO2 Experience Enhancements
 
 Zestaw userscriptów do przeglądarki dla lepszego użytkowania SIO2/OIOIOI [na GitHubie.](https://github.com/Aleshkev/sio2-experience-enhancements)
-
-## How to install and use oitimetool in modern times?
-
-Napisane dzięki pomocy Kubina [szczegółowe instrukcje jak uruchomić oitimetool](https://aleshkev.github.io/a/oitimetool). Niestety przestarzałe od czasu pojawienia się o wiele lepszego SIO2Jail.
 
 ## Afterdeals
 

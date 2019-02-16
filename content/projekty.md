@@ -20,11 +20,13 @@ Napisane dzięki pomocy Kubina [szczegółowe instrukcje jak uruchomić oitimeto
 
 ## Afterdeals
 
-Moja własna książka, która będzie zawierać kody źródłowe *wszystkich* algorytmów, jakie są niezbędne na OI. Kod jest w specjalnym podzbiorze Pythona, który łatwo ręcznie przepisać do C++.
+Książka z kodami źródłowymi algorytmów w specjalnym podzbiorze Pythona, który łatwo ręcznie przepisać do C++.
 
 Docelowo będzie także zawierać wszystkie nazwy jakich ludzie z niewiadomych powodów używają na dany algorytm. (Naprawdę, "zamiatanie drzewa przedziałowego" to zamach na ludzkość.)
 
-Na razie, aby budować napięcie, książka nie jest dostępna publicznie.
+## generator-liczb
+
+Generator liczb losowych stworzony ekskluzywnie na zlecenie pana Nowaka. Dzięki GitHub pages, [dostępny jest live build](https://aleshkev.github.io/generator-liczb/).
 
 ## Inne
 

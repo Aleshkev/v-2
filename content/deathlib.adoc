@@ -2,6 +2,7 @@
 :revdate: 2019-02-16
 :nofooter:
 :source-highlighter: coderay
+:icons: font
 
 .Establishment
 image::https://sio2.mimuw.edu.pl/static/oi/logo.png[role="left",caption=""]

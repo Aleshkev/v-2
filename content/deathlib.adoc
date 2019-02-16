@@ -54,6 +54,8 @@ give_answer(X())
 
 NOTE: Dla osób niepłynnych w Pythonie: porównanie obiektu klasy X z dowolną liczbą nierówną zeru zwraca wartość prawdziwą. Dodatkowo, próba zamiany takiego obiektu na zwykłą liczbę całkowitą używając funkcji `int()` jest bezskuteczna (w Pythonie 3.4 używanym wtedy na olimpiadzie -- zostało to naprawione w nowszych wersjach).
 
+Jak zauważył pewien anonimowy algorytmik, jest to jedyny udokumentowany przypadek wykorzystania polimorfizmu na Olimpiadzie Informatycznej.
+
 Atak się na szczęście nie powiódł, ale istnieją podejrzenia, że dodanie metody `+def __bool__(self): return True+` by było skuteczne.
 
 .Mało brakowało żeby finalista OI

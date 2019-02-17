@@ -17,7 +17,7 @@ image:quikscript.png[]
 import collections
 
 source = tuple("bpdtgkwfchjlłmnrsz") + ('dz', 'dź', 'dż', 'cz', 'ń', 'ś', 'sz', 'ź', 'ż') + tuple("eęaąiyou")
-target = tuple("bpdtgkvfHhjlwmnrszyYJcN`STZeEaFiMoU")
+target = tuple("bpdtgkvfHhjlwmnrszyYJcN`STZeEAFiMoU")
 mapping = collections.defaultdict(lambda x: x)
 mapping.update(zip(source, target))
 
@@ -41,6 +41,6 @@ print('\n'.join(s))
 <tr><td></td><td></td><td>dz</td><td>dź</td><td>dż</td><td></td><td></td><td></td><td>cz</td><td></td><td></td><td></td><td></td><td></td><td>ń</td><td>ś</td><td>sz</td><td>ź</td><td>ż</td></tr>
 <tr class='font'><td></td><td></td><td>y</td><td>Y</td><td>J</td><td></td><td></td><td></td><td>c</td><td></td><td></td><td></td><td></td><td></td><td>N</td><td>`</td><td>S</td><td>T</td><td>Z</td></tr>
 <tr><td>e</td><td>ę</td><td>a</td><td>ą</td><td>i</td><td>y</td><td>o</td><td>u</td></tr>
-<tr class='font'><td>e</td><td>E</td><td>a</td><td>F</td><td>i</td><td>M</td><td>o</td><td>U</td></tr>
+<tr class='font'><td>e</td><td>E</td><td>A</td><td>F</td><td>i</td><td>M</td><td>o</td><td>U</td></tr>
 </table>
 ----

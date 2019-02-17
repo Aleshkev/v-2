@@ -31,7 +31,7 @@ def main(content, md_theme, root_url, output):
     md_builder.render(content, md_theme, root_url, output, not RELEASE)
     adoc_builder.render(content, root_url, output)
 
-    exclude = ('nav.md', 'footer.md', 'site-name.txt')
+    exclude = ('nav.md', 'footer.md', 'site-name.txt', 'docinfo.html')
     exclude_suffixes = ('.md', '.adoc', '.css', '.scss')
 
     for file in content.glob('*'):

@@ -16,5 +16,6 @@ def render(content: pathlib.Path, root_url: str, output: pathlib.Path):
             'asciidoctor',
             '--destination-dir', str(output),
             '-a', 'linkcss',
+            '-a', 'docinfo=shared',
             str(adoc_file)
         ], shell=True, stdout=sys.stdout)

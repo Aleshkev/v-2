@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/highlight.pack.min.js"></script>
+  <link rel="stylesheet" href="markdown.css" />
+  <style>
+    body {
+      max-width: 60em;
+      margin: auto;
+    }
+  </style>
+  <script>
+    'use strict';
+    $(function () {
+      const this_url = new URL(window.location.href);
+      const that_url = new URL(this_url.searchParams.get("p"));
+      console.log(that_url);
+      fetch(that_url).then(response => response.text()).then(md_text => {
+        const md = window.markdownit({
+          html: true,
+          linkify: true,
+          highlight: function (str, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+              console.log(hljs.highlight(lang, str));
+              return hljs.highlight(lang, str).value;
+            }
+            return '';
+          }
+        });
+        const rendered = md.render(md_text);
+        $('body').html(rendered);
+      });
+      // console.log(response);
+    });
+  </script>
+</head>
+
+<body class="vscode-light">
+  If the page doesn't load, check console for errors and contact the owner.
+</body>
+
+</html>

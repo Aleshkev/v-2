@@ -5,8 +5,15 @@
   <script src="https://cdn.jsdelivr.net/npm/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/highlight.pack.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/classeur/markdown-it-mathjax/markdown-it-mathjax.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/highlight.js/src/styles/vs.min.css" />
   <link rel="stylesheet" href="markdown.css" />
   <style>
+    code {
+      color: rgb(163, 21, 21);
+    }
+
     body {
       max-width: 60em;
       margin: auto;
@@ -24,16 +31,15 @@
           linkify: true,
           highlight: function (str, lang) {
             if (lang && hljs.getLanguage(lang)) {
-              console.log(hljs.highlight(lang, str));
               return hljs.highlight(lang, str).value;
             }
             return '';
           }
         });
+        md.use(window.markdownitMathjax());
         const rendered = md.render(md_text);
         $('body').html(rendered);
       });
-      // console.log(response);
     });
   </script>
 </head>

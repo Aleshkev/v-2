@@ -16,6 +16,15 @@ Napisane w charakterystycznym stylu, który wszyscy kochamy, różne dokumenty, 
 
 Repozytorium z moimi rozwiązaniami zadań algorytmicznych. Wszystkie kody źródłowe dostępne [na GitHubie](https://github.com/Aleshkev/algoritmika).
 
+## Zadania
+
+Kiedyś napisałem coś o robieniu zadań jako szlachetnej sztuce ponieważ wymaga znajomości LaTeXa, bla bla bla, wyśmiałem kolegę za jego obrazkowy zamach na typografię, bla bla bla. Od kiedy znalazłem szablon, którego używa Staszic i rzeczywiście musiałem ułożyć jednoznaczną treść oraz poprawne testy, zmieniłem zdanie. LaTeX nie jest taki trudny, jest po prostu nieprzystosowany do bycia używanym. A układanie dobrych testów jest dużym wyzwaniem.
+
+Więc na razie, ułożyłem tylko dwa banalnie proste zadania:
+- [Kalkulator](https://github.com/Aleshkev/algoritmika/blob/master/tasks/kalkulator/doc/klkzad.pdf) (PreMOI 2019)
+- [Konstytucja](https://github.com/Aleshkev/algoritmika/blob/master/tasks/konstytucja/doc/konzad.pdf) (PreMOI 2019)
+
+
 ## Taw-check
 
 Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).

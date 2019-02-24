@@ -1,6 +1,5 @@
 # [Aleshkevich Interactive]()
 - [about me](about-me.md)
 - [o mnie](o-mnie.md)
-- [zadania](zadania.md)
 - [projekty](projekty.md)
 - [taw-check](taw-check.md)

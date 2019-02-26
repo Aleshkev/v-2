@@ -1,5 +1,5 @@
 = Zadania z biblioteczkami considered harmful
-:revdate: 2019-02-16
+:revdate: 2019-02-16 (a. 2019-02-26)
 :nofooter:
 :source-highlighter: coderay
 :icons: font
@@ -40,7 +40,7 @@ Jedyne co chroni kontesty przed masowym hakowaniem sprawdzarek w taki sposób to
 Sprawia to oczywiście, że nie znam ani jednego przypadku gdy sprawdzarka została publicznie udostępniona, nawet gdy same pliki z testami były.
 
 ====
-W Pythonie istnieje jeszcze jeden atak, który nie jest już w sferze bardzo-prawdopodobnie-działającej teorii, ale został już niemal skutecznie wykonany na XXVI Olimpiadzie Informatycznej. W zadaniu oczekującym, że rozwiązanie wywoła `give_answer(n)`, pewien uczestnik zwrócił mniej-więcej taki obiekt:
+W Pythonie istnieje jeszcze jeden atak, który został wypróbowany na XXVI Olimpiadzie Informatycznej. W zadaniu oczekującym, że rozwiązanie wywoła `give_answer(n)`, pewien uczestnik zwrócił mniej-więcej taki obiekt:
 
 [source,python]
 ----
@@ -56,10 +56,9 @@ NOTE: Dla osób niepłynnych w Pythonie: porównanie obiektu klasy X z dowolną 
 
 Jak zauważył pewien anonimowy algorytmik, jest to jedyny udokumentowany przypadek wykorzystania polimorfizmu na Olimpiadzie Informatycznej.
 
-Atak się na szczęście nie powiódł, ale istnieją podejrzenia, że dodanie metody `+def __bool__(self): return True+` by było skuteczne.
+Atak się nie powiódł, ale istnieją podejrzenia, że dodanie metody `+def __bool__(self): return True+` by było skuteczne.
 
-.Mało brakowało żeby finalista OI
-image::https://c1.staticflickr.com/8/7240/26934148384_c692e4df07_k.jpg[caption=""]
+Prawdopodobnie jednak większość biblioteczek jest zabezpieczona tak, że program sprawdzający wypisuje jakiś hasz wejścia oraz odpowiedzi zwrócone przez program, co znacznie utrudnia hakowanie.
 ====
 
 Oczywiście, takie ataki przestają działać w momencie gdy ktoś zajrzy do kodu, czyli z personalnego doświadczenia przed 20:00 tego samego dnia. Większość osób to wie i nawet nie próbuje marnować swojego czasu.

@@ -9,6 +9,13 @@ Inspirowany oryginalnym angielskim https://www.omniglot.com/pdfs/quikscriptmanua
 .Alfabet przystosowany do j. polskiego
 image:quikscript.png[]
 
+[caption=]
+.Przykład tekstu
+====
+image::quikscript-example.png[width=]
+====
+
+////
 == Technikalia
 
 .Kod użyty do wygenerowania tej tabelki
@@ -44,3 +51,4 @@ print('\n'.join(s))
 <tr class='font'><td>e</td><td>E</td><td>A</td><td>F</td><td>i</td><td>M</td><td>o</td><td>U</td></tr>
 </table>
 ----
+////

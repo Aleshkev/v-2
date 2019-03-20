@@ -1,18 +1,18 @@
 = Polski Quikscript
 Jonasz Aleszkiewicz
 :nofooter:
-:revdate: 2019-02-16
-:source-highlighter: coderay
+:revdate: 2019-03-20
 
-Inspirowany oryginalnym angielskim https://www.omniglot.com/pdfs/quikscriptmanual.pdf[Quikscriptem] (http://home.earthlink.net/~sbartok1632/quik/qprojects/qfonts.htm[czcionka]), z przeszuflowanymi literami żeby się nadawał do polskomowy. 
+Inspirowany oryginalnym angielskim https://www.omniglot.com/pdfs/quikscriptmanual.pdf[Quikscriptem] (czcionkę http://home.earthlink.net/~sbartok1632/quik/qprojects/qfonts.htm[wziąłem stąd], ale link w międzyczasie umarł), ze zmienionym znaczeniem liter, żeby całość nadawała się do języka polskiego. 
 
-.Alfabet przystosowany do j. polskiego
+.Quikscript przystosowany do j. polskiego
 image:quikscript.png[]
 
 [caption=]
 .Przykład tekstu
 ====
-image::quikscript-example.png[width=]
+image::quikscript-example.png[]
+Ćwiczenie dla czytelnika: można tu znaleźć co najmniej dwa błędy.
 ====
 
 ////

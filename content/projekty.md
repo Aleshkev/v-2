@@ -33,12 +33,6 @@ Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 
 Zestaw userscriptów do przeglądarki dla lepszego użytkowania SIO2/OIOIOI [na GitHubie.](https://github.com/Aleshkev/sio2-experience-enhancements)
 
-## Afterdeals
-
-Książka z kodami źródłowymi algorytmów w specjalnym podzbiorze Pythona, który łatwo ręcznie przepisać do C++.
-
-Docelowo będzie także zawierać wszystkie nazwy jakich ludzie z niewiadomych powodów używają na dany algorytm. (Naprawdę, "zamiatanie drzewa przedziałowego" to zamach na ludzkość.)
-
 ## generator-liczb
 
 Generator liczb losowych stworzony ekskluzywnie na zlecenie pana Nowaka. Dzięki GitHub pages, [dostępny jest live build](https://aleshkev.github.io/generator-liczb/).

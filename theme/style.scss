@@ -12,11 +12,39 @@ $text-links: #1155cc;
 $header-title: #D93737;
 $header-accent: #CB8145;
 
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://raw.githack.com/iaolo/iA-Fonts/master/iA Writer Duospace/Webfonts/iAWriterDuospace-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: normal;
+  font-style: italic;
+  src: url("https://raw.githack.com/iaolo/iA-Fonts/master/iA Writer Duospace/Webfonts/iAWriterDuospace-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: bold;
+  font-style: normal;
+  src: url("https://raw.githack.com/iaolo/iA-Fonts/master/iA Writer Duospace/Webfonts/iAWriterDuospace-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: bold;
+  font-style: italic;
+  src: url("https://raw.githack.com/iaolo/iA-Fonts/master/iA Writer Duospace/Webfonts/iAWriterDuospace-BoldItalic.woff") format("woff");
+}
+
 // Main layout
 // ===
 
 html {
-  font: $rem 'Source Code Pro', monospace;
+  font: $rem 'iA Writer Duospace', 'Source Code Pro', monospace;
   line-height: $line;
   color: $text-primary;
 }

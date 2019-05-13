@@ -10,7 +10,7 @@ Napisane w charakterystycznym stylu, który wszyscy kochamy, różne dokumenty, 
 - [How to install and use oitimetool in modern times?](oitimetool.adoc) -- napisane dzięki pomocy Kubina szczegółowe instrukcje jak uruchomić oitimetool. Niestety przestarzałe od czasu pojawienia się o wiele lepszego SIO2Jail.
 - [Saga o Stack Exchange](se.md)
 - [Polski Quikscript](quikscript.adoc)
-- [Zadania z biblioteczkami considered harmful](deathlib.adoc)
+<!-- - [Zadania z biblioteczkami considered harmful](deathlib.adoc) -->
 
 ## Algoritmika
 

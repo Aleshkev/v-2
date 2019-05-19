@@ -5,6 +5,7 @@ import logging
 
 import commonmark
 import htmlmin
+import yaml
 import jinja2
 import webassets.ext.jinja2
 
@@ -45,8 +46,9 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
     transforms.resolve_links(footer_ast, root_url, keep_extension=html_extensions)
     footer = renderer.render(footer_ast)
 
-    logger.info("Loading [site-name]")
-    site_name = (content / 'site-name.txt').read_text('utf-8').strip()
+    logger.info("Loading [config.yaml]")
+    config = yaml.load((content / 'config.yaml').read_text('utf-8'))
+    site_name = config['site_name']
 
     # TODO: Handle not-flat structure of markdown files.
     for md_file in content.glob('*.md'):
@@ -57,14 +59,23 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
         ast = parser.parse(md_file.read_text('utf-8'))
 
         title = transforms.get_title(ast)
-        title = title + ' -- ' + site_name if title is not None else site_name
+        title = title + ' – ' + site_name if title is not None else site_name
 
         transforms.anchor_headings(ast)
         transforms.resolve_links(ast, root_url + md_file.stem + '.html', keep_extension=html_extensions)
 
         out = content / output / (md_file.stem + '.html')
 
-        out_html = every.render(root_url=root_url, title=title, content=renderer.render(ast), nav=nav, footer=footer)
+        props = {
+            "root_url": root_url,
+            "title": title,
+            "author": config['author'],
+            "keywords": config['keywords'],
+            "content": renderer.render(ast),
+            "nav": nav,
+            "footer": footer
+        }
+        out_html = every.render(**props)
 
         out.write_text(out_html, 'utf-8')
 

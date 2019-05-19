@@ -6,7 +6,7 @@
 
 > Wszystko, czego potrzebujesz i nic, czego się spodziewasz.
 >
->  -- Mark Beaks
+>  — Mark Beaks
 
 To jest sprawdzarka do zadań. Ale zamiast przechodzić po wszystkich plikach `.in` i `.out` w folderze, ma ona plik `.taw`, w którym są wszystkie testy. W jednym pliku. Dzięki temu:
 1. Nie trzeba testów wsadzać do zipa lub tara, żeby komuś je przesłać.
@@ -27,7 +27,7 @@ Następnie zacznę propagować ideologię taw-checka gdzie tylko się da, więc 
 >
 > Whoever is not with me is against me, and whoever does not gather with me scatters.
 >
-> -- Matthew 12:30, Luke 11:23
+> — Matthew 12:30, Luke 11:23
 >
 > </div>
 

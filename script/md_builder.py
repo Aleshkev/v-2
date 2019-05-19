@@ -52,7 +52,7 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
 
     # TODO: Handle not-flat structure of markdown files.
     for md_file in content.glob('*.md'):
-        if md_file.name in ('nav.md', 'footer.md', 'site-name.txt'):
+        if md_file.name in ('nav.md', 'footer.md', 'config.yaml'):
             continue
 
         logger.info(f"Rendering {md_file}")
@@ -70,7 +70,7 @@ def render(content: pathlib.Path, theme: pathlib.Path, root_url: str,
             "root_url": root_url,
             "title": title,
             "author": config['author'],
-            "keywords": config['keywords'],
+            "keywords": ",".join(config['keywords']),
             "content": renderer.render(ast),
             "nav": nav,
             "footer": footer

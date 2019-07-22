@@ -14,7 +14,11 @@ Napisane w charakterystycznym stylu, który wszyscy kochamy, różne dokumenty, 
 
 ## Algoritmika
 
-Repozytorium z moimi rozwiązaniami zadań algorytmicznych. Wszystkie kody źródłowe dostępne [na GitHubie](https://github.com/Aleshkev/algoritmika).
+Repozytorium z moimi rozwiązaniami zadań algorytmicznych. [GitHub](https://github.com/Aleshkev/algoritmika)
+
+## Talent-sorter
+
+Skrypt w Pythonie, który pomimo swojego braku skomplikowania jest bardzo użyteczny do obliczania prawdziwych pozycji w globalnym rankingu na obozach Stowarzyszenia Talent. Okazuje się również, że sam Talent takiego skryptu nie ma i przemnaża wszystko ręcznie. [GitHub](https://github.com/Aleshkev/talent-sorter)
 
 ## Zadania
 
@@ -30,8 +34,8 @@ Projekt tak postępowy i genialny, że ma [własną podstronę](taw-check.md).
 
 ## SIO2 Experience Enhancements
 
-Zestaw userscriptów do przeglądarki dla lepszego użytkowania SIO2/OIOIOI [na GitHubie.](https://github.com/Aleshkev/sio2-experience-enhancements)
+Zestaw userscriptów do przeglądarki dla lepszego użytkowania SIO2/OIOIOI. [GitHub](https://github.com/Aleshkev/sio2-experience-enhancements)
 
 ## generator-liczb
 
-Generator liczb losowych stworzony ekskluzywnie na zlecenie pana Nowaka. Dzięki GitHub pages, [dostępny jest live build](https://aleshkev.github.io/generator-liczb/).
+Generator liczb losowych stworzony ekskluzywnie na zlecenie pana Nowaka. [Live build](https://aleshkev.github.io/generator-liczb/)

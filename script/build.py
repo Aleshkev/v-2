@@ -67,7 +67,7 @@ class Site:
             autoescape=False)
         self.environment.filters["as_absolute_url"] = self.as_absolute_url
         self.environment.assets_environment = webassets.Environment(
-            str(self.output_dir), self.root,
+            str(self.output_dir), self.root + str(self.output_dir),
             load_path=[str(self.theme_dir)])
         self.article_template = self.environment.get_template("article.html")
         self.list_template = self.environment.get_template("list.html")
@@ -105,11 +105,13 @@ class Site:
         self.render_index()
 
     def add_resource(self, source_file: pathlib.Path, virtual: bool = False):
-        self.resources[source_file] = source_file
+        o = source_file
         if source_file.suffix == ".md" or virtual:
-            self.resources[source_file] = (self.output_dir /
-                                           os.path.relpath(str(source_file), self.source_dir)).with_suffix(".html")
-        os.makedirs(self.resources[source_file].parent, exist_ok=True)
+            o = (self.output_dir / os.path.relpath(str(source_file), self.source_dir)).with_suffix(".html")
+        if source_file.name.startswith("-"):
+            o = o.with_name(o.name[1:])
+        self.resources[source_file] = o
+        os.makedirs(o.parent, exist_ok=True)
 
     def as_absolute_url(self, source_file: pathlib.Path):
         p = self.resources[source_file]
@@ -199,7 +201,7 @@ class Site:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build the site. Use -ec for release mode.")
+    parser = argparse.ArgumentParser(description="Build the site. Use -rec for release mode.")
     parser.add_argument("--expensive", "-e", action="store_true", help="waste time for nicer output")
     parser.add_argument("--clear", "-c", action="store_true", help="remove last build")
     parser.add_argument("--only", "-l", help="build only articles with paths containing this text")

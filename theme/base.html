@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>{% block title %}{% endblock %} – Aleszkiewicz ʙʟᴏɢ</title>
+    <meta name="keywords" content="{% block keywords %}{% endblock %}"/>
+    <meta name="description" content="{% block description %}{% endblock %}"/>
+    <meta name="author" content="{% block author %}Jonasz Aleszkiewicz{% endblock %}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+    {% assets filters="sass, cssmin", output="style.min.css", "style.sass" %}
+        <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" media="all"/>
+    {% endassets %}
+
+    {% assets "script.js" %}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</head>
+
+<body class="unified">
+<main>
+    <header>
+        <div>
+            <h2><a href="{{ site.index | as_absolute_url }}">Aleszkiewicz <span>blog</span></a></h2>
+        </div>
+        <div>
+            <a href="{{ site.main_list | as_absolute_url }}">artykuły</a> |
+            <a href="{{ site.get_tag("opinia").source | as_absolute_url }}">opinie</a> |
+            <a href="{{ site.get_tag("projekt").source | as_absolute_url }}">projekty</a> |
+            <a href="{{ site.get_tag("art").source | as_absolute_url }}">nonsens</a>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+</main>
+<footer class="ui">
+    <span class="copyright-sign">©</span>
+    Jonasz Aleszkiewicz
+    {% block copyright_year %}
+        {{ site.articles[-1].date.year }} – {{ site.articles[0].date.year }}
+    {% endblock %}
+</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% from "macros.html" import article_list %}
+
+{% block title %}Strona główna{% endblock %}
+{% block keywords %}Jonasz Aleszkiewicz{% endblock %}
+{% block description %}Strona główna Jonasza Aleszkiewicza.{% endblock %}
+
+{% block content %}
+
+    <h1>Jonasz Aleszkiewicz</h1>
+
+    <div class="contact-table">
+        <div>
+            <span>email</span>
+            <span>
+                j.alesz<span style="display: none">XXX</span>kiewicz@gm<span style="display: none">XXX</span>ail.com
+            </span>
+        </div>
+        <div>
+            <span>GitHub</span>
+            <span>
+                <a href="https://github.com/Aleshkev">@Aleshkev</a>
+            </span>
+        </div>
+        <div>
+            <span>Codeforces</span>
+            <span>
+                <a href="https://codeforces.com/profile/Aleshkevich">
+                    Aleshkevich
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <h2>Ostatnie artykuły</h2>
+    {{ article_list(site, site.articles[:5]) }}
+{% endblock %}

@@ -1,0 +1,310 @@
+@import reset
+@import solarized-light
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap&subset=cyrillic,latin-ext')
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i&display=swap&subset=latin-ext')
+
+// Harmonic: 1.5, 2.25, 3.375
+
+
+$black: #333
+$accent: #938e94
+$blue: #557a95
+$blue: #7395ae
+$blue: #3c7dde
+$brown: #fffdf7
+//lighten(#efe2ba, 10%)
+
+
+$standard-font-family: "Noto Serif", Georgia, serif
+$code-font-family: "Source Code Pro", monospace
+
+// The standard is 16px font, so 1rem = 16px.
+// We use 1.5 as line height and base of modular scale.
+$main-column-width: 640px
+$margin-column-width: 288px
+$total-width: 16px + $main-column-width + 32px + $margin-column-width + 16px
+
+html
+  font: 16px $standard-font-family
+  line-height: 1.75em
+  letter-spacing: -0.01em
+  color: $black
+  text-rendering: optimizeLegibility
+  text-justify: inter-character
+
+body
+  &.unified
+    max-width: $main-column-width
+
+  &.split
+    max-width: $total-width
+  margin: 0 auto
+  padding-left: 1rem
+  padding-right: 1rem
+  position: relative
+
+=in-sidebar
+  min-width: $margin-column-width
+  max-width: $margin-column-width
+  position: absolute
+  right: 1rem
+
+main
+  max-width: $main-column-width
+  text-align: justify
+
+
+footer
+  border-top: 1px $accent solid
+  margin: 3.375rem 0 2.25rem 0
+
+
+=as-ui
+  font-size: 0.75em
+  text-transform: uppercase
+  text-align: left
+
+  &, a
+    color: $black
+    font-weight: lighter
+
+// article.html
+div.article-info
+  +as-ui
+  margin-top: 1.5em
+  margin-bottom: 1.5em
+
+  .dates, .tags
+    margin-top: 0
+    display: inline-block
+
+  .tags
+    float: right
+
+// list.html
+.tag-name
+  +as-ui
+  font-size: .75em
+
+.article-list
+  width: 100%
+  display: table
+  text-align: left
+
+  a
+    color: $black
+
+  & > *
+    display: table-row
+
+    & > *
+      display: table-cell
+
+    & > *:first-child
+      width: 6em
+      text-align: right
+      padding-right: 1em
+
+    & > *:last-child
+      & > *:last-child
+        +as-ui
+        margin-top: 0
+        margin-left: .5em
+        float: right
+        text-align: right
+
+.all-articles-link
+  margin-top: 1.5rem
+  +as-ui
+
+// index.html
+.contact-table
+  *
+    color: $black
+  max-width: 20em
+  padding-right: 1em
+  border-right: 1px $accent solid
+
+  & > *
+    & > *
+      margin-top: 0
+
+    & > *:first-child
+      +as-ui
+
+    & > *:last-child
+      float: right
+
+header
+  max-width: 18rem
+
+  .split &
+    +in-sidebar
+
+  h2
+    margin-top: .5rem
+    margin-bottom: 0
+    letter-spacing: -0.025em
+    text-align-last: justify
+
+  & > *:last-child
+    +as-ui
+    letter-spacing: 0.025rem
+    text-align-last: justify
+
+  a
+    color: $black
+
+main * + *
+  margin-top: 1em
+
+
+.unified
+  * + .asides, .asides + *
+    margin-top: 1rem
+
+aside
+  border-top: 1px $accent solid
+  padding: .25em 0
+  margin: 0
+  font-size: 14px
+  line-height: 1.5em
+
+  .split &
+    +in-sidebar
+    max-width: $margin-column-width
+
+  .unified &
+    border-bottom: 1px $accent solid
+
+  * + *
+    margin-top: .5em
+
+aside + aside
+  margin-top: -1px
+
+
+// This is modular scale: 1, 1.5, 2.25, 3.375.
+h1, h2, h3, h4, h5, h6
+  text-indent: -1px
+  text-align: left
+  line-height: 1.5em
+  margin-bottom: 1rem
+
+h1
+  margin-top: 3.375rem
+  font-size: 3.375rem
+  line-height: 1.2em
+
+h2
+  margin-top: 2.25rem
+  font-size: 2.25rem
+
+h3
+  margin-top: 1.5rem
+  font-size: 1.5rem
+
+p
+  disallow: font-family("Comic Sans MS")
+
+p + p, .split p + .asides + p
+  text-indent: 1em
+  margin-top: 0
+
+
+ul, ol
+  padding-left: 1.5em
+  margin-top: 0
+
+ul
+  list-style-type: none
+
+  & > li
+    &::before
+      position: absolute
+      content: "\2014"
+      // –
+      margin-left: -1.25em
+//p + ul, .split p + .asides + ul, p + ol, .split p + .asides + ol, ul:first-child, ol:first-child
+//  margin-top: 0
+li + li, .split li + .asides + li
+  margin-top: 0
+
+a
+  color: $blue
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+hr
+  height: 0
+  border-top: 1px $accent solid
+
+code
+  font-family: $code-font-family
+  color: #a31515
+
+pre
+  white-space: pre
+  margin-left: -1em
+  margin-right: -1em
+  padding: .5em 1em
+  overflow-x: auto
+  background-color: #fffef3
+
+blockquote
+  margin-left: -1em
+  margin-right: -1em
+  padding: .5em 1em
+  background-color: #f6f8ff
+
+  cite
+    display: block
+    text-align: right
+
+
+p > img:first-child
+  margin-left: auto
+  margin-right: auto
+  display: block
+
+  & + em
+    display: block
+    text-align: center
+
+
+table
+  margin-left: -1em
+  margin-right: -1em
+  padding: 1em
+  box-sizing: content-box
+  min-width: calc(100% + 2em)
+  // TODO: avoid calc, restore cssmin to jinja template
+  overflow-x: auto
+  text-align: left
+
+  th
+    font-weight: normal
+    text-transform: uppercase
+
+  border-collapse: collapse
+
+  tr
+    td, th
+      border: 1px solid $accent
+      padding: .5em
+
+      &:first-child
+        border-left: none
+
+      &:last-child
+        border-right: none
+
+  thead tr:first-child
+    td, th
+      border-top: none
+
+  tr:last-child
+    td, th
+      border-bottom: none

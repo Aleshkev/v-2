@@ -20,11 +20,21 @@ def _get_hyphenator(lang):
 
 
 def hyphenate(s: str, lang):
+    was_upper = False
+    if s.isupper():
+        was_upper = True
+        s = s.lower()
+
     if s[0].isupper():
         return s
+
     syllables = _get_hyphenator(lang).syllables(s)
     if syllables:
-        return "\xad".join(syllables)
+        s = "\xad".join(syllables)
+
+    if was_upper:
+        s = s.upper()
+
     return s
 
 

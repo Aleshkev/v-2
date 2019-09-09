@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title | striptags }}{% endblock %}
-{% block keywords %}{% for tag in article.tags %}{{ tag.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endblock %}
+{% block keywords %}{% for tag in article.tags %}{{ tag.name }}{% if not loop.last %}, {% endif %}{#
+#}{% endfor %}{% endblock %}
 {% block description %}{% endblock %}
 {% block author %}Jonasz Aleszkiewicz{% endblock %}
 
@@ -46,5 +47,11 @@
         {% endif %}
     {% elif article.revised and article.date.year != article.revised.year %}
         {{ article.revised.year }}
+    {% endif %}
+{% endblock %}
+
+{% block copyright_extension %}
+    {% if article.copyright_extension %}
+        {{ article.copyright_extension }}
     {% endif %}
 {% endblock %}

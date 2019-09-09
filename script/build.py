@@ -10,14 +10,14 @@ import shutil
 import subprocess
 from typing import *
 
+import htmlmin
 import jinja2
 import slugify
 import webassets.ext.jinja2
 import yaml
-import htmlmin
 
-import typographical_transforms
 import functional_transforms
+import typographical_transforms
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -38,6 +38,7 @@ class Article:
     date: Optional[datetime.date] = None
     revised: Optional[datetime.date] = None
     tags: List[Tag] = dataclasses.field(default_factory=list)
+    copyright_extension: Optional[HTML] = ""  # See "Paski TVP" for example.
     title: HTML = ""
     content: HTML = ""
 
@@ -46,10 +47,12 @@ class Article:
 
 
 class Site:
-    def __init__(self, expensive_typography: bool, clear_output: bool, article_filter: Optional[str], release: bool):
+    def __init__(self, expensive_typography: bool, clear_output: bool, article_filter: Optional[str],
+                 release: bool, minimal: bool):
         self.expensive_typography = expensive_typography
         self.article_filter = article_filter
         self.release = release
+        self.minimal = minimal
 
         self.source_dir = pathlib.Path("content/")
         self.output_dir = pathlib.Path("a/")
@@ -108,8 +111,6 @@ class Site:
         o = source_file
         if source_file.suffix == ".md" or virtual:
             o = (self.output_dir / os.path.relpath(str(source_file), self.source_dir)).with_suffix(".html")
-        if source_file.name.startswith("-"):
-            o = o.with_name(o.name[1:])
         self.resources[source_file] = o
         os.makedirs(o.parent, exist_ok=True)
 
@@ -125,14 +126,14 @@ class Site:
                 continue
             if self.article_filter and self.article_filter not in file.name:
                 continue
-            match = re.fullmatch(r"(-?)([0-9]{4})-([0-9]{2})-([0-9]{2})-(.*)\.md", file.name)
+            match = re.fullmatch(r"([0-9]{4})-([0-9]{2})-([0-9]{2})-(.*)\.md", file.name)
             if match:
-                is_draft, *date, slug = match.groups()
-                if is_draft and self.release:
+                *date, slug = match.groups()
+                if slug.endswith("-draft") and self.minimal:
                     continue
                 self.articles.append(Article(file, date=datetime.date(*map(int, date))))
             else:
-                if file.name.startswith("-") and self.release:
+                if file.name.endswith("-draft" + file.suffix) and self.minimal:
                     continue
                 self.pages.append(Article(file))
 
@@ -162,6 +163,8 @@ class Site:
         for tag in (tags if tags or not article.date else [self.get_tag("bez kategorii")]):
             tag.articles.append(article)
             article.tags.append(tag)
+
+        article.copyright_extension = metadata.get("copyright-extension", None)
 
         p = subprocess.run(['node', str(self.script_dir / 'markdown.js')],
                            input=md_source.encode("utf-8"), capture_output=True)
@@ -201,11 +204,12 @@ class Site:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build the site. Use -rec for release mode.")
+    parser = argparse.ArgumentParser(description="Build the site. Use -recm for release mode.")
     parser.add_argument("--expensive", "-e", action="store_true", help="waste time for nicer output")
     parser.add_argument("--clear", "-c", action="store_true", help="remove last build")
     parser.add_argument("--only", "-l", help="build only articles with paths containing this text")
     parser.add_argument("--release", "-r", action="store_true", help="final build to upload online")
+    parser.add_argument("--minimal", "-m", action="store_true", help="skip unfinished articles")
 
     args = parser.parse_args()
-    Site(args.expensive, args.clear, args.only, args.release)
+    Site(args.expensive, args.clear, args.only, args.release, args.minimal)

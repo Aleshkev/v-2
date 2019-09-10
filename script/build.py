@@ -72,6 +72,8 @@ class Site:
         self.environment.assets_environment = webassets.Environment(
             str(self.output_dir), self.root + str(self.output_dir),
             load_path=[str(self.theme_dir)])
+        self.environment.assets_environment.url_expire = False
+        self.environment.assets_environment.debug = not self.release
         self.article_template = self.environment.get_template("article.html")
         self.list_template = self.environment.get_template("list.html")
         self.index_template = self.environment.get_template("index.html")

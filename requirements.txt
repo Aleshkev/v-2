@@ -4,5 +4,3 @@ PyYAML
 webassets
 slugify
 jinja2
-
-

@@ -14,6 +14,6 @@
 
 > Ja tu nie będę was zadręczał, to wszystko we własnym zakresie.
 
-> Stopień skomplikowania tej układanki jest tak wysoki, że wszelka próba poradzenia sobie z tematem kończy się natychmiastową dyskwalifikacją.
+> Stopień skomplikowania tej układanki logicznej jest tak wysoki, że wszelka próba poradzenia sobie z tematem kończy się natychmiastową dyskwalifikacją.
 
 > Jak jest popyt większy niż podaż to pojawiają się oszuści.

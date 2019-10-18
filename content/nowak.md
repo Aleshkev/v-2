@@ -15,5 +15,11 @@
 > Ja tu nie będę was zadręczał, to wszystko we własnym zakresie.
 
 > Stopień skomplikowania tej układanki logicznej jest tak wysoki, że wszelka próba poradzenia sobie z tematem kończy się natychmiastową dyskwalifikacją.
+>
+> <cite>(cytat niedosłowny; w niektórych źródłach "kompletną" zamiast "natychmiastową")</cite>
 
 > Jak jest popyt większy niż podaż to pojawiają się oszuści.
+
+> Mówią, że nie ma duchów. Jak nie ma, jak są.
+
+> Logicznie rzecz biorąc, jest to szalenie niebezpieczne.

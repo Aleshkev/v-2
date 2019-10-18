@@ -39,7 +39,9 @@
     <span class="copyright-sign">©</span>
     Jonasz Aleszkiewicz
     {% block copyright_year %}
-        {{ site.articles[-1].date.year }} – {{ site.articles[0].date.year }}
+        {% if site.articles %}
+            {{ site.articles[-1].date.year }} – {{ site.articles[0].date.year }}
+        {% endif %}
     {% endblock %}
     {% if self.copyright_extension().strip() %} &middot; {% endif %}
     {% block copyright_extension %}

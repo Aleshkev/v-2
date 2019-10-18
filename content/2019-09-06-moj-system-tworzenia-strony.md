@@ -75,6 +75,6 @@ Tworzenie list jest proste:
 - punkt trzy.
 ```
 
-Są oczywiście inne podobne systemy, zwłaszcza [ReStructuredText](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) oraz [AsciiDoc](https://asciidoctor.org/docs/what-is-asciidoc/). Ale ja mimo wszystkich jego wad wolę Markdowna.
+Są oczywiście inne podobne systemy, zwłaszcza [ReStructuredText](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) oraz [AsciiDoc](https://asciidoctor.org/docs/what-is-asciidoc/). Ale ja -- mimo wszystkich jego wad -- wolę Markdowna.
 
 Niektórym bardzo przeszkadza, że nie ma niektórych elementów i bardzo szybko zaczyna się pisać w tylko jednym z licznych dialektów, zabijając jakąkolwiek niezależność od implementacji -- i ja to rozumiem, sam miałem przez długi czas takie wątpliwości. Ale mi to daje możliwość stworzenia własnego dialektu Markdowna, sprawiając, że moja witryna jest jakby zamkniętym w sobie ekosystemem, stworzonym w całości przeze mnie.

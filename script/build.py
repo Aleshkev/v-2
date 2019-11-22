@@ -118,8 +118,11 @@ class Site:
 
     def as_absolute_url(self, source_file: pathlib.Path):
         p = self.resources[source_file]
-        if self.release and p.name == "index.html":
+        if p.name == "index.html":
             p = p.parent
+        if self.release and p.suffix == ".html":
+            p = p.with_suffix("")
+
         return self.root + str(p).replace("\\", "/")
 
     def load_articles(self):

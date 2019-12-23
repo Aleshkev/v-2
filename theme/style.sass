@@ -35,15 +35,9 @@ body
   position: relative
 
 
-header, footer
-  +wide
-  text-align: center
-  margin-top: 5.0625rem
-  margin-bottom: 3.375rem
-
-nav, footer
-  color: $dimmed
-  font-variant: all-petite-caps
+=small-caps
+  text-transform: uppercase
+  font-size: small
 
 
 article
@@ -62,6 +56,19 @@ article
 
   * + *
     margin-top: 1em
+
+
+header, footer
+  // This rule has to be after the one with article > *.
+  +wide
+
+  text-align: center
+  margin-top: 5.0625rem
+  margin-bottom: 3.375rem
+
+nav, footer
+  color: $dimmed
+  +small-caps
 
 
 // Modular scale: 1, 1.5, 2.25, 3.375, 5.0625.
@@ -181,11 +188,11 @@ blockquote
       display: table-cell
 
     span:first-child
-      font-variant: all-petite-caps
+      +small-caps
       color: $dimmed
 
 .contact-table span:first-child
-  width: 6em
+  width: 6rem
 
 .article-list span:first-child
-  width: 4.5em
+  width: 4.5rem

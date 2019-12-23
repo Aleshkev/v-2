@@ -1,1 +1,589 @@
-@charset "UTF-8";@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap&subset=cyrillic,latin-ext");@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i&display=swap&subset=latin-ext");html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,menu,nav,section,time,mark,audio,video,details,summary{margin:0;padding:0;border:0;font-size:100%;font-weight:normal;vertical-align:baseline;background:transparent}main,article,aside,figure,footer,header,nav,section,details,summary{display:block}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,object,embed{max-width:100%}html{overflow-y:scroll}ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:separate;border-spacing:0}th{font-weight:bold;vertical-align:bottom}td{font-weight:normal;vertical-align:top}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}pre{white-space:pre;white-space:pre-wrap;white-space:pre-line;word-wrap:break-word}input[type="radio"]{vertical-align:text-bottom}input[type="checkbox"]{vertical-align:bottom}.ie7 input[type="checkbox"]{vertical-align:baseline}.ie6 input{vertical-align:text-bottom}select,input,textarea{font:99% sans-serif}table{font-size:inherit;font:100%}small{font-size:85%}strong{font-weight:bold}td,td img{vertical-align:top}sub,sup{font-size:75%;line-height:0;position:relative}sup{top:-0.5em}sub{bottom:-0.25em}pre,code,kbd,samp{font-family:monospace,sans-serif}.clickable,label,input[type=button],input[type=submit],input[type=file],button{cursor:pointer}button,input,select,textarea{margin:0}button,input[type=button]{width:auto;overflow:visible}.ie7 img{-ms-interpolation-mode:bicubic}.clearfix:after{content:" ";display:block;clear:both}.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83}.hljs-comment,.hljs-quote{color:#93a1a1}.hljs-keyword,.hljs-selector-tag,.hljs-addition{color:#859900}.hljs-number,.hljs-string,.hljs-meta .hljs-meta-string,.hljs-literal,.hljs-doctag,.hljs-regexp{color:#2aa198}.hljs-title,.hljs-section,.hljs-name,.hljs-selector-id,.hljs-selector-class{color:#268bd2}.hljs-attribute,.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-class .hljs-title,.hljs-type{color:#b58900}.hljs-symbol,.hljs-bullet,.hljs-subst,.hljs-meta,.hljs-meta .hljs-keyword,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-link{color:#cb4b16}.hljs-built_in,.hljs-deletion{color:#dc322f}.hljs-formula{background:#eee8d5}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}br{line-height:0}html{font:18px "Noto Serif",Georgia,serif;line-height:1.75em;color:#333;text-rendering:optimizeLegibility;text-justify:inter-character}body{margin:0 auto;padding-left:18px;padding-right:18px;position:relative}header,footer{margin-left:auto;margin-right:auto;text-align:center;margin-top:5.0625rem;margin-bottom:3.375rem}nav,footer{color:#666;font-variant:all-petite-caps}article{max-width:1024px;margin:auto}article>*,article>div{margin-left:192px;margin-right:192px}@media(max-width:1060px){article>*,article>div{margin-left:auto;margin-right:auto;max-width:640px}}article *+*{margin-top:1em}h1,h2,h3,h4,h5,h6{text-indent:-1px;line-height:1.1em;margin-bottom:1rem}h1{margin-top:3.375rem;font-size:3.375rem;letter-spacing:-0.03em}h2{margin-top:2.25rem;font-size:2.25rem}h3{margin-top:1.5rem;font-size:1.5rem}p{text-align:justify}p+p{text-indent:2em;margin-top:0}a{color:inherit}strong{font-weight:normal;letter-spacing:.2em}ul,ol{padding-left:2em}p+ul,p+ol{margin-top:0}ul{list-style-type:none}ul>li::before{position:absolute;content:"—";margin-left:-1.25em}li+li{margin-top:0}figure{margin-left:auto;margin-right:auto;display:table;margin-left:auto;margin-right:auto}figure>*{display:table-row}figure img{margin-left:auto;margin-right:auto;max-height:80vh;max-width:1024px}figure figcaption{font-size:smaller;color:#666}hr{height:0;border-top:1px #666 solid}code,pre{font-family:"Source Code Pro",monospace}pre{white-space:pre;overflow-x:auto;overflow-y:hidden;line-height:1em;margin-left:auto;margin-right:auto;max-width:80ch}blockquote{padding-left:2rem;padding-right:1.5rem;font-size:smaller;line-height:1.5}blockquote cite{display:block;text-align:right;color:#666}.contact-table a,.article-list a{text-decoration:none}.contact-table a:hover,.article-list a:hover{text-decoration:underline}.contact-table div,.article-list div{display:table-row}.contact-table div span,.article-list div span{display:table-cell}.contact-table div span:first-child,.article-list div span:first-child{font-variant:all-petite-caps;color:#666}.contact-table span:first-child{width:6em}.article-list span:first-child{width:4.5em}
+@charset "UTF-8";
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap&subset=cyrillic,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i&display=swap&subset=latin-ext");
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000313}}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000323}}
+main, article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000329}}
+html {
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000333}}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects */
+/* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000343}}
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000359}}
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	you'll have to restore the bullets within content,
+	which is fine because they're probably customized anyway */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000366}}
+ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000370}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000374}}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000382}}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000390}}
+del {
+  text-decoration: line-through;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\0000394}}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003100}}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003105}}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003110}}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003115}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003124}}
+input, select {
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003128}}
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003135}}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003139}}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003143}}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003147}}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003151}}
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003155}}
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003160}}
+small {
+  font-size: 85%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003164}}
+strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003168}}
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003173}}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003179}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003183}}
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003188}}
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003193}}
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003203}}
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003208}}
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003215}}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/reset\.scss}line{font-family:\00003225}}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\000035}}
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000313}}
+.hljs-comment,
+.hljs-quote {
+  color: #93a1a1;
+}
+
+/* Solarized Green */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000319}}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000326}}
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000336}}
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000345}}
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000355}}
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000367}}
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc322f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000372}}
+.hljs-formula {
+  background: #eee8d5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000376}}
+.hljs-emphasis {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/franz\/OneDrive\/Documents\/aleshkev\.github\.io\/theme\/solarized-light\.scss}line{font-family:\0000380}}
+.hljs-strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\000036}}
+br {
+  line-height: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000324}}
+html {
+  font: 18px "Noto Serif", Georgia, serif;
+  line-height: 1.75em;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  text-justify: inter-character;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000331}}
+body {
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
+article {
+  max-width: 1024px;
+  margin: auto;
+}
+@media -sass-debug-info{filename{}line{font-family:\0000347}}
+article > *, article > div {
+  margin-left: 192px;
+  margin-right: 192px;
+}
+@media (max-width: 1060px) {
+@media -sass-debug-info{filename{}line{font-family:\0000347}}
+  article > *, article > div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+  }
+}
+@media -sass-debug-info{filename{}line{font-family:\0000357}}
+article * + * {
+  margin-top: 1em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
+header, footer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5.0625rem;
+  margin-bottom: 3.375rem;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000369}}
+nav, footer {
+  color: #666;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000375}}
+h1, h2, h3, h4, h5, h6 {
+  text-indent: -1px;
+  line-height: 1.1em;
+  margin-bottom: 1rem;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000380}}
+h1 {
+  margin-top: 3.375rem;
+  font-size: 3.375rem;
+  letter-spacing: -0.03em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000385}}
+h2 {
+  margin-top: 2.25rem;
+  font-size: 2.25rem;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000389}}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000394}}
+p {
+  text-align: justify;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000397}}
+p + p {
+  text-indent: 2em;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003101}}
+a {
+  color: inherit;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003104}}
+strong {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003109}}
+ul, ol {
+  padding-left: 2em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003112}}
+p + ul, p + ol {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003115}}
+ul {
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003119}}
+ul > li::before {
+  position: absolute;
+  content: "—";
+  margin-left: -1.25em;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003124}}
+li + li {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003128}}
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003134}}
+figure > * {
+  display: table-row;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003137}}
+figure img {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 80vh;
+  max-width: 1024px;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003143}}
+figure figcaption {
+  font-size: smaller;
+  color: #666;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003148}}
+hr {
+  height: 0;
+  border-top: 1px #666 solid;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003153}}
+code, pre {
+  font-family: "Source Code Pro", monospace;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003156}}
+pre {
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: hidden;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80ch;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003165}}
+blockquote {
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  font-size: smaller;
+  line-height: 1.5;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003171}}
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #666;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003178}}
+.contact-table a, .article-list a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003181}}
+.contact-table a:hover, .article-list a:hover {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003184}}
+.contact-table div, .article-list div {
+  display: table-row;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003187}}
+.contact-table div span, .article-list div span {
+  display: table-cell;
+}
+@media -sass-debug-info{filename{}line{font-family:\00003190}}
+.contact-table div span:first-child, .article-list div span:first-child {
+  text-transform: uppercase;
+  font-size: small;
+  color: #666;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003194}}
+.contact-table span:first-child {
+  width: 6rem;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\00003197}}
+.article-list span:first-child {
+  width: 4.5rem;
+}

@@ -11,7 +11,7 @@ Ponieważ mam blog i odczuwam potrzebę wypełnienia go nieinteresująco specyfi
 Ostatnio popularne wśród deweloperów są [generatory statycznych stron](https://www.staticgen.com). Tworzą (_renderują_) one HTML gotowy do wysłania każdemu użytkownikomi, bez potrzeby zaawansowanego serwera -- wystarczy, że będzie on wysyłał odpowiednie pliki.
 
 Oznacza to, że taki serwer jest wydajny, bezpieczny i tani -- w istocie na tyle tani, że niektóre firmy zapewniają darmowy każdemu użytkownikowi. Przykładem jest [GitHub Pages](https://pages.github.com), którego ja w tym momencie osobiście używam.
-^[Dlatego URL mojej strony zawiera "github.io", ale da się to łatwo zmienić wykupując własną domenę.]
+(Dlatego URL mojej strony zawiera "github.io", ale da się to łatwo zmienić wykupując własną domenę.)
 
 W statycznych stronach nadal może być JavaScript wykonywany po stronie klienta, więc nie są statyczne pod wszystkimi względami.
 
@@ -29,7 +29,7 @@ Cały mój system opiera się na ustawionych na sobie hackach i bodge'ach, niczy
 
 Moją opinią jest, że naprawienie tego nie jest warte wysiłku; wszystko po prostu działa, zapewne oprócz rzadkich przypadków, które, ponieważ jestem autorem wszystkiego, będę umiał, mam nadzieję, samodzielnie naprawić gdy je napotkam. W ten sposób naturalna awersja do wysiłku połączona z nihilizmem świadomości, że pewnie i tak niedługo zmienię zdanie jak wszystko ma działać i cały wysiłek się zmarnuje, oddelegowuje cokolwiek co zostało z perfekcjonizmu do pilnowania końcowego HTML-a.
 
-A końcowy HTML jest bardzo ładny. Każdy fragment tekstu ma oznaczony język -- ten język jest używany do automatycznego wstawiania znaków `&shy;` i `&nbsp;` w odpowiednich miejscach, żeby przeglądarki wiedziały, gdzie słowa można przenosić do nowej linii. Ratując tradycyjne praktyki polskiej typografii przed agresywną westernizacją, cudzysłowy są poprawne, a paragrafy nie są oddzielane odstępem, tylko wcięciem pierwszego wiersza.^[Wcięcie to ma dokładnie 1 em, w kolejnym geście sprzeciwu przeciw zachodnim neokolonistom.]
+A końcowy HTML jest bardzo ładny. Każdy fragment tekstu ma oznaczony język -- ten język jest używany do automatycznego wstawiania znaków `&shy;` i `&nbsp;` w odpowiednich miejscach, żeby przeglądarki wiedziały, gdzie słowa można przenosić do nowej linii. Ratując tradycyjne praktyki polskiej typografii przed agresywną westernizacją, cudzysłowy są poprawne, a paragrafy nie są oddzielane odstępem, tylko wcięciem pierwszego wiersza.
 
 Jedną z trudniejszych do dodania rzeczy były notatki na marginesie. Ale udało się; jeżeli ekran użytkownika jest dostatecznie duży i JavaScript jest włączony, wszystkie przypisy pojawiają się właśnie tam.
 

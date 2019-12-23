@@ -14,37 +14,20 @@
     {% assets filters="sass, cssmin", output="style.min.css", "style.sass" %}
         <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" media="all"/>
     {% endassets %}
-
-    {% assets "script.js" %}
-        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-    {% endassets %}
 </head>
 
-<body class="unified">
+<body>
 <main>
-    <header>
-        <div>
-            <h2><a href="{{ site.index | as_absolute_url }}">Aleszkiewicz <span>blog</span></a></h2>
-        </div>
-        <div>
-            <a href="{{ site.main_list | as_absolute_url }}">artykuły</a> |
-            <a href="{{ site.get_tag("opinia").source | as_absolute_url }}">opinie</a> |
-            <a href="{{ site.get_tag("projekt").source | as_absolute_url }}">projekty</a> |
-            <a href="{{ site.get_tag("art").source | as_absolute_url }}">nonsens</a>
-        </div>
-    </header>
     {% block content %}{% endblock %}
 </main>
-<footer class="ui">
-    <span class="copyright-sign">©</span>
+<footer>
+    ©
     Jonasz Aleszkiewicz
     {% block copyright_year %}
-        {% if site.articles %}
-            {{ site.articles[-1].date.year }} – {{ site.articles[0].date.year }}
-        {% endif %}
+        {{ site.articles[-1].date.year }}–{{ site.articles[0].date.year }}
     {% endblock %}
-    {% if self.copyright_extension().strip() %} &middot; {% endif %}
-    {% block copyright_extension %}
+    {% if self.extra_copyright().strip() %} &middot; {% endif %}
+    {% block extra_copyright %}
     {% endblock %}
 </footer>
 </body>

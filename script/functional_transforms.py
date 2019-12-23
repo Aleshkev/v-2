@@ -19,37 +19,6 @@ def extract_title(soup: bs4.element.Tag):
     return s
 
 
-def hoist_footnotes(soup: bs4.element.Tag):
-    e = soup.find("hr", class_="footnotes-sep")
-    if not e:
-        return
-    e.decompose()
-    footnotes = soup.find("section", class_="footnotes")
-    if not footnotes:
-        return
-    for span in soup.find_all("span", class_="fn-anchor"):
-        ref_id = span["data-id"]
-
-        aside = footnotes.find("li", id=f"fn{ref_id}")
-        aside.name = "aside"
-        aside.find("a", class_="footnote-backref").decompose()
-        span.attrs = aside.attrs = {"data-id": ref_id}
-        span.append(bs4.NavigableString("\u200b"))  # Zero-width space, to be sure span has correct text height.
-
-        parent: bs4.Tag = span.find_parent(
-            lambda x: x.name in ("p", "ol", "ul", "blockquote", "table", "h1", "h2", "h3", "h4", "h5",
-                                 "h6", "details"))
-        append_to = parent.next_sibling
-        while isinstance(append_to, bs4.NavigableString) and not append_to.strip():
-            append_to = append_to.next_sibling
-        if not append_to or append_to.get("class", "") != "asides":
-            append_to = bs4.Tag(name="div")
-            append_to["class"] = "asides"
-            parent.insert_after(append_to)
-        append_to.append(aside)
-    footnotes.decompose()
-
-
 def resolve_hrefs(soup: bs4.element.Tag, source: pathlib.Path, as_absolute_url):
     for node in soup.find("body").find_all(lambda tag: "href" in tag.attrs.keys()):
         s = node.attrs["href"]
@@ -60,3 +29,23 @@ def resolve_hrefs(soup: bs4.element.Tag, source: pathlib.Path, as_absolute_url):
             node.attrs["href"] = s
         except KeyError:
             log.warning(f"Broken inside-href: {s} not a resource")
+
+
+def handle_images(soup: bs4.element.Tag):
+    for p in soup.find_all("p"):
+        p: bs4.element.Tag
+        children = tuple(p.children)
+        if len(children) != 1 or children[0].name != "img":
+            continue
+        img, = children
+
+        img.extract()
+        figure = bs4.element.Tag(name="figure")
+        figure.insert(0, img)
+        if img.attrs["alt"]:
+            figcaption = bs4.element.Tag(name="figcaption")
+            figcaption.string = bs4.element.NavigableString(img.attrs["alt"])
+            figure.insert(1, figcaption)
+        p.insert_after(figure)
+        p.decompose()
+

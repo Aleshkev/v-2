@@ -1,10 +1,9 @@
 ---
 tags: j. polski, art
+extra-copyright: "Oryginalny tytuł: <em>humanizm</em>"
 ---
 
 # Realsprache
-
-^[Oryginalny tytuł: _Humanizm_.]
 
 > Gdy z gliny uformuje się pożądany kształt, trzeba ją wypalić.
 >
@@ -12,9 +11,7 @@ tags: j. polski, art
 
 ## I
 
-Witam wszystkich.[^ogl] Nazywam się Jan Polański, jestem polonistą i językoznawcą, znanym z moich regularnych wpisów w czasopismach na temat współczesnego użycia naszej mowy ojczystej. Zostałem zaproszony tu dzisiaj, aby odpowiedzieć na pytanie: "skąd w języku biorą się zasady?"
-
-[^ogl]: Nieprawdziwe informacje i statystyki zostały umieszczone w tekście celowo.
+Witam wszystkich. Nazywam się Jan Polański, jestem polonistą i językoznawcą, znanym z moich regularnych wpisów w czasopismach na temat współczesnego użycia naszej mowy ojczystej. Zostałem zaproszony tu dzisiaj, aby odpowiedzieć na pytanie: "skąd w języku biorą się zasady?"
 
 Język w swoisty sposób dowodzi, że demokracja nie działa we wszystkich dziedzinach życia społecznego. Rozpatrzmy następujący przypadek: większość osób chciałaby, żeby forma "przygotowywuję" była poprawna -- ale już "analizowuję" cieszy się zerowym poparciem. Czy to oznacza, że należy codziennie, losowymi sposobami, w niedookreślone kierunki, zmieniać gramatykę, bo tak życzy sobie dzisiaj gmin? Osiągamy absurd ocierający się o groteskę!
 

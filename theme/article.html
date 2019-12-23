@@ -1,57 +1,36 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title | striptags }}{% endblock %}
-{% block keywords %}{% for tag in article.tags %}{{ tag.name }}{% if not loop.last %}, {% endif %}{#
-#}{% endfor %}{% endblock %}
 {% block description %}{% endblock %}
 {% block author %}Jonasz Aleszkiewicz{% endblock %}
 
 {% block content %}
     <article>
-        <h1>{{ article.title }}</h1>
+        <header>
+            <h1>{{ article.title }}</h1>
 
-        {% if article.tags or article.revised %}
-            <div class="article-info">
-                <span class="dates">
-                    {% if article.tags %}
-                        <a href="{{ site.main_list | as_absolute_url }}">
-                        {{ article.date }}
-                        </a>
-                        {% if article.revised %}
-                            / {{ article.revised }}
-                        {% endif %}
-                    {% elif article.revised %}
-                        {{ article.revised }}
-                    {% endif %}
-                </span>
-
-                {% if article.tags %}
-                    <span class="tags">
-                        {% for tag in article.tags %}
-                            <a href="{{ tag.source | as_absolute_url }}">{{ tag.name }}</a>{% if not loop.last %},
-                        {% endif %}
-                        {% endfor %}
-                    </span>
+            <nav>
+                <time>{{ article.date }}</time>
+                {% if article.revised %}
+                    &middot; ŝanĝita <time>{{ article.revised }}</time>
                 {% endif %}
-            </div>
-        {% endif %}
+                &middot;
+                <a href="{{ site.index | as_absolute_url }}">Jonasz Aleszkiewicz</a>
+            </nav>
+        </header>
 
         {{ article.content }}
     </article>
 {% endblock %}
 
 {% block copyright_year %}
-    {% if article.date %}
-        {{ article.date.year }}
-        {% if article.revised and article.revised.year != article.date.year %}
-            – {{ article.revised.year }}
-        {% endif %}
-    {% elif article.revised and article.date.year != article.revised.year %}
-        {{ article.revised.year }}
+    {{ article.date.year }}
+    {% if article.revised and article.revised.year != article.date.year %}
+        – {{ article.revised.year }}
     {% endif %}
 {% endblock %}
 
-{% block copyright_extension %}
-    {% if article.copyright_extension %}
-        {{ article.copyright_extension }}
+{% block extra_copyright %}
+    {% if article.extra_copyright %}
+        {{ article.extra_copyright }}
     {% endif %}
 {% endblock %}

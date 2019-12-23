@@ -22,10 +22,15 @@
 </main>
 <footer>
     ©
-    Jonasz Aleszkiewicz
     {% block copyright_year %}
-        {{ site.articles[-1].date.year }}–{{ site.articles[0].date.year }}
+        {% if site.articles[-1].date.year == site.articles[0].date.year %}
+            {{ site.articles[0].date.year }}
+        {% else %}
+            {{ site.articles[-1].date.year }}–{{ site.articles[0].date.year }}
+        {% endif %}
     {% endblock %}
+    Jonasz Aleszkiewicz
+
     {% if self.extra_copyright().strip() %} &middot; {% endif %}
     {% block extra_copyright %}
     {% endblock %}

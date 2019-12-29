@@ -1,3 +1,5 @@
+wordcloud
+matplotlib
 htmlmin
 beautifulsoup4
 PyYAML

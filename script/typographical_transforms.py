@@ -25,8 +25,8 @@ def hyphenate(s: str, lang):
         was_upper = True
         s = s.lower()
 
-    if s[0].isupper():
-        return s
+    # if s[0].isupper():
+    #     return s
 
     syllables = _get_hyphenator(lang).syllables(s)
     if syllables:

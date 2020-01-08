@@ -1,10 +1,14 @@
 # Traktat o biblioteczkach
 
+> Artykuł jest głęboką ironią wymagającą niepublicznego kontekstu, jest swoistym _inside-jokem_ alienującym przeciętnego czytelnika, za co przepraszam.
+>
+> <cite>--- pewien prowokator bądź szaleniec, który w ROT13 ma inicjały _WN_</cite>
+
 ## Wstęp
 
 Jak powiedział pewien filozof:
 
-> NIe mogę walczyć o to, czego nie kocham. Nie mogę kochać czegoś, czego nie szanuję. Nie mogę szanować czegoś, czego nawet nie znam.
+> Nie mogę walczyć o to, czego nie kocham. Nie mogę kochać czegoś, czego nie szanuję. Nie mogę szanować czegoś, czego nawet nie znam.
 
 Dlatego postaram się przedstawić moje poglądy, które choć kontrowersyjne, są w miarę oczywiste i trzeba by zaprzeczać obiektywnym faktom, aby je "obalić" -- tak naprawdę tylko zaprzeczyć zdrowemu rozsądkowi.
 
@@ -35,7 +39,7 @@ Obecne systemy wejścia są kompromisem pomiędzy wieloma czynnikami, niektóre 
 Racjonalną rzeczą jest naprawić ten problem. Są dwa lub cztery rozwiązania:
 
 1. zmienić kulturę europejską, żeby czytała tekst od prawej do lewej, co oczywiście zwiększy czytelność kodu;
-2. zrobić żeby tylko w zadaniach liczby były pisane od prawej do lewej, co chociaż ułatwi wczytywanie tekstu, może spotkać się ze sprzeciwem ze strony środowiska za sprawą pojawienia się pewnej dychotomii kierunkowości myślenia;
+2. zrobić żeby tylko w zadaniach liczby były pisane od prawej do lewej, co, chociaż ułatwi wczytywanie tekstu, może spotkać się ze sprzeciwem ze strony środowiska za sprawą pojawienia się pewnej dychotomii kierunkowości myślenia;
 3. zastąpienie wczytywania liczb po kolei poprzez wywołania funkcji, każda z nich by zwracała tylko jedną liczbę.
 
 Rozwiązanie pierwsze ma pewne nieoczywiste wady: może okazać się, że niektóre starsze zadania mogą być ciężkie do przeczytania przez użytkowników przyzwyczajonych tylko do nowego systemu. Więc tutaj sukces będzie w paradoksalny sposób porażką. Coś takiego sugeruje jednak drugie rozwiązanie.
@@ -70,4 +74,4 @@ Kolejną moją opinią, która często jest źle rozumiana: zadania powinny być
 
 ## Konkluzja
 
-Jeżeli się nie zgadzasz z powyższym tekstem -- bardzo dobrze, ale pamiętaj, twoja opinia nie jest jedyna i prawdopodobnie błędna jeśli opiera się tylko na ślepym podążaniu za ostatnimi trendami stylów programistycznym. Jeżeli chcesz odpowiedzieć, to odpowiedz, ale pamiętaj rozważyć wszystkie argumenty holistycznie, nie wyrywaj sobie jednego czy dwóch, które uważasz że łatwo obalić jak będą wyrwane z kontekstu. Stajesz się wtedy tylko takim żartem człowieka, taką parodią samego siebie, ludzie stworzą sobie opinię o tobie na podstawie, choć krzywdzącego, to prawdziwego, przesłania.
+Jeżeli się nie zgadzasz z powyższym tekstem -- bardzo dobrze, ale pamiętaj, twoja opinia nie jest jedyna i, jeśli opiera się tylko na ślepym podążaniu za ostatnimi trendami stylów programistycznym, prawdopodobnie błędna. Jeżeli chcesz odpowiedzieć, to odpowiedz, ale pamiętaj rozważyć wszystkie argumenty holistycznie, nie wyrywaj sobie jednego czy dwóch, które uważasz że łatwo obalić jak będą wyrwane z kontekstu. Stajesz się wtedy tylko takim żartem człowieka, taką parodią samego siebie, ludzie stworzą sobie opinię o tobie na podstawie, choć krzywdzącego, to prawdziwego, przesłania.

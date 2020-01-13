@@ -51,7 +51,8 @@ def _walk_strings(node, lang=None, ignore_headings=False):
     if isinstance(node, bs4.element.NavigableString):
         yield node, lang
         return
-    if node.name in ("code", "style") or (ignore_headings and node.name in ("h1", "h2", "h3", "h4", "h5", "h6")):
+    if node.name in ("code", "style", "script") or (
+            ignore_headings and node.name in ("h1", "h2", "h3", "h4", "h5", "h6")):
         return
     for child in node.children:
         yield from _walk_strings(child, lang if "lang" not in node.attrs.keys() else node.attrs["lang"],

@@ -50,7 +50,8 @@ class Site:
         self.output_dir = pathlib.Path("a/")
         self.script_dir = pathlib.Path(__file__).parent
         self.theme_dir = pathlib.Path("theme/")
-        self.root = "/" if release else "/aleshkev.github.io/"
+        self.release_root = "https://aleshkev.github.io/"
+        self.root = self.release_root if self.release else "/aleshkev.github.io/"
 
         self.articles = []
 
@@ -97,14 +98,14 @@ class Site:
         self.resources[source_file] = o
         os.makedirs(o.parent, exist_ok=True)
 
-    def as_absolute_url(self, source_file: pathlib.Path):
+    def as_absolute_url(self, source_file: pathlib.Path, force_release: bool = False):
         p = self.resources[source_file]
         if p.name == "index.html":
             p = p.parent
-        if self.release and p.suffix == ".html":
+        if (force_release or self.release) and p.suffix == ".html":
             p = p.with_suffix("")
 
-        return self.root + str(p).replace("\\", "/")
+        return (self.release_root if force_release else  self.root) + str(p).replace("\\", "/")
 
     def load_articles(self):
         for file in self.resources.keys():

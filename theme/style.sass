@@ -67,9 +67,18 @@ header, footer, #disqus_thread
   margin-top: 5.0625rem
   margin-bottom: 3.375rem
 
-nav, footer
+
+footer
+  margin-top: 0
+
+
+nav, footer, #disqus_thread
   color: $dimmed
   +small-caps
+
+
+#disqus_thread:not(.init)
+  margin-bottom: 0
 
 
 // Modular scale: 1, 1.5, 2.25, 3.375, 5.0625.

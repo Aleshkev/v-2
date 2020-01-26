@@ -11,8 +11,7 @@
             <nav>
                 <time>{{ article.date }}</time>
                 {% if article.revised %}
-                    &middot; ŝanĝita
-                    <time>{{ article.revised }}</time>
+                    &middot; ŝanĝita <time>{{ article.revised }}</time>
                 {% endif %}
                 &middot;
                 <a href="{{ site.index | as_absolute_url }}">Jonasz Aleszkiewicz</a>
@@ -20,27 +19,7 @@
         </header>
 
         {{ article.content }}
-        <div id="disqus_thread"></div>
-        <script>
-            var PAGE_URL = "{{ article.source | as_absolute_url(True) }}";
-            var PAGE_IDENTIFIER = "{{ article.source.stem }}";
-            var disqus_url = PAGE_URL;
-            var disqus_config = function () {
-                this.page.url = PAGE_URL;
-                this.page.identifier = PAGE_IDENTIFIER;
-            };
-            (function () { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://aleshkev-github-io.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-
     </article>
-
 {% endblock %}
 
 {% block copyright_year %}

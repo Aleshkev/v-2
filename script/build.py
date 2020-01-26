@@ -160,8 +160,8 @@ class Site:
         typographical_transforms.insert_shy(soup)
         typographical_transforms.extend_emphases(soup)
         s = str(soup)
-        if self.release:
-            s = htmlmin.minify(s)
+        # if self.release:
+        #     s = htmlmin.minify(s)
         output_file.write_text(s, "utf-8")
 
     def render_article(self, article: Article):

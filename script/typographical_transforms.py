@@ -80,7 +80,7 @@ def insert_shy(soup: bs4.element.Tag):
 
 def insert_nbsp(soup: bs4.element.Tag):
     for node, lang in walk_strings(soup):
-        s = re.sub(r"((\s|^)\w)(\s|^)", r"\1" + "\xa0", node.string)
+        s = re.sub(r"(([^\w]|^)\w)(\s|^)", r"\1" + "\xa0", node.string)
         node.string.replace_with(s)
 
 

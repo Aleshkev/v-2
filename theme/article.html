@@ -11,7 +11,8 @@
             <nav>
                 <time>{{ article.date }}</time>
                 {% if article.revised %}
-                    &middot; ŝanĝita <time>{{ article.revised }}</time>
+                    &middot; ŝanĝita
+                    <time>{{ article.revised }}</time>
                 {% endif %}
                 &middot;
                 <a href="{{ site.index | as_absolute_url }}">Jonasz Aleszkiewicz</a>
@@ -24,13 +25,6 @@
 
 {% block copyright_year %}
     {{ article.date.year }}
-    {% if article.revised and article.revised.year != article.date.year %}
-        – {{ article.revised.year }}
-    {% endif %}
+    {% if article.revised and article.revised.year != article.date.year %} – {{ article.revised.year }} {% endif %}
 {% endblock %}
-
-{% block extra_copyright %}
-    {% if article.extra_copyright %}
-        {{ article.extra_copyright }}
-    {% endif %}
-{% endblock %}
+{% block extra_copyright %} {% if article.extra_copyright %} {{ article.extra_copyright }} {% endif %} {% endblock %}

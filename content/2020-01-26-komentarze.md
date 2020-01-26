@@ -12,11 +12,13 @@ Dodałem do mojej strony niedawno komentarze, co wydawało mi się dobrym pomys�
 >
 > <cite>--- ja, "Komentarze!", 2020-01-13</cite>
 
-Te komentarze bardzo brzydko wyglądały, nawet pomijając nieusuwalne logo Disqusa, po prostu nie pasowały ani trochę do mojej strony. Zwiększały wagę strony kilkusetkrotnie.
+Te komentarze bardzo brzydko wyglądały, nawet pomijając nieusuwalne logo Disqusa, po prostu nie pasowały ani trochę do mojej strony. Zwiększały też wagę strony kilkusetkrotnie.
 
-Postanowiłem je więc ukryć, tak żeby użytkownik musiał kliknąć aby te komentarze zobaczyć. To naprawiło problem brzydkiego wyglądu dopóki użytkownik tego nie kliknął. Tylko to z kolei sprawiło, że linki do komentarzy nie działały, i jeszcze dodatkowo skomplikowało kod mojego generatora strony. Większość osób komentarzy czy reakcji nigdy nie zobaczy, czyniąc je bezużytecznymi jako metoda publicznej komunikacji.
+Postanowiłem je więc ukryć, tak żeby użytkownik musiał kliknąć aby te komentarze zobaczyć. To naprawiło problem brzydkiego wyglądu jeżeli ktoś nigdy nie postanowił ich wyświetlić. Tylko to z kolei sprawiło, że linki do komentarzy nie działały, i jeszcze dodatkowo skomplikowało kod mojego generatora strony. Większość osób komentarzy czy reakcji nigdy nie zobaczy, czyniąc je bezużytecznymi jako metoda publicznej komunikacji.
 
-Koledzy i przyjaciele mogą napisać do mnie na Messengerze. Przecięcie osób nimi nie będących i czytających moją stronę jest zerowe, ale i tak gdy takim osobom zależy, mogą napisać emaila.
+Dlatego, komentarze od dzisiaj są usunięte.
+
+Koledzy i przyjaciele mogą napisać do mnie na Messengerze. Przecięcie osób nimi nie będących i czytających moją stronę jest zerowe, ale i tak gdy takim osobom zależy, mogą napisać emaila (mój adres jest [na stronie głównej](.)).
 
 ## Jedyny komentarz, jaki do tej pory dostałem
 

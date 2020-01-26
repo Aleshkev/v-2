@@ -27,4 +27,4 @@
     {{ article.date.year }}
     {% if article.revised and article.revised.year != article.date.year %} – {{ article.revised.year }} {% endif %}
 {% endblock %}
-{% block extra_copyright %} {% if article.extra_copyright %} {{ article.extra_copyright }} {% endif %} {% endblock %}
+{% block extra_copyright %}{% if article.extra_copyright %} {{ article.extra_copyright }} {% endif %}{% endblock %}

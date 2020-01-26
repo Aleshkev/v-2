@@ -22,7 +22,7 @@ def extract_title(soup: bs4.element.Tag):
 def resolve_hrefs(soup: bs4.element.Tag, source: pathlib.Path, as_absolute_url):
     for node in soup.find("body").find_all(lambda tag: "href" in tag.attrs.keys()):
         s = node.attrs["href"]
-        if re.match(r"^\w+://", s) or re.match(r"^/", s) or re.match("^javascript:", s):
+        if re.match(r"^\w+://", s) or re.match(r"^/", s):
             continue
         try:
             s = as_absolute_url(source.parent / s)

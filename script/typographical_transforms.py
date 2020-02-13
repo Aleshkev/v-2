@@ -43,7 +43,7 @@ def _get_language_identifier():
     import langid
     log.info("Load language identifier")
     identifier = langid.langid.LanguageIdentifier.from_modelstring(langid.langid.model, norm_probs=True)
-    identifier.set_languages(["en", "pl", "fr", "de"])
+    identifier.set_languages(["en", "pl", "fr", "de", "ru"])
     return identifier
 
 
@@ -63,6 +63,8 @@ def walk_strings(soup, ignore_headings=False) -> Iterator[Tuple[bs4.element.Navi
     yield from _walk_strings(soup.find("body"), lang=soup.find("html").attrs["lang"], ignore_headings=ignore_headings)
 
 
+# "<em>lingua franca</em>" → '<em lang="fr">lingua franca</em>'
+# (Doesn't work very well.)
 def detect_lang(soup: bs4.element.Tag):
     for node, lang in walk_strings(soup):
         text = str(node)
@@ -72,15 +74,20 @@ def detect_lang(soup: bs4.element.Tag):
                 node.parent.attrs["lang"] = another_lang
 
 
+# "disestablishment" → "dis&shy;es&shy;tab&shy;lish&shy;ment"
 def insert_shy(soup: bs4.element.Tag):
     for node, lang in walk_strings(soup, ignore_headings=True):
         s = re.sub(r"\w+", lambda m: hyphenate(m.group(0), lang), node.string)
         node.string.replace_with(s)
 
 
+# "i tak" → "i&nbsp;tak"
+# "i z tym" → "i&nbsp;z&nbsp;tym"
 def insert_nbsp(soup: bs4.element.Tag):
     for node, lang in walk_strings(soup):
         s = re.sub(r"(([^\w]|^)\w)(\s|^)", r"\1" + "\xa0", node.string)
+        # This is an ugly hack, but better than 'correcting' the regex above.
+        s = re.sub(r"(([^\w]|^)\w)\s(\w)(\s|^)", r"\1" + "\xa0" + r"\3" + "\xa0", s)
         node.string.replace_with(s)
 
 
@@ -95,6 +102,7 @@ def _find_border_string(tag, index) -> Optional[bs4.element.NavigableString]:
     return tag
 
 
+# "A (<em>very</em>) sad <strong>occasion</strong>." → "A <em>(very)</em> sad <strong>occasion.</strong>"
 def extend_emphases(soup, _elements=("em", "strong")):
     for node, lang in walk_strings(soup):
         s = node.string
@@ -114,3 +122,15 @@ def extend_emphases(soup, _elements=("em", "strong")):
                 p.string.replace_with(z + str(p))
 
         node.string.replace_with(s)
+
+
+# "&emdash; Hi!" → "&emdash;&4emsp;Hi!", where &4emsp; is FOUR-PER-EM space.
+# It looks like normal space, but hyphen-style dialogs look nicer when text-align is justified:
+#   -- Hi! How are you?
+#   -- Well.  And  you?
+# instead of:
+#   -- Hi! How are you?
+#   --  Well.  And  you?
+def improve_dialogs(soup):
+    for node, lang in walk_strings(soup):
+        node.string.replace_with(re.sub(r"(^\s*—)\s", r"\1 ", node.string))

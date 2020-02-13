@@ -159,6 +159,7 @@ class Site:
         typographical_transforms.insert_nbsp(soup)
         typographical_transforms.insert_shy(soup)
         typographical_transforms.extend_emphases(soup)
+        typographical_transforms.improve_dialogs(soup)
         s = str(soup)
         # if self.release:
         #     s = htmlmin.minify(s)

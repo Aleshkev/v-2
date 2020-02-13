@@ -48,4 +48,3 @@ def handle_images(soup: bs4.element.Tag):
             figure.insert(1, figcaption)
         p.insert_after(figure)
         p.decompose()
-

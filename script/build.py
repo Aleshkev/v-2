@@ -50,7 +50,7 @@ class Site:
         self.output_dir = pathlib.Path("a/")
         self.script_dir = pathlib.Path(__file__).parent
         self.theme_dir = pathlib.Path("theme/")
-        self.root = "/" if release else "/aleshkev.github.io/"
+        self.root = "/"
 
         self.articles = []
 

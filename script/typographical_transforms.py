@@ -48,6 +48,8 @@ def _get_language_identifier():
 
 
 def _walk_strings(node, lang=None, ignore_headings=False):
+    if isinstance(node, bs4.element.Comment):
+        return
     if isinstance(node, bs4.element.NavigableString):
         yield node, lang
         return

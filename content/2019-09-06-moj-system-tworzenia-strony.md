@@ -52,17 +52,16 @@ tags: meta, markdown
 
 # Tytuł strony
 
-Paragraf składa się z bezpośrednio następujących po sobie
-linii tekstu -- jedna lub więcej pustych linii tworzą nowy
-paragraf.
+Paragraf składa się z bezpośrednio następujących po sobie linii tekstu --
+jedna lub więcej pustych linii tworzą nowy akapit.
 
-Tekst można pochylić -- lub, ściślej rzecz biorąc, oznaczyć
-jako akcentowany -- _w ten_ sposób.
+Tekst można pochylić -- lub, ściślej rzecz biorąc, oznaczyć jako akcentowany
+-- _w ten_ sposób.
 
 ## Tytuł sekcji
 
-Używane jest rozszerzenie do wyświetlania notatek na
-marginesie.^[To jest przykładowa notatka.]
+Używane jest rozszerzenie do wyświetlania notatek na marginesie.^[To jest
+przykładowa notatka.]
 
 Formuła matematyczna: $x^2$
 

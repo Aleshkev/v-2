@@ -1,18 +1,19 @@
 const hljs = require("highlight.js");
 
-const MarkdownIt = require("markdown-it"), md = new MarkdownIt({
-    html: true,
-    typographer: true,
-    quotes: "„”»«",
-    highlight: function (str, lang) {
-        if (lang && hljs.getLanguage(lang)) {
-            try {
-                return hljs.highlight(lang, str).value
-            } catch (e) {
-                return "";
-            }
-        }
+const MarkdownIt = require("markdown-it");
+const md = new MarkdownIt({
+  html: true,
+  typographer: true,
+  quotes: "„”»«",
+  highlight: function(str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, str).value;
+      } catch (e) {
+        return "";
+      }
     }
+  }
 });
 
 md.use(require("@iktakahiro/markdown-it-katex"));

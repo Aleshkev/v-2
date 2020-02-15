@@ -1,4 +1,4 @@
-# Gespräch
+# Gretchenfrage
 
 > Rozpal ludziom ogień, a będzie im ciepło przez jeden dzień. [...]
 >

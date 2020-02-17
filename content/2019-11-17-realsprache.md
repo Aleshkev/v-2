@@ -75,13 +75,13 @@ Dyscyplinę i precyzję słowa powszechnie się uważa za odzwierciedlenie dyscy
 
 ## VI
 
-_Wydaje się, że żyjemy w tygodniu językowych kontrowersji. Najpierw profesor Polański kazał osobom krytycznym wobec jego teorii emigrować, co po wielu przeprosinach zostało mu wybaczone przez społeczność naukową. Następnie pożar w Katowickiej Bibliotece Uniwersyteckiej, przez prokuratorę mimo wielu wątpliwości uznany za wypadek. A teraz dzieląca Polaków wypowiedź prezydenta. W programie gości dzisiaj ekspert od współczesnego języka polskiego, absolwent Uniwersytetu Jagiellońskiego i jeden z naszych dziennikarzy._
+_Wydaje się, że żyjemy w tygodniu językowych kontrowersji. Najpierw profesor Polański kazał osobom krytycznym wobec jego teorii emigrować, co po wielu przeprosinach zostało mu wybaczone przez społeczność naukową. Następnie pożar w Katowickiej Bibliotece Uniwersyteckiej, przez prokuraturę mimo wielu wątpliwości uznany za wypadek. A teraz dzieląca Polaków wypowiedź prezydenta. W programie gości dzisiaj ekspert od współczesnego języka polskiego, absolwent Uniwersytetu Jagiellońskiego i jeden z naszych dziennikarzy._
 
 _Skąd się biorą tak duże emocje przy rozmowie o języku?_
 
 Myślę, że to nie są emocje do języka, tylko do polityki. Politycy starają się kontrolować język i to wzbudza kontrowersje.
 
-_W jaki sposób politycy próbują kontrolować język? Ostatnia wypowiedź prezydenta nie była przecież próbą kontroly języka polskiego._
+_W jaki sposób politycy próbują kontrolować język? Ostatnia wypowiedź prezydenta nie była przecież próbą kontroli języka polskiego._
 
 To nie była próba zaprojektowana przez prezydenta, ale przez totalną opozycję, próbującą mniej lub bardziej świadomie wydzielić jak działa, a jak nie działa, gramatyka. Jest to jakaś patologia, bo od tego są językoznawcy: ja, pan Miodek, pan Polański.
 

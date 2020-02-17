@@ -1,4 +1,15 @@
+---
+extra-copyright: "Oryginalny tytuł: <em>Gespräch</em>"
+---
+
 # Gretchenfrage
+
+<style>
+p + p {
+  text-indent: 0;
+  margin-top: 1em;
+}
+</style>
 
 > Rozpal ludziom ogień, a będzie im ciepło przez jeden dzień. [...]
 >

@@ -31,3 +31,39 @@
 Але их цел, пже­до­ста­нє сьӗ по­над вўа­сны по­зьом ег­зы­стен­цйи, сьӗ по­вюдў. Спра­ви­ли, же опо­вєсьць, в кту­рей же­чы­ви­сьцє, так як мы­сьле­ли за спра­вӑ ау­то­ра, сьӗ знай­до­ва­ли, пже­ста­ўа я­ко цел мєць пже­ка­за­нє фа­бу­ўы, а ста­ўа сьӗ по про­сту тек­стем ма­йӑ­цым быць пжы­кўа­дем ужы­ця но­ве­го ал­фа­бе­ту. Нє­сте­ты, до­кўад­нє так як ау­тор од по­чӑт­ку хцяў.
 
 Леч тен 'ар­ты­куў' нє єст вы­ўӑч­нє пжы­кўа­дем ужы­ця но­ве­го ал­фа­бе­ту. Зо­стаў ство­жо­ны пру­бу­йӑц ство­жыць цось, че­го скон­су­мо­ва­нє зай­мє чы­тел­ни­ко­ви вьӗ­цей ниж ау­то­ро­ви -- та­кє са­мо­ѕєл­нє на­жу­цо­не ми пже­зе мнє са­ме­го ар­ты­стыч­не вы­зва­нє. Дла вы­го­ды по­ми­нӗ то, же нє­кту­жы зна­йӑ цы­ры­ли­цӗ и дла них ца­ўосьць мо­гўа быць про­сто зро­зу­мя­ўа. Реш­цє осуб гра­ту­лу­йӗ. Є­же­ли чу­є­цє, же ва­ша ре­ла­цъя з тым ар­ты­ку­ўем єст са­тыс­фак­цйо­ну­йӑ­ца, и за­йӗ­ўо вам то мнєй ниж го­ѕи­нӗ, вы­гра­ли­сьцє -- я тен ар­ты­куў ство­жы­ўем в го­ѕи­нӗ. Є­же­ли за­йӗ­ўо вам то вьӗ­цей, пже­гра­ли­сьцє, товарищу.
+
+## Google Translate
+
+По­ле­цам, ту­тай укра­ињ­ски (ау­то­ма­тыч­нє вы­кры­ты) на пол­ски.
+
+> Dawno, dawno temu tematem, za gurami i za lasami, było królestwo Nikitów Mawi. Nyevketev, filozof pogodowy, pewnego dnia, myśliciel nad naturą wakacji, przyszedł pomyśleć o tym, jak zbudować maszyny zdolne, jego ducha, damę sów w zoot. Według prezentacji projektu krylova opalenizna po dopasowaniu i pomalowaniu na konstrukcji maszyny zadowolona z podobieństwa skarbu kryłowskiego.
+>
+> To nie jest górna połowa, to Natekiew, najwyższy konkurent Nievketev. Krul Nikita nie ma Ufy, a unosząc się nad swą posługą filozofa od dawna dyskutuje na temat Nievketev.
+>
+> Natekiew napisał przez chwilę temat traktatu, dodając kturim, ale pzhemenova ovov w jedzeniu jest niemożliwa. Nie rozumiał, co Nyevketev postanowił zostać cemhem, że stał się tak niemożliwie filozoficzny wobec pzhikademu w Kyżkowie, że nie mógł tego zrobić, i potargał włosy.
+>
+> Kiedy jednak się z tym spotkali i zaczęli rozmawiać na ten temat, Nijewekjew wspomniał, że nie wiedział, jak sprowokować ich do wioski we własnym rozumieniu. Witch jest albo nie jest jedynym sposobem, aby żaby projektowały maszyny do używania skór i ignorowały ich zrozumienie. Po spaleniu notatek Nijewketiewa Natekiew żartował i zaczął pomagać w budowie samochodu.
+>
+> Na tyłach miasta ulowa maszyna znajdowała się w najwyższym pomieszczeniu, w którym znajdował się zamek koła Nikity, a ksiądz zaprowadził ją do nieosiągalnego zamku. Tam, gdzie Nikita przebił się, pomyślał o wielkości samochodu, a jednocześnie dał Pokvadaytom jeszcze bardziej hojnie w zachowaniu ucznia, kazał strażnikowi oglądać te wtyczki uke z samochodu.
+>
+> Pewnego dnia koroner Nikity wyszedł z uzdy ze swojej wieży i wyjrzał przez okno, a samochód filozofa przejechał stupę stupy niżej niż najwyższa wieża w jego zamku. Zabrzmiał to okazja, ale nie miało to wpływu na nikogo, ponieważ skoro oddał hołd swojemu filozofowi, skłoniłby go do uśmiechu. Powiedział, że Witz zacznie budować swój zamek.
+>
+> W międzyczasie Nyevketev i Natekiev otrzymali stażystę, a on został nominowany jako Nyuyevkievich. Zacząłem opowiadać bajki i mity o łąkach i bogach phemeniyahsych, poruszającym wiosną metalu przy użyciu bardzo małej maszyny, godzin własnych rzek jako przysięgi, godzin mezhanki ziewania jako tradycji. Szacunek, że filozofowie nie chcieli go związać i poradził mu, aby pozwolił kręcić się zamku Nikity.
+>
+> Nyuwevkiewicz poszedł do zamku, gdzie zerwał się z rundy. Krul Nikita powiedział, że najlepszym uściskiem jest szybkie napisanie, szacunek, ale powinna poznać swoją historię, a żaby nie powtórzą się.
+>
+> W międzyczasie Niewijew i Natekiew zadbali o to, by ich maszyny były tak wytrzymałe jak dziś. Uświadomienie sobie samotności było znaczące i niepokojące.
+>
+> Przybyli do wioski, podobnie jak ich logika i zrozumienie, i nie szukali chciwych odważnych fundamentów; Tam, gdzie diabeł z zamku księcia Nikity jest jedną z jego osobistych opowieści o Nyuvevkievichu, Nyevketev zrozumiał w skrócie.
+>
+> »Prace Yestesmy przedstawiają jakiegoś boga podniecenia. „Nigdzie nie można sobie wyobrazić w tym kierunku, ale bajka o chórach przemijania, twórcy życia na jego obraz, została wstępnie przełożona, musicie pamiętać, gdzie je zapamiętać;
+>
+> „Ale w tym przypadku, Newketev, każde recytowanie historii moich bogów przez waszych bogów jest nowym życiem opowiadanym na śmierć, życie każdego z nich jest nieco inne pzhez bvdy w pzhekaz i zrozumienie” dotyczył Natekiewa.
+>
+> Rozumieli sytuację i po raz kolejny wymyślili kawałek żywego jazzu w perłowym kolorze. Myśli Natekiewa, w tym przypadku, dojenie takiej podnoszącej na duchu wioski mogło być niegrzeczne przez długi czas;
+>
+> Nyevketev i Natekiev postanowili zmodyfikować maszyny. Dziobak jazzowy pracował przez kilka dni, a potem poszli nie tak. Oświadczenie po raz pierwszy; znikając w tsavosci, strzelając do wybuchu, wybuchając na zachodzie, sam w pokoju, zabójca Nievketev, Natekiev i pzhez vstzhelone pzhipadkem kuvate rube nyuvevkievich.
+>
+> Ale ich cel jest wszędzie ważniejszy niż postawa istnienia. Opowiedzieli o gorliwości zapału, zastanawiając się nad dziełami autora, i dowiedzieli się, jaki był cel miecza, a najprościej mówiąc - być pzhikwade nowego socjalizmu. Nestety, tak jak autor zaczynał od hts.
+>
+> Traktowanie „artykułów” nie obejmuje badań nad wykorzystaniem nowego socjalizmu. Jeśli stworzysz prubuytza, stworzy tsosha, którego konsumpcja zabierze czytelnika bardziej niż autora - taki domowy ślimak to dla mnie najbardziej artystyczne wezwanie. Ze względu na wygodę ludzie muszą znaleźć socjalizmy cyrylicy, a dla nich parsymon można po prostu zrozumieć. Reszta osób jest uszczęśliwiona. Jeśli usłyszysz, to twoja relacja z tym artykułem jest satyfikacją i otrzymałeś go ode mnie poniżej gogina, wygrasz - stworzę ten artykuł w goginie. Podobało ci się, pzhegralitsie, towarzyszu.

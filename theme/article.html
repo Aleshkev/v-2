@@ -1,7 +1,7 @@
 {% extends "base.html" %}
+{% block lang %}{{ article.lang }}{% endblock %}
 {% block title %}{{ article.title | striptags }}{% endblock %}
-{% block description %}{% endblock %}
-{% block author %}Jonasz Aleszkiewicz{% endblock %}
+{% block author %}{{ article.author | striptags }}{% endblock %}
 
 {% block content %}
     <article>
@@ -15,7 +15,7 @@
                     <time>{{ article.revised }}</time>
                 {% endif %}
                 &middot;
-                <a href="{{ site.index | as_absolute_url }}">Jonasz Aleszkiewicz</a>
+                {{ article.author }}
             </nav>
         </header>
 
@@ -27,4 +27,3 @@
     {{ article.date.year }}
     {% if article.revised and article.revised.year != article.date.year %} – {{ article.revised.year }} {% endif %}
 {% endblock %}
-{% block extra_copyright %}{% if article.extra_copyright %} {{ article.extra_copyright }} {% endif %}{% endblock %}

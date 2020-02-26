@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block title %}Strona główna{% endblock %}
-{% block keywords %}Jonasz Aleszkiewicz{% endblock %}
-{% block description %}Strona główna Jonasza Aleszkiewicza.{% endblock %}
+{% block keywords %}Jonasz Aleszkiewicz, strona, osobista strona, strona domowa, minimalizm, informatyka{% endblock %}
+{% block description %}Osobista strona Jonasza Aleszkiewicza.{% endblock %}
 
 {% block content %}
     <article>
@@ -37,4 +37,12 @@
             {% endfor %}
         </div>
     </article>
+{% endblock %}
+
+{% block copyright_year %}
+    {% if site.articles[-1].date.year == site.articles[0].date.year %}
+        {{ site.articles[0].date.year }}
+    {% else %}
+        {{ site.articles[-1].date.year }}–{{ site.articles[0].date.year }}
+    {% endif %}
 {% endblock %}

@@ -20,15 +20,16 @@ def extract_title(soup: bs4.Tag):
 
 
 def resolve_hrefs(soup: bs4.Tag, source: pathlib.Path, as_absolute_url):
-    for node in soup.find("body").find_all(lambda tag: "href" in tag.attrs.keys()):
-        s = node.attrs["href"]
-        if re.match(r"^\w+://", s) or re.match(r"^/", s):
-            continue
-        try:
-            s = as_absolute_url(source.parent / s)
-            node.attrs["href"] = s
-        except KeyError:
-            log.warning(f"Broken inside-href: {s} not a resource")
+    for key in {"href", "src"}:
+        for node in soup.find_all(lambda tag: key in tag.attrs.keys()):
+            s = node.attrs[key]
+            if re.match(r"^\w+://", s) or re.match(r"^/", s):
+                continue
+            try:
+                s = as_absolute_url(source.parent / s)
+                node.attrs[key] = s
+            except KeyError:
+                log.warning(f"Broken inside-href: {s} not a resource")
 
 
 def handle_images(soup: bs4.Tag):

@@ -13,7 +13,6 @@ log = logging.getLogger(__name__)
 @functools.lru_cache(32)
 def _get_hyphenator(lang: str):
     lang = "en_GB" if lang == "en" else f"{lang}_{lang.upper()}"
-    print(lang)
     return hyphen.Hyphenator(lang)
 
 

@@ -10,9 +10,7 @@ import shutil
 import subprocess
 from typing import *
 
-import htmlmin
 import jinja2
-import slugify
 import webassets.ext.jinja2
 import yaml
 
@@ -28,9 +26,10 @@ HTML = NewType('HTML', str)
 @dataclasses.dataclass
 class Article:
     source: pathlib.Path
+    lang: str = ""
+    author: HTML = ""
     date: Optional[datetime.date] = None
     revised: Optional[datetime.date] = None
-    extra_copyright: Optional[HTML] = ""  # See "Paski TVP" for example.
     title: HTML = ""
     content: HTML = ""
 
@@ -72,13 +71,13 @@ class Site:
         if self.release and self.output_dir.is_dir():
             shutil.rmtree(self.output_dir)
 
+        self.index = self.source_dir / "index"
+        self.add_resource(self.index, virtual=True)
+
         self.load_articles()
         for article in self.articles:
             log.info(f"Load {article.source}")
             self.load_article_data(article)
-
-        self.index = self.source_dir / "index"
-        self.add_resource(self.index, virtual=True)
 
         self.articles.sort(key=lambda article: article.date, reverse=True)
 
@@ -128,6 +127,8 @@ class Site:
         md_source = article.source.read_text("utf-8")
         metadata, md_source = self.extract_metadata(md_source)
 
+        article.lang = metadata.get("lang", "pl")
+        article.author = metadata.get("author", f'<a href="{self.as_absolute_url(self.index)}">Jonasz Aleszkiewicz</a>')
         article.revised = metadata.get("revised", None)
         assert article.revised is None or isinstance(article.revised, datetime.date)
 
@@ -137,13 +138,13 @@ class Site:
 
         soup = functional_transforms.get_soup(p.stdout.decode("utf-8"))
         article.title = functional_transforms.extract_title(soup)
+        functional_transforms.resolve_hrefs(soup, article.source, self.as_absolute_url)
         article.content = str(soup)
 
     def render_something(self, source: pathlib.Path, template: jinja2.Template, data: Dict[str, Any]):
         log.info(f"Render {source}")
         output_file = self.resources[source]
         soup = functional_transforms.get_soup(template.render(**data, site=self))
-        functional_transforms.resolve_hrefs(soup, source, self.as_absolute_url)
         functional_transforms.handle_images(soup)
         if self.release:
             typography.detect_lang(soup)

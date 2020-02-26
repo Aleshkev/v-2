@@ -18,7 +18,7 @@ Postanowiłem je więc ukryć, tak żeby użytkownik musiał kliknąć aby te ko
 
 Dlatego, komentarze od dzisiaj są usunięte.
 
-Koledzy i przyjaciele mogą napisać do mnie na Messengerze. Przecięcie osób nimi nie będących i czytających moją stronę jest zerowe, ale i tak gdy takim osobom zależy, mogą napisać emaila (mój adres jest [na stronie głównej](.)).
+Koledzy i przyjaciele mogą napisać do mnie na Messengerze. Przecięcie osób nimi nie będących i czytających moją stronę jest zerowe, ale i tak gdy takim osobom zależy, mogą napisać emaila (mój adres jest [na stronie głównej](index)).
 
 ## Jedyny komentarz, jaki do tej pory dostałem
 

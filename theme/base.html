@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="{% block lang %}pl{% endblock %}">
 
 <head>
     <meta charset="utf-8"/>
@@ -21,18 +21,7 @@
     {% block content %}{% endblock %}
 </main>
 <footer>
-    ©
-    {% block copyright_year %}
-        {% if site.articles[-1].date.year == site.articles[0].date.year %}
-            {{ site.articles[0].date.year }}
-        {% else %}
-            {{ site.articles[-1].date.year }}–{{ site.articles[0].date.year }}
-        {% endif %}
-    {% endblock %}
-    Jonasz Aleszkiewicz
-
-    {% if self.extra_copyright().strip() %} &middot; {% endif %}
-    {% block extra_copyright %}{% endblock %}
+    © {% block copyright_year %}{% endblock %} Jonasz Aleszkiewicz
 </footer>
 </body>
 </html>

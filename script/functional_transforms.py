@@ -11,7 +11,7 @@ def get_soup(html):
     return bs4.BeautifulSoup(html, "html.parser")
 
 
-def extract_title(soup: bs4.element.Tag):
+def extract_title(soup: bs4.Tag):
     title: bs4.Tag = soup.find("h1")
     assert title
     s = "".join(map(str, title.children))
@@ -19,7 +19,7 @@ def extract_title(soup: bs4.element.Tag):
     return s
 
 
-def resolve_hrefs(soup: bs4.element.Tag, source: pathlib.Path, as_absolute_url):
+def resolve_hrefs(soup: bs4.Tag, source: pathlib.Path, as_absolute_url):
     for node in soup.find("body").find_all(lambda tag: "href" in tag.attrs.keys()):
         s = node.attrs["href"]
         if re.match(r"^\w+://", s) or re.match(r"^/", s):
@@ -31,20 +31,20 @@ def resolve_hrefs(soup: bs4.element.Tag, source: pathlib.Path, as_absolute_url):
             log.warning(f"Broken inside-href: {s} not a resource")
 
 
-def handle_images(soup: bs4.element.Tag):
+def handle_images(soup: bs4.Tag):
     for p in soup.find_all("p"):
-        p: bs4.element.Tag
+        p: bs4.Tag
         children = tuple(p.children)
         if len(children) != 1 or children[0].name != "img":
             continue
         img, = children
 
         img.extract()
-        figure = bs4.element.Tag(name="figure")
+        figure = bs4.Tag(name="figure")
         figure.insert(0, img)
         if img.attrs["alt"]:
-            figcaption = bs4.element.Tag(name="figcaption")
-            figcaption.string = bs4.element.NavigableString(img.attrs["alt"])
+            figcaption = bs4.Tag(name="figcaption")
+            figcaption.string = bs4.NavigableString(img.attrs["alt"])
             figure.insert(1, figcaption)
         p.insert_after(figure)
         p.decompose()

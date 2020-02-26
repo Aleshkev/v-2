@@ -17,7 +17,7 @@ import webassets.ext.jinja2
 import yaml
 
 import functional_transforms
-import typographical_transforms
+import typography
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -39,9 +39,7 @@ class Article:
 
 
 class Site:
-    def __init__(self, expensive_typography: bool, clear_output: bool, article_filter: Optional[str],
-                 release: bool, minimal: bool):
-        self.expensive_typography = expensive_typography
+    def __init__(self, article_filter: Optional[str], release: bool, minimal: bool):
         self.article_filter = article_filter
         self.release = release
         self.minimal = minimal
@@ -50,7 +48,6 @@ class Site:
         self.output_dir = pathlib.Path("a/")
         self.script_dir = pathlib.Path(__file__).parent
         self.theme_dir = pathlib.Path("theme/")
-        self.root = "/"
 
         self.articles = []
 
@@ -60,7 +57,7 @@ class Site:
             autoescape=False)
         self.environment.filters["as_absolute_url"] = self.as_absolute_url
         self.environment.assets_environment = webassets.Environment(
-            str(self.output_dir), self.root + str(self.output_dir),
+            str(self.output_dir), "/" + str(self.output_dir),
             load_path=[str(self.theme_dir)])
         self.environment.assets_environment.url_expire = False
         self.environment.assets_environment.debug = not self.release
@@ -72,7 +69,7 @@ class Site:
             for file in files:
                 self.add_resource(pathlib.Path(directory) / file)
 
-        if clear_output and self.output_dir.is_dir():
+        if self.release and self.output_dir.is_dir():
             shutil.rmtree(self.output_dir)
 
         self.load_articles()
@@ -99,12 +96,9 @@ class Site:
 
     def as_absolute_url(self, source_file: pathlib.Path):
         p = self.resources[source_file]
-        if p.name == "index.html":
-            p = p.parent
-        if self.release and p.suffix == ".html":
-            p = p.with_suffix("")
-
-        return self.root + str(p).replace("\\", "/")
+        p = p.parent if p.name == "index.html" else p
+        p = p.with_suffix("") if p.suffix == ".html" else p
+        return "/" + str(p).replace("\\", "/")
 
     def load_articles(self):
         for file in self.resources.keys():
@@ -116,11 +110,10 @@ class Site:
                 continue
 
             match = re.fullmatch(r"([0-9]{4})-([0-9]{2})-([0-9]{2})-(.*)\.md", file.name)
+            date = datetime.date.today()
             if match:
                 *date, slug = match.groups()
                 date = datetime.date(*map(int, date))
-            else:
-                date = datetime.date.today()
 
             self.articles.append(Article(file, date=date))
 
@@ -138,8 +131,6 @@ class Site:
         article.revised = metadata.get("revised", None)
         assert article.revised is None or isinstance(article.revised, datetime.date)
 
-        article.extra_copyright = metadata.get("extra-copyright", None)
-
         p = subprocess.run(['node', str(self.script_dir / 'markdown.js')],
                            input=md_source.encode("utf-8"), capture_output=True)
         assert not p.stderr, p.stderr.decode("utf-8")
@@ -154,12 +145,11 @@ class Site:
         soup = functional_transforms.get_soup(template.render(**data, site=self))
         functional_transforms.resolve_hrefs(soup, source, self.as_absolute_url)
         functional_transforms.handle_images(soup)
-        if self.expensive_typography:
-            typographical_transforms.detect_lang(soup)
-        typographical_transforms.insert_nbsp(soup)
-        typographical_transforms.insert_shy(soup)
-        typographical_transforms.extend_emphases(soup)
-        typographical_transforms.improve_dialogs(soup)
+        if self.release:
+            typography.detect_lang(soup)
+        typography.prevent_orphans(soup)
+        typography.insert_soft_hyphens(soup)
+        typography.readjust_dialog_spacing(soup)
         s = str(soup)
         # if self.release:
         #     s = htmlmin.minify(s)
@@ -173,12 +163,10 @@ class Site:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build the site. Use -recm for release mode.")
-    parser.add_argument("--expensive", "-e", action="store_true", help="waste time for nicer output")
-    parser.add_argument("--clear", "-c", action="store_true", help="remove last build")
+    parser = argparse.ArgumentParser(description="Build the site. Use -rm for release mode.")
     parser.add_argument("--only", "-l", help="build only articles with paths containing this text")
     parser.add_argument("--release", "-r", action="store_true", help="final build to upload online")
     parser.add_argument("--minimal", "-m", action="store_true", help="skip unfinished articles")
 
     args = parser.parse_args()
-    Site(args.expensive, args.clear, args.only, args.release, args.minimal)
+    Site(args.only, args.release, args.minimal)

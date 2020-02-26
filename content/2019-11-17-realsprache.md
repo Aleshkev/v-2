@@ -27,20 +27,27 @@ I mimo tego wszystkiego, jak się im powie to wszystko, nadal niektórzy zaczyna
 
 ## II
 
+**Wiadomości**\
 _Na dzisiejszym wykładzie otwartym na Uniwersytecie Katowickim, wybitny polonista profesor Polański, w przypływie emocji, podczas przemówienia zasugerował, że osoby, którym nie podoba się język polski mogą... cytując, "spakować się i wyjechać za granicę do Anglii służyć im Anglikom na zmywaku i nigdy nie wracać". Nagranie kontrowersyjnej wypowiedzi szybko stało się popularne w internecie, a sam autor wypowiedzi za nią przeprosił na Facebooku, jednak odmówił udziału w naszym programie. Zaprosiliśmy więc Antoniego Szapira, znanego działacza społecznego z Katowic, z własnym spojrzeniem na sprawę._
 
+**Antoni Szapir**\
 Witam serdecznie. Jakie jest moje spojrzenie na sprawę? Ono jest bardzo proste. Apeluję o jedno. Proszę przestać wyzywać ludzi od idiotów. Nie jest to takie trudne, ja robię tak cały czas. Obrażając innych profesor Polański udowadnia tylko, że jego racje nie są w stanie wygrać w racjonalnej dyskusji. Nie zgadzasz się -- to super. Ale twoja opinia nie jest jedyna.
 
+**Dziennikarz**\
 _Profesor Polański jednak sugeruje, że niektóre opinie są bardziej uzasadnione od innych, nie jest to według Pana prawdą?_
 
+**A. Szapir**\
 Ma to w sobie ziarno prawdy, jednak kto decyduje, które opinie są bardziej uzasadnione, a które nie? Polański ze swoim wyobrażeniem jak -- stworzony przez Boga specjalnie dla nieomylnego narodu Lecha, Warsa i Sawy -- język ma działać w jego śnieżnobiałych pałacykach? Ja sobie tego nie życzę, Polacy sobie tego nie życzą.
 
+**Dziennikarz**\
 _Czyli według Pana tłum Polaków ma więcej do powiedzenia niż jeden wykształcony ekspert?_
 
+**A. Szapir**\
 Proszę mi wybaczyć, jestem staromodnym człowiekiem, ale ja wierzę w demokrację. Nie chodzi o to, że Polacy wiedzą lepiej niż eksperci, tylko wiedzą których ekspertów słuchać lepiej niż ci eksperci, którzy wskazują zawsze samych siebie.
 
 ## III
 
+**J. Polański**\
 Chciałbym zacząć od ponownego przeproszenia za to, co wydarzyło się ostatnim razem na jednej z moich lektur. To się więcej nie powtórzy. Nie będę się tu próbował tłumaczyć, proszę tylko o zrozumienie -- sytuacja, w jakiej znajduje się język polski jest tragiczna.
 
 Niepoprawne formy imiesłowów znajdujemy w konstytucji, której niektórzy niby tak dzielnie i bezkrytycznie bronią.
@@ -55,12 +62,14 @@ Po wczorajszej lekturze rozmawiałem z... proszę mi wybaczyć, nie pamiętam na
 
 ## IV
 
+**Wiadomości**\
 _Pożar w Katowickiej Bibliotece Uniwersyteckiej zniszczył bezcenne archiwalne zbiory. Za sprawą szybkiej reakcji służb ratunkowych i straży pożarnej, nikt nie zginął, a straty zostały ograniczone do około 1600 książek, jednak około 200 z nich było ostatnimi egzemplarzami danego wydania lub nawet tytułu. Podejrzewane jest podpalenie._
 
 _Cała sprawa podaje w wątpliwość kompetencje rektora Uniwersytetu Katowickiego, który ostatnio postanowił udostępnić archiwalne tytuły szerszemu gronu odbiorców, pomijając wymaganą przez polskie prawo weryfikację odwiedzających, obowiązkową przy publicznych zbiorach o takiej wartości. Prokuratura wszczęła postępowanie zarówno w sprawie podejrzeń podpalenia jak i możliwych niedopatrzeń administracji._
 
 ## V
 
+**J. Polański**\
 Dzisiejszy temat: "język polski w polskich szkołach". Ja nie jestem polityczną osobą, więc będę starał się unikać tematu reformy szkolnictwa. Zresztą wymienię Państwu dzisiaj tylko prawdy, które, choć niewygodne, są niepodważalne.
 
 Po pierwsze, w szkołach obecnie nie kładzie się nacisku na prawidłową mowę. Wymysły jak dysleksja i dysgrafia to triumf leniwych osób na polu tresury swoich następników.
@@ -75,18 +84,23 @@ Dyscyplinę i precyzję słowa powszechnie się uważa za odzwierciedlenie dyscy
 
 ## VI
 
+**Wiadomości**\
 _Wydaje się, że żyjemy w tygodniu językowych kontrowersji. Najpierw profesor Polański kazał osobom krytycznym wobec jego teorii emigrować, co po wielu przeprosinach zostało mu wybaczone przez społeczność naukową. Następnie pożar w Katowickiej Bibliotece Uniwersyteckiej, przez prokuraturę mimo wielu wątpliwości uznany za wypadek. A teraz dzieląca Polaków wypowiedź prezydenta. W programie gości dzisiaj ekspert od współczesnego języka polskiego, absolwent Uniwersytetu Jagiellońskiego i jeden z naszych dziennikarzy._
 
 _Skąd się biorą tak duże emocje przy rozmowie o języku?_
 
+**Ekspert**\
 Myślę, że to nie są emocje do języka, tylko do polityki. Politycy starają się kontrolować język i to wzbudza kontrowersje.
 
+**Dziennikarz**\
 _W jaki sposób politycy próbują kontrolować język? Ostatnia wypowiedź prezydenta nie była przecież próbą kontroli języka polskiego._
 
+**Ekspert**\
 To nie była próba zaprojektowana przez prezydenta, ale przez totalną opozycję, próbującą mniej lub bardziej świadomie wydzielić jak działa, a jak nie działa, gramatyka. Jest to jakaś patologia, bo od tego są językoznawcy: ja, pan Miodek, pan Polański.
 
 ## VII
 
+**J. Polański**\
 Świat prześladuje postawa instrumentalna wobec języka polskiego. Wszelka dyskusja o języku opiera się na pytaniach "jak może nam on pomóc w komunikacji?" Tylko osoba uznająca nasze dziedzictwo za wartość autoteliczną może wydać obiektywną ocenę. Język staje się polski w formie ale obcy w treści, co mi przypomina czasy Stalina.
 
 Tak jak wtedy, ostatnio do Polski przybywa wiele osób z zagranicy -- ja się im nie dziwię, że nie dbają o nasz język. Wiadomo, dba się o rzeczy swoje, cudze to nam wszystko jedno. Sytuacja jest trochę podobna jak przy pożarach lasów w Stanach Zjednoczonych. Przybywa dużo osób z innego, mniej świadomego narodowo kraju, nie dbają one o środowisko i następną rzeczą jaką jesteśmy w stanie zaobserwować są katastrofalne klęski żywiołowe.

@@ -1,5 +1,4 @@
-#baseURL: https://aleshkev.github.io
-baseURL:
+baseURL: https://aleshkev.github.io
 languageCode: pl
 title: aleshkev.github.io
 params:

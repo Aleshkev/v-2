@@ -5,6 +5,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title}}{{ end }}</title>
+    {{ range .AlternativeOutputFormats }}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end }}
 
     {{ hugo.Generator }}
     {{/* These live here: https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates */}}

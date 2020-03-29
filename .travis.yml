@@ -13,8 +13,8 @@ install:
 
 script:
   - hugo
-  - chmod +x ./enhance.py
-  - ./enhance.py
+#  - chmod +x ./enhance.py
+  - python3 ./enhance.py
 
 deploy:
   provider: pages

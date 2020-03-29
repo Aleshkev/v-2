@@ -13,6 +13,7 @@ install:
 
 script:
   - hugo
+  - chmod +x ./enhance.py
   - ./enhance.py
 
 deploy:

@@ -1,0 +1,58 @@
+{{ define "main" }}
+    <main class="layout-single">
+        <article>
+            <section class="intro">
+                <h1>{{ .Title }}</h1>
+                <div class="date">
+                    {{ partial "date" .Date }}
+                </div>
+            </section>
+
+            <section class="content">
+                {{ with .Params.cover }}
+                    <figure class="cover">
+                        <img src="{{ (resources.Get .).Permalink }}" alt="{{ $.Params.coverCaption | markdownify }}">
+                        {{ with $.Params.coverCaption }}
+                            <figcaption>{{ . | markdownify }}</figcaption>
+                        {{ end }}
+                    </figure>
+                {{ end }}
+
+                {{ .Content }}
+            </section>
+
+            <section class="meta">
+                <div class="compact-table">
+                    {{ with .Params.categories }}
+                        <div>
+                            <div>Kategori{{ if ge (len .) 2 }}e{{ else }}a{{ end }}:</div>
+                            <div>
+                                {{ range $i, $category := . -}}
+                                    {{ if $i }}, {{ end }}
+                                    <a href="/categories/{{ $category | urlize }}/">{{ $category }}</a>
+                                {{- end }}
+                            </div>
+                        </div>
+                    {{ end }}
+                    {{ with .Params.tags }}
+                        <div>
+                            <div>Tag{{ if ge (len .) 2 }}i{{ end }}:</div>
+                            <div>
+                                {{ range $i, $tag := . -}}
+                                    {{ if $i }}, {{ end }}
+                                    <a href="/tags/{{ $tag | urlize }}/">{{ $tag }}</a>
+                                {{- end }}
+                            </div>
+                        </div>
+                    {{ end }}
+                    {{ with .Lastmod }}
+                        <div>
+                            <div>Aktualizacja:</div>
+                            <div>{{ partial "date" . }}</div>
+                        </div>
+                    {{ end }}
+                </div>
+            </section>
+        </article>
+    </main>
+{{ end }}

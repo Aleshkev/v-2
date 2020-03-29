@@ -1,0 +1,132 @@
+@import "vars"
+
+html
+  font: $font-size/1.6 $sans-serif
+  color: $black
+  font-weight: 300
+
+
+=button-like($color: white)
+  display: inline-block
+  border-radius: .2rem
+  height: 2.35em
+  line-height: 2.25em
+  padding: 0 .75em
+  margin: 0 -.75em
+  transition: background-color 100ms ease-in-out
+
+  &:hover
+    background-color: transparentize($color, .9)
+
+
+body
+  min-height: 100vh
+
+  & > div
+    min-height: 100vh
+    background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%)
+
+    & > *
+      max-width: $column-width + 2 * $site-padding
+      margin: 0 auto
+      padding-left: $site-padding
+      padding-right: $site-padding
+
+
+nav
+  font-variant-caps: all-small-caps
+  padding-top: 2em
+  padding-bottom: 2em
+  display: flex
+  justify-content: space-between
+  color: $dimmed-white
+
+  a
+    +button-like
+
+  h1
+    color: $white
+
+  ol
+    margin-left: 2em
+
+    li:not(:last-child)
+      margin-right: 2em
+
+
+footer
+  min-height: $sheet-padding
+
+
+article
+  background-color: $white
+  border-radius: .4em
+  overflow: hidden
+  --vertical-sheet-padding: #{$sheet-padding}
+
+  section
+    padding-top: var(--vertical-sheet-padding)
+    padding-bottom: var(--vertical-sheet-padding)
+
+  .content
+    padding-top: 0
+
+  .cover
+    margin-bottom: var(--vertical-sheet-padding)
+
+    img
+      width: 100%
+
+  .meta
+    background-color: $gray
+
+
+.card + .card
+  margin-top: $smaller-sheet-padding
+
+.card
+  --vertical-sheet-padding: #{$smaller-sheet-padding}
+
+  .cover
+    overflow: hidden
+    img
+      transition: transform 200ms ease-in-out
+      transform: scale(1.05)
+
+      &:hover
+        transform: none
+
+  .content
+    padding-bottom: .5em
+
+  .actions
+    padding-top: 0
+    text-align: right
+
+    a
+      +button-like
+
+      &:hover
+        background-color: transparentize(black, 0.9)
+
+.plain-button
+  padding: $smaller-sheet-padding 0
+  text-align: center
+  a
+    color: $white
+    +button-like
+
+.article-list
+  color: $white
+  td
+    vertical-align: top
+  td:first-child
+    color: $dimmed-white
+    text-align: right
+    padding-right: 1em
+
+main > h1
+  color: $white
+  font-size: 2em
+  text-align: center
+  margin-bottom: $smaller-sheet-padding

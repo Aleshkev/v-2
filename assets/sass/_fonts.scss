@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Noto Serif';
+  src: local('Noto Serif Light'), local('NotoSerif-Light'),
+  url('/fonts/subset-NotoSerif-Light.woff2') format('woff2'),
+  url('/fonts/subset-NotoSerif-Light.woff') format('woff'),
+  url('/fonts/subset-NotoSerif-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: local('Noto Serif Light Italic'), local('NotoSerif-LightItalic'),
+  url('/fonts/subset-NotoSerif-LightItalic.woff2') format('woff2'),
+  url('/fonts/subset-NotoSerif-LightItalic.woff') format('woff'),
+  url('/fonts/subset-NotoSerif-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Light Italic'), local('NotoSans-LightItalic'),
+  url('/fonts/subset-NotoSans-LightItalic.woff2') format('woff2'),
+  url('/fonts/subset-NotoSans-LightItalic.woff') format('woff'),
+  url('/fonts/subset-NotoSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local('Noto Sans Light'), local('NotoSans-Light'),
+  url('/fonts/subset-NotoSans-Light.woff2') format('woff2'),
+  url('/fonts/subset-NotoSans-Light.woff') format('woff'),
+  url('/fonts/subset-NotoSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Mono';
+  src: local('Noto Mono'), local('NotoMono'),
+  url('/fonts/subset-NotoMono.woff2') format('woff2'),
+  url('/fonts/subset-NotoMono.woff') format('woff'),
+  url('/fonts/subset-NotoMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

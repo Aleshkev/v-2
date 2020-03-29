@@ -1,0 +1,12 @@
+script:
+  hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in Travis repository settings
+  verbose: true
+  local_dir: public
+  target_branch: master
+  on:
+    branch: source

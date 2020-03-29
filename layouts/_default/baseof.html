@@ -1,0 +1,26 @@
+<html lang="{{ $.Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title}}{{ end }}</title>
+
+    {{ hugo.Generator }}
+    {{/* These live here: https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates */}}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+    {{ with (resources.Get "sass/main.sass" | resources.ToCSS) }}
+        <link rel="stylesheet" href="{{ .Permalink }}">
+    {{ end }}
+</head>
+<body>
+<div>
+{{ partial "nav" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer" . }}
+</div>
+</body>
+</html>

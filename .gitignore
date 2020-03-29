@@ -1,11 +1,6 @@
 .idea/
-.webassets-cache/
-
-package-lock.json
-node_modules/
+public/
+rejected-content/
 
 __pycache__/
 *.py[cod]
-
-*-draft.md
-rejected-content/

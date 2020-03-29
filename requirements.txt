@@ -1,8 +1,0 @@
-wordcloud
-matplotlib
-htmlmin
-beautifulsoup4
-PyYAML
-webassets
-slugify
-jinja2

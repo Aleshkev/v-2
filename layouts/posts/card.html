@@ -1,0 +1,36 @@
+<article class="card">
+    <section class="intro">
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <div class="date">
+            {{ partial "date" .Date }}
+        </div>
+    </section>
+
+    <section class="content">
+        {{ with .Params.cover }}
+            <figure class="cover">
+                <a href="{{ $.Permalink }}">
+                    <img src="{{ (resources.Get .).Permalink }}" alt="{{ $.Params.coverCaption | markdownify }}">
+                </a>
+            </figure>
+        {{ end }}
+
+        {{ $description := "" }}
+        {{ with .Description }}
+            {{ $description = . }}
+        {{ else }}
+            {{ $description = .Summary }}
+        {{ end }}
+        {{ if eq (substr $description 0 1) "<" }}
+            {{ $description }}
+        {{ else }}
+            <p>{{ $description }}</p>
+        {{ end }}
+    </section>
+
+    <section class="actions">
+        <div>
+            <a href="{{ .Permalink }}">Czytaj dalej »</a>
+        </div>
+    </section>
+</article>

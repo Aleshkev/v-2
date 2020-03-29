@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <main class="layout-list">
+        <h1>{{ .Name }}</h1>
+        <table class="article-list">
+            {{ range .Pages }}
+                <tr>
+                    <td>{{ partial "date" .Date }}</td>
+                    <td>
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    </td>
+                </tr>
+            {{ end }}
+        </table>
+    </main>
+{{ end }}

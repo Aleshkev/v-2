@@ -1,0 +1,175 @@
+@import "vars"
+
+body
+  text-rendering: optimizeLegibility
+  text-justify: inter-character
+  hanging-punctuation: first allow-end last
+  font-variant-numeric: oldstyle-nums
+  hyphens: none
+
+
+.compact-table
+  display: table
+
+  & > div
+    display: table-row
+
+    & > div
+      display: table-cell
+
+      &:first-child
+        padding-right: .5em
+        font-variant-caps: small-caps
+        text-align: right
+        width: 1%
+        white-space: nowrap
+
+
+article > section > *
+  margin-left: $sheet-padding
+  margin-right: $sheet-padding
+
+=wide($only-container: false)
+  margin-left: 0
+  margin-right: 0
+
+  @if ($only-container)
+    & > *
+      margin-left: $sheet-padding
+      margin-right: $sheet-padding
+
+
+.intro, .content
+  h1
+    line-height: 1.2
+    font-size: 2em
+
+.content
+  hyphens: manual
+  font-family: $serif
+
+  * + *
+    margin-top: 1em
+
+  h2, h3, h4, h5
+    hyphens: none
+    font-family: $sans-serif
+    margin-top: 1.5em
+    line-height: 1.2
+    letter-spacing: -0.05ch
+
+  h2
+    font-size: 1.6em
+
+  h3
+    font-size: 1.2em
+
+  h6
+    font-variant-caps: small-caps
+    text-indent: $indent
+
+  p
+    text-align: justify
+
+  p + p, h6 + p
+    margin-top: 0
+
+  p + p
+    text-indent: $indent
+
+
+  a
+    color: darken($color-c, 20%)
+    text-decoration: underline
+
+    transition: text-decoration-color 200ms ease-in-out
+
+    &:hover
+      text-decoration-color: transparent
+  //text-decoration: none
+
+  em
+    font-style: italic
+
+  strong
+    font-variant-caps: small-caps
+
+  del
+    text-decoration: line-through
+
+  ul, ol
+    padding-left: 1.25em
+
+  p + ul, p + ol
+    margin-top: 0
+
+  ol, ul
+    display: block
+
+    & > li
+      display: list-item
+
+  ul
+    list-style-type: none
+
+    & > li
+      &::before
+        position: absolute
+        content: "—"
+        margin-left: -1.25em
+
+  ol > li
+    list-style-type: decimal
+
+  li + li
+    margin-top: 0
+
+
+  hr
+    border: none
+    height: .15em
+    max-width: 8em
+    margin: var(--vertical-sheet-padding) auto
+    background: linear-gradient(90deg, $color-b, $color-d)
+
+
+  figure
+    +wide(true)
+
+    img
+      margin-left: auto
+      margin-right: auto
+
+    figcaption
+      margin-top: .5em
+      font-size: $smaller-font
+      font-family: $sans-serif
+
+      &, & a
+        color: $dimmed-black
+
+      &, & > p
+        text-align: center
+
+
+  blockquote
+    font-size: $smaller-font
+    padding-left: $indent
+
+    cite
+      display: block
+      text-align: right
+      color: $dimmed-black
+
+  .highlight
+    +wide
+
+    code
+      width: 100%
+      overflow-x: auto
+      overflow-y: hidden
+      line-height: 1.5em
+      font-size: $smaller-font
+      font-family: "Noto Mono", monospace
+      display: block
+      padding: 1em .5em 1em $sheet-padding

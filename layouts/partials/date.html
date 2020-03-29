@@ -1,0 +1,8 @@
+{{/* I'm not sure if this date format is correct, but is used by the default theme. */}}
+<time datetime="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- .Format "2" -}}
+&nbsp;
+{{- index (slice "" "stycznia" "lutego" "marca" "kwietnia" "maja" "czerwca" "lipca" "sierpnia" "września" "października" "listopada" "grudnia") .Month -}}
+&nbsp;
+{{- .Format "2006" -}}
+</time>

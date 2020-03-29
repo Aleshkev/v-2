@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <main class="layout-index">
+        {{ $posts := where .Site.RegularPages ".Section" "eq" "posts" }}
+        {{ range $posts | first 100 }}
+            {{ .Render "card" }}
+        {{ end }}
+        <div class="plain-button">
+            <a href="/posts/">Wszystkie wpisy »</a>
+        </div>
+    </main>
+
+{{ end }}

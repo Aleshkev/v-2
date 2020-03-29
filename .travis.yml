@@ -14,14 +14,13 @@ install:
 
 script:
   - hugo
-#  - chmod +x ./enhance.py
   - python ./enhance.py
 
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in Travis repository settings
-  verbose: true
+  cleanup: false
+  token: $GITHUB_TOKEN  # Set in Travis repository settings
+#  verbose: true
   local_dir: public
   target_branch: master
   on:

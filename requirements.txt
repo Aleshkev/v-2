@@ -1,0 +1,3 @@
+watchdog
+beautifulsoup4
+pyhyphen

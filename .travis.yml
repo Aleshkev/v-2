@@ -18,7 +18,7 @@ script:
 
 deploy:
   provider: pages
-  cleanup: false
+  skip_cleanup: true
   token: $GITHUB_TOKEN  # Set in Travis repository settings
 #  verbose: true
   local_dir: public

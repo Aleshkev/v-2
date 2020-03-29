@@ -10,11 +10,12 @@ install:
   - wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
   - tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
   - mv hugo ~/bin/
+  - pip install -r requirements.txt
 
 script:
   - hugo
 #  - chmod +x ./enhance.py
-  - python3 ./enhance.py
+  - python ./enhance.py
 
 deploy:
   provider: pages

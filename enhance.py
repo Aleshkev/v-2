@@ -24,6 +24,8 @@ def _get_hyphenator(lang: str):
 
 
 def _hyphenate(s: str, lang: str):
+    if re.match(r"\$.*\$", s):
+        return s
     was_upper = s.isupper()
     if was_upper:
         s = s.lower()  # Because the hyphenator doesn't like all-uppercase strings.
@@ -67,7 +69,7 @@ def detect_lang(soup: bs4.Tag):
 
 def insert_soft_hyphens(soup: bs4.Tag):
     for node, lang in walk_strings(soup):
-        s = re.sub(r"\w+", lambda m: _hyphenate(m.group(0), lang), node.string)
+        s = re.sub(r"(\$\S.*?\S\$|\w+)", lambda m: _hyphenate(m.group(0), lang), node.string)
         node.string.replace_with(s)
 
 

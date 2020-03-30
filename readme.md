@@ -15,6 +15,8 @@ git push --force
 
 ### TODO:
 
+- [x] add katex math
+- [ ] style code spans
 - [ ] better SEO
   - look at yeast wp plugin?
 - [ ] redirects from old links?

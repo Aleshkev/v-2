@@ -6,6 +6,7 @@ categories: [groteska]
 tags: [pan k, pretensjonalność, biblioteczki (informatyka), dwukierunkowe znaki unicode, rekreacyjne cytowanie adolfa hitlera]
 summary: >
     Tradycyjnie, istniał konflikt pomiędzy zadaniami z biblioteczkami a zadaniami bez biblioteczek. Według koncepcji Hegla, jest to pewna teza i antyteza tworząca syntezę, swoistą dialektykę librariańską. Jako typowo modernistyczny sposób interpretacji rzeczywistości, taka symplistyczna teoria nie działa w rzeczywistości.
+math: true
 ---
 
 > Artykuł jest głęboką ironią wymagającą niepublicznego kontekstu, jest swoistym _inside-jokem_ alienującym przeciętnego czytelnika, za co przepraszam.
@@ -56,7 +57,7 @@ Drugie rozwiązanie natomiast wydaje się idealne, jednak jak już jest napisane
 
 Dlatego jedynym świetnym rozwiązaniem jest rozwiązanie trzecie. Postuluję zatem, aby wszystkie zadania wszystkie dane przekazywały jako wywołania funkcji. Zwiększa to czytelność:
 
-```cpp
+```js
 // Nieczytelne: nie wiemy co to są n, m, k czy w jakiej są kolejności.
 cin >> n >> m >> k;
 

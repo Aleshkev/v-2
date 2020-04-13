@@ -18,7 +18,7 @@ Istnieje pewien konsensus, że pisanie w losowych momentach na całkowicie losow
 
 Dlatego staram się ustalić niszę, którą będę próbował moimi wpisami wypełnić. W tej chwili mam pomysł, żeby w przystępny sposób opisywać mniej znane idee i teorie kierujące działaniami społeczeństwa i jego części, w szczególności tego jak odnoszą się do polskiej młodzieży. Przykładowe tematy:
 
-- Jaki jest cel lektur szkolnych i kiedy uczniowie nie będą musieli czytać Mickiewicza?
+- Jaki jest cel lektur szkolnych i kiedy uczniowie nie będą musieli już czytać Mickiewicza?
 - Skąd biorą się obecne zasady języka polskiego?
 - Czy opinie innych osób o nas są nam niepotrzebne?
 - Czego Ministerstwo Edukacji oczekuje od informatyki w szkołach?
@@ -28,7 +28,7 @@ Dlatego staram się ustalić niszę, którą będę próbował moimi wpisami wyp
 
 Będę oczywiście również zawsze otwarty na sugestie. I tak nie na wszystkie te pytania jestem w stanie samemu od razu odpowiedzieć, więc jest to też dla mnie stała okazja, żeby dowiedzieć się czegoś nowego.
 
-Jeżeli mimo oczekiwań by to dobrze poszło, mogłoby to ewoluować do czegoś na wzór dziennikarstwa, które zamiast rozpraszać się na jakichś osobistych skandalach pojedynczych polityków skupiłoby się bardziej na aspektach ich ogólniejszych światopoglądów.
+Jeżeli mimo moich pesymistycznych oczekiwań by to dobrze poszło, mogłoby to ewoluować do czegoś na wzór dziennikarstwa, które zamiast rozpraszać się na jakichś osobistych skandalach pojedynczych polityków skupiłoby się bardziej na aspektach ich ogólniejszych światopoglądów.
 
 Wydaje się to tak dobrym pomysłem, że pewnie ktoś już na niego dawno temu wpadł. Ale ja nigdy na nic takiego nie trafiłem, a byłbym bardzo zainteresowany. Stąd wniosek, że jest miejsce na przynajmniej jeden kolejny taki blog.
 
@@ -52,4 +52,4 @@ Ogólnie całego procesu nie polecam. Jeżeli ktoś nie chce poświęcać ogromn
 
 ---
 
-Nie jestem w stanie powiedzieć jak pójdzie mi realizowanie swoich celów i jaka będzie ostateczna jakość czy przydatność moich wpisów. Ale mam nadzieję, że od tej pory uprzyjemnię choć minimalnie moją stroną życie nie tylko sobie samemu. 😊
+Nie jestem w stanie powiedzieć jak pójdzie mi realizowanie swoich celów i jaka będzie ostateczna jakość czy przydatność moich wpisów. Ale mam nadzieję, że od tej pory uprzyjemnię choć minimalnie moją stroną życie nie tylko sobie samemu. 😊

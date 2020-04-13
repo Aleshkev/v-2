@@ -32,4 +32,6 @@ Dlatego zastosuję profesjonalny trik i stwierdzę, że szukanie tego znaczenia 
 
 Nie mam na myśli tutaj, że moja strona będzie się teraz składać _wyłącznie_ z metatekstów o samej sobie, na co może teraz się zapowiadać jeżeli 5/7 artykułów jest dokładnie tym. Myślałem nawet nad tym przez chwilę: mógłbym się odnosić w tych wewnętrznych metarozważaniach do spraw zewnętrznych (jak w tym artykule się odniosłem do _Patointeligencji_), żeby nie postawić po prostu monumentu mojemu egoizmowi, ale usłyszałem, że na GoFundMe jest podcast _Podcast_, który polega na ocenianiu poprzedniego odcinka tego podcastu. Nie wiem czy to jest prawda, bo było to powiedziane w wideo o charakterze komediowym, ale i tak pokazuje to, że mój pomysł nie jest oryginalny.
 
+<!-- 2020-04-07: ja nie wierzę, YouTube zarekomendował mi to: https://www.youtube.com/watch?v=cf2T_Skq1xc&t=734 -->
+
 Nadal podoba mi się jednak idea mojego manifestu, więc on nadal obowiązuje, dopóki _prawdziwe_ znaczenie nie zostanie odkryte.

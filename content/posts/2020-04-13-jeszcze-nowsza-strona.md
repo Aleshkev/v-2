@@ -6,7 +6,7 @@ categories: [meta]
 tags: [design, gradient, markdown]
 ---
 
-Wbrew krążącej wśród niektórych opinii, zdawałem sobie sprawę z tego, że moja strona wyglądała zupełnie inaczej od większości innych w internecie. Nie przeszkadzało mi to zbytnio, ponieważ zawartość też była w niepowtarzalny sposób jakby przeciwna temu, żeby czytało ją dużo osób.
+Wbrew krążącej wśród niektórych opinii, zdawałem sobie sprawę z tego, że moja strona wyglądała zupełnie inaczej od większości innych w internecie. Nie przeszkadzało mi to zbytnio, ponieważ zawartość też była w niepowtarzalny sposób jakby przeciwna temu, żeby czytało ją dużo osób. <!--more-->
 
 Ale kilka tygodni temu natrafiłem na imponująco (dla mnie) popularną [stronę mojej koleżanki z klasy z gimnazjum](https://bthegreat.pl) i zdałem sobie sprawę z tego, że tak wcale nie musi być. Staram się nie przejmować za bardzo opinią innych wytworzoną na podstawie m.in. mojej strony -- chociaż obecnie mam pewne wątpliwości co do praktyczności takiego założenia, OK. Ale w żaden sposób nie oznacza to, że na każdym kroku muszę upewniać się, że wszyscy potencjalni czytelnicy wiedzą, że nimi się nie przejmuję.
 

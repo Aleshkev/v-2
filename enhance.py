@@ -45,10 +45,10 @@ def _get_language_identifier():
 
 
 def _walk_strings(node, lang=None):
+    if isinstance(node, bs4.Comment) or node.name in {"code", "style", "script"}:
+        return
     if isinstance(node, bs4.NavigableString):
         yield node, lang
-        return
-    if isinstance(node, bs4.Comment) or node.name in {"code", "style", "script"}:
         return
     for child in node.children:
         yield from _walk_strings(child, lang if "lang" not in node.attrs.keys() else node.attrs["lang"])

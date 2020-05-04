@@ -22,7 +22,7 @@ Postanowiłem je więc ukryć, tak żeby użytkownik musiał kliknąć aby te ko
 
 Dlatego, komentarze od dzisiaj są usunięte.
 
-Koledzy i przyjaciele mogą napisać do mnie na Messengerze. Przecięcie osób nimi nie będących i czytających moją stronę jest zerowe, ale i tak gdy takim osobom zależy, mogą napisać emaila (mój adres jest [na stronie głównej](index)).
+Koledzy i przyjaciele mogą napisać do mnie na Messengerze. Przecięcie osób nimi nie będących i czytających moją stronę jest zerowe, ale i tak gdy takim osobom zależy, mogą napisać emaila (mój adres jest [na stronie głównej](/)).
 
 ## Jedyny komentarz, jaki do tej pory dostałem
 
@@ -30,7 +30,7 @@ Jest dokładnie od osoby, którą nie bez powodu zablokowałem na Messengerze. P
 
 > Nawet biorąc pod uwagę _inside-joke, alienujący przeciętnego czytelnika_, ten artykuł nie ma sensu. Uważasz, że jesteś fajny bo umiesz w dwukierunkowy Unicode oraz znasz kody znaków do góry nogami. W zasadzie cała Twoja twórczość opiera się na Twoim błędnym przekonaniu, że kogokolwiek śmieszą Twoje żarty z poważnych, rozwiniętych i licznie reprezentowanych idei politycznych oraz społecznych. Żal mi Ciebie. Może faktycznie chciałeś przekazać jakikolwiek koncept w tym artykule, ale przez przesycenie go chaosem twórczym, który zawstydziłby nawet barokowych twórców, wyszło po prostu na to, że jesteś tylko fasadą, która przez strzępkową znajomość podstaw kultury próbuje utworzyć miraż, jakobyś człowiekiem kultury faktycznie był. Również ewidentne jest, że znacząco przedkładasz formę nad treść. Nie mogę zaprzeczyć, że Twoja strona ma starannie dobrany, dopracowany i jednolity styl. Niestety, nie mogę powiedzieć tego samego na temat treści. Wygląda to trochę, jakbyś poszukując inspiracji do napisania kolejnych artykułów kręcił się na krześle biurowym na środku pokoju zastawionego gazetami i szukał tematu w tej, w stronę której będziesz zwrócony gdy krzesło skończy ruch obrotowy. Po wyborze tematu piszesz bardzo płytki merytorycznie artykuł, który można by zapisać 3 razy ściślej, gdyby nie wszechobecne rozpraszacze: niepotrzebne odniesienia do polityki i filozofii, samokrytyka zapewne mająca na celu zademonstrowanie Twojego dystansu do siebie, próba popisu znajomością filologii i lingwistyki oraz, co najgorsze, liczne żarty niezrozumiałe dla niewtajemniczonego czytelnika. Podsumowując, nie bierz tego do siebie, ale Twoja strona jest niewielką antologią niskiej jakości twórczości.
 >
-> <cite>--- Y3b4n1utk1, pod ironicznym ["Traktatem o biblioteczkach"](2020-01-05-biblioteczki.md), 2020-01-26
+> <cite>--- Y3b4n1utk1, pod ironicznym ["Traktatem o biblioteczkach"]({{< ref "2020-01-05-biblioteczki.md" >}}), 2020-01-26
 
 Przytaczam go tutaj tylko po to, żeby nie było, że usuwam negatywne komentarze -- robię teraz coś przeciwnego przenosząc go z domyślnie ukrytej sekcji komentarzy do pełnoprawnego artykułu, czego już żałuję. Mógłbym teraz odpowiedzieć, że naturalnym następstwem pisania o własnych przemyśleniach jest samokrytyka, niepopularne figury retoryczne, różnorodność tematów czy nawiązywanie do niedawno napotkanych koncepcji z polityki i filozofii, że ta krytyka w większości sprowadza się do "znajdź lepsze tematy na artykuły", z czego ja od dawna zdaję sobie sprawę i staram się poprawić. Ale tego otwarcie nie odpowiem, bo tylko otworzyłoby to kolejną bezcelową dyskusję z autorem tego komentarza.
 

@@ -6,7 +6,7 @@ html
   font-weight: 300
 
 
-=button-like($color: white)
+=button-like($color: black)
   display: inline-block
   border-radius: .2rem
   height: 2.35em
@@ -22,45 +22,97 @@ html
 body
   min-height: 100vh
 
-  & > div
-    min-height: 100vh
-    background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%)
+  display: flex
+  flex-direction: column
 
-    & > *
-      max-width: $column-width + 2 * $site-padding
-      margin: 0 auto
-      padding-left: $site-padding
-      padding-right: $site-padding
+  main
+    flex-grow: 1
+
+  background-image: linear-gradient(45deg, hsl(hue($color-a), 96%, 96%) 15%, hsl(hue($color-d), 96%, 96%) 85%)
+
+
+nav > * > *, main, footer > * > *
+  max-width: $page-width + 2 * $site-padding
+  padding-left: $site-padding
+  padding-right: $site-padding
+  display: block
+  margin: auto
 
 
 nav
+  background: white
+  border-bottom: 1px solid $border
+  margin-bottom: $smaller-sheet-padding
   font-variant-caps: all-small-caps
-  padding-top: 2em
-  padding-bottom: 2em
-  display: flex
-  justify-content: space-between
-  color: $dimmed-white
 
-  a
-    +button-like
+  .stripe
+    height: .175em
+    background: $color-b linear-gradient(45deg, $color-b 15%, $color-c 85%)
 
-  h1
-    color: $white
+  .logo
+    padding: 1.5em
+    border-bottom: 1px solid $border
+    text-align: center
 
-  ol
-    margin-left: 2em
+    h2
+      font-size: 1.5em
+      text-align: center
 
-    li:not(:last-child)
-      margin-right: 2em
+    p
+      font-style: italic
+      font-variant-caps: initial
+
+  .menu
+    border-bottom: .15em solid lighten($border, 7.5%)
+
+    & > *
+      margin-bottom: -.15em
+
+    ol
+      li
+        border-left: 1px solid $border
+
+        &:last-child
+          border-right: 1px solid $border
+
+        a
+          display: inline-block
+          padding: .2em 1em .65em
+          border-top: .175em solid transparent
+          transition: border-top-color 100ms ease-in-out
+
+        &:nth-child(1) a:hover
+          border-top-color: $color-a
+
+        &:nth-child(2) a:hover
+          border-top-color: $color-b
+
+        &:nth-child(3) a:hover
+          border-top-color: $color-c
+
+        &:nth-child(4) a:hover
+          border-top-color: $color-d
+
+        &:nth-child(5) a:hover
+          border-top-color: $color-e
 
 
 footer
-  min-height: $sheet-padding
+  background: white
+  border-top: 1px solid $border
+  margin-top: $smaller-sheet-padding
+
+  text-align: center
+  padding: 1em
 
 
 article
+  max-width: $page-width + 2 * $site-padding
+  margin: 0 auto
+
   background-color: $white
-  border-radius: .4em
+  border-radius: .25em
+  border: 1px solid #e2e4e6
   overflow: hidden
   --vertical-sheet-padding: #{$sheet-padding}
 
@@ -78,8 +130,8 @@ article
       width: 100%
 
   .meta
-    background-color: $gray
-
+    border-top: 1px solid #eaecee
+    background-color: #fafafa
 
 .card + .card
   margin-top: $smaller-sheet-padding
@@ -89,6 +141,7 @@ article
 
   .cover
     overflow: hidden
+
     img
       transition: transform 200ms ease-in-out
       transform: scale(1.05)
@@ -106,27 +159,23 @@ article
     a
       +button-like
 
-      &:hover
-        background-color: transparentize(black, 0.9)
-
 .plain-button
   padding: $smaller-sheet-padding 0
   text-align: center
+
   a
-    color: $white
     +button-like
 
 .article-list
-  color: $white
   td
     vertical-align: top
+
   td:first-child
-    color: $dimmed-white
+    color: $dimmed-black
     text-align: right
     padding-right: 1em
 
 main > h1
-  color: $white
   font-size: 2em
   text-align: center
   margin-bottom: $smaller-sheet-padding

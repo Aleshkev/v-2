@@ -1,7 +1,7 @@
 {{ define "main" }}
     <main class="layout-index">
         {{ $posts := where .Site.RegularPages ".Section" "eq" "posts" }}
-        {{ range $posts | first 100 }}
+        {{ range $posts | first 10 }}
             {{ .Render "card" }}
         {{ end }}
         <div class="plain-button">

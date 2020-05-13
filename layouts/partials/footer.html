@@ -1,3 +1,14 @@
 <footer>
+    <p>
+        &copy;
 
+        {{ if .Date }}
+            {{ .Date.Year -}}
+            {{- if (and .Params.Modified (ne .Params.Modified.Year .Date.Year)) -}}
+                –{{ .Params.Modified.Year }}
+            {{ end }}
+        {{ end }}
+
+        {{ .Site.Params.Author }}
+    </p>
 </footer>

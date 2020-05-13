@@ -1,12 +1,18 @@
 <nav>
-    <h1>
-        <a href="/">{{ .Site.Title }}</a>
-    </h1>
-    <ol>
-        {{- range .Site.Menus.main -}}
-            <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-        {{- end -}}
-    </ol>
+    <div class="stripe"></div>
+    <div class="logo">
+        <h2>
+            <a href="/">{{ .Site.Title }}</a>
+        </h2>
+        <p>Unikatowe połączenie faktów i opinii o ogólnych, kulturowych tematach, nadużywając ironii.</p>
+    </div>
+    <div class="menu">
+        <ol>
+            {{- range .Site.Menus.main -}}
+                <li>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+            {{- end -}}
+        </ol>
+    </div>
 </nav>

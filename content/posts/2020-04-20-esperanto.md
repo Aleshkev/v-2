@@ -14,7 +14,7 @@ tags:
   ]
 ---
 
-Pan [Ludwik Zamenhof](https://pl.wikipedia.org/wiki/Ludwik_Zamenhof) w 1887 roku zaprezentował swój samodzielnie stworzony język, esperanto. Zaprojektował on go, żeby był on prosty do nauczenia się, i z czasem stał się najpopularniejszym sztucznym (w przeciwieństwie do tych naturalnych) językiem, jaki kiedykolwiek powstał. Niektórzy jednak bardzo nie lubią esperanto, nazywając je "fałszywym" językiem będącym globalistyczną, żydowską i/lub komunistyczną konspiracją.
+Pan [Ludwik Zamenhof](https://pl.wikipedia.org/wiki/Ludwik_Zamenhof) w 1887 roku zaprezentował swój samodzielnie stworzony język, esperanto. Zaprojektował on go, żeby był on prosty do nauczenia się, i z czasem stał się najpopularniejszym sztucznym (w przeciwieństwie do tych naturalnych) językiem, jaki kiedykolwiek powstał. Niektórzy jednak bardzo nie lubią esperanto, nazywając je "fałszywym" językiem będącym globalistyczną, żydowską i/lub komunistyczną konspiracją. <!--more-->
 
 ## Kto stoi za tą konspiracją?
 

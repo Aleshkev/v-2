@@ -4,6 +4,7 @@ DefaultContentLanguage: pl
 title: aleshkev.github.io
 params:
   author: Jonasz Aleszkiewicz
+  description: Unikalne i sprawdzone nieironiczne opinie.
 
 menu:
   main:
@@ -13,12 +14,9 @@ menu:
     - name: Archiwum
       url: /posts/
       weight: 2
-#    - name: O mnie
-#      url: /o-mnie/
-#      weight: 3
-#    - name: Kontakt
-#      url: /kontakt/
-#      weight: 4
+    - name: RSS
+      url: /index.xml
+      weight: 3
 
 markup:
   highlight:

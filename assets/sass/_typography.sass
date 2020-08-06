@@ -179,3 +179,18 @@ article > section > *
   // YouTube embed
   div[style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"]
     +wide
+    
+  table
+    margin-left: calc((100vw) * 1/16 + 1rem)
+    border-collapse: collapse
+    font-size: .875rem
+    line-height: 1.25em
+    tr
+      vertical-align: top
+      text-align: left
+    th, td
+      border-bottom: solid 1px transparentize($color-e, .5)
+      min-width: 5em
+      padding: .2em .5em
+    th
+      font-variant-caps: small-caps

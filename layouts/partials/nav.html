@@ -1,9 +1,15 @@
 <nav>
     <div class="stripe"></div>
     <div class="logo">
-        <h2>
-            <a href="/">{{ .Site.Title }}</a>
-        </h2>
+        {{ if eq .URL "/" }}
+            <h1>
+                <a href="/">{{ .Site.Title }}</a>
+            </h1>
+        {{ else }}
+            <h2>
+                <a href="/">{{ .Site.Title }}</a>
+            </h2>
+        {{ end }}
         <p>{{ .Site.Params.Description }}</p>
     </div>
     <div class="menu">

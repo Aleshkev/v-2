@@ -17,6 +17,9 @@ menu:
     - name: RSS
       url: /index.xml
       weight: 3
+    - name: Kontakt
+      url: /kontakt/
+      weight: 5
 
 markup:
   highlight:

@@ -123,7 +123,7 @@ Cały alfabet ma więc 54 różne znaki, co jest znaczącą poprawą nad dotychc
 
 Z preambuły konstytucji RP:
 
-> V trosce o byt i prišwość našej Ojčyzny, oʒyskavšy v 1989 roku moŕlivość suverennego i demokratyčnego stanověnǎ o Ěj losě, my, Narud Polski -- všyscy obyvatele Rěčypospolitej, zaruvno věrǫ̌cy v Boga będǫcego źrudwem pravdy, spravědlivości, dobra i pę̌kna, ǎk i ně poʒělajǫcy tej vǎry, a te universalne vartości vyvoʒǫcy z innyh źrudew, ruvni v pravah i v povinnoścǎh vobec dobra vspulnego -- Polski,
+> V trosce o byt i prišwość našej Ojčyzny, odzyskavšy v 1989 roku moŕlivość suverennego i demokratyčnego stanověnǎ o Ěj losě, my, Narud Polski -- všyscy obyvatele Rěčypospolitej, zaruvno věrǫ̌cy v Boga będǫcego źrudwem pravdy, spravědlivości, dobra i pę̌kna, ǎk i ně poʒělajǫcy tej vǎry, a te universalne vartości vyvoʒǫcy z innyh źrudew, ruvni v pravah i v povinnoścǎh vobec dobra vspulnego -- Polski,
 >
 > vʒę̌čni našym prǒdkom za ih pracę, za valkę o něpodlegwość okupǒnǫ ogromnymi ofǎrami, za kulturę zakorěnǒnǫ v hrěściǎńskim ʒěʒictvě Narodu i ogulnoluʒkih vartoścǎh, naviǫzujǫc do najlepšyh tradycji Pěrvšej i Drugěj Rěčypospolitej, zoboviǫzani, by prěkazać prišwym pokolenǒm všystko, co cenne z ponad tysiǫcletněgo dorobku, zwǫčeni vę̌zami vspulnoty z našymi rodakami rozsǎnymi po śvěcě, śvǎdomi potrěby vspuwpracy ze všystkimi kraǎmi dla dobra Roʒiny Luʒkěj,
 >

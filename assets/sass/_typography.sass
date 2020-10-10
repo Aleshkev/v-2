@@ -39,10 +39,9 @@ article > section > *
       margin-right: $sheet-padding
 
 
-.intro, .content
-  h1
-    line-height: 1.2
-    font-size: 2em
+.title
+  line-height: 1.2
+  font-size: 2em
 
 .content
   hyphens: manual
@@ -131,7 +130,7 @@ article > section > *
     border: none
     height: .15em
     max-width: 8em
-    margin: var(--vertical-sheet-padding) auto
+    margin: $sheet-padding auto
     background: linear-gradient(90deg, $color-b, $color-d)
 
 
@@ -179,7 +178,7 @@ article > section > *
   // YouTube embed
   div[style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"]
     +wide
-    
+
   table
     margin-left: calc((100vw) * 1/16 + 1rem)
     border-collapse: collapse

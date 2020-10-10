@@ -16,7 +16,7 @@
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
 
-    {{ with (resources.Get "sass/main.sass" | resources.ToCSS) }}
+    {{ with (resources.Get "sass/main.sass" | resources.ToCSS (dict "enableSourceMap" true)) }}
         <link rel="stylesheet" href="{{ .Permalink }}">
     {{ end }}
 

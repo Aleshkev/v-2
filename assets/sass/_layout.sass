@@ -30,9 +30,8 @@ body
 
   background-image: linear-gradient(45deg, hsl(hue($color-a), 96%, 96%) 15%, hsl(hue($color-d), 96%, 96%) 85%)
 
-
 nav > * > *, main, footer > * > *
-  max-width: $page-width + 2 * $site-padding
+  max-width: calc(min(#{$page-width + 2 * $site-padding}, 100%))
   padding-left: $site-padding
   padding-right: $site-padding
   display: block
@@ -114,17 +113,16 @@ article
   border-radius: .25em
   border: 1px solid #e2e4e6
   overflow: hidden
-  --vertical-sheet-padding: #{$sheet-padding}
 
   section
-    padding-top: var(--vertical-sheet-padding)
-    padding-bottom: var(--vertical-sheet-padding)
+    padding-top: $sheet-padding
+    padding-bottom: $sheet-padding
 
   .content
     padding-top: 0
 
   .cover
-    margin-bottom: var(--vertical-sheet-padding)
+    margin-bottom: $sheet-padding
 
     img
       width: 100%
@@ -137,17 +135,17 @@ article
   margin-top: $smaller-sheet-padding
 
 .card
-  --vertical-sheet-padding: #{$smaller-sheet-padding}
-
   .cover
     overflow: hidden
 
+    a
+      margin: 0
+
     img
       transition: transform 200ms ease-in-out
-      transform: scale(1.05)
 
       &:hover
-        transform: none
+        transform: scale(1.05)
 
   .content
     padding-bottom: .5em

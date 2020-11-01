@@ -6,7 +6,7 @@ tags: [poezja, polonistyka]
 math: true
 ---
 
-W życiu każdej osoby w pewnym momencie pojawia się potrzeba ułożenia rymującego się wiersza, chociażby w ramach szkolnej pracy domowej. Przez uniwersalność tego doświadczenia, równie uniwersalna jest świadomość jak męczące jest liczenie sylab w wierszach i w słowach.
+W życiu każdej osoby w pewnym momencie pojawia się potrzeba ułożenia rymującego się wiersza, chociażby w ramach szkolnej pracy domowej. Przez uniwersalność tego doświadczenia, równie uniwersalna jest świadomość jak męczące jest liczenie sylab w wierszach i w słowach. <!--more-->
 
 Aby rozwiązać ten problem, stworzyłem narzędzie, które rozwiązuje ten problem automatycznie. Wykorzystywana metoda opiera się na profesjonalnych opracowaniach naukowych (Danuta Ostaszewska, Jolanta Tambor, _Fonetyka i fonologia współczesnego języka polskiego_), ale też autorskim systemie głębokiego nauczania maszynowego i symulacji fundamentalnych operacji kwantowych.
 

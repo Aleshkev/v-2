@@ -58,6 +58,11 @@ def walk_strings(soup) -> Iterator[Tuple[bs4.NavigableString, str]]:
     yield from _walk_strings(soup.find("body"), lang=soup.find("html").get("lang", "pl"))
 
 
+# TODO: We should ignore math expressions (in $$ in markdown) when hyphenating and inserting spaces, because it
+# breaks the parser. The easiest solution is to wrap things that look like math with a special tag that will be ignored
+# by walk_strings. Relevant: https://stackoverflow.com/questions/22700646/wrapping-subsections-of-text-with-tags-in-beautifulsoup
+
+
 def detect_lang(soup: bs4.Tag):
     for node, lang in walk_strings(soup):
         text = str(node)

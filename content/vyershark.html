@@ -1,0 +1,157 @@
+---
+layout: none
+---
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Vyershark</title>
+</head>
+
+<style>
+    body {
+        font: 14px/25px Georgia, serif;
+    }
+
+    body {
+        margin: auto;
+        padding: 27px;
+    }
+
+    textarea {
+        padding: 0 0.5em;
+        margin: 27px 27px 27px 0;
+        line-height: 26px;
+        width: 33%;
+        float: left;
+        overflow-x: scroll;
+        white-space: nowrap;
+        resize: horizontal;
+        border: solid 1px #cbcbcc;
+    }
+
+    textarea:focus {
+        outline: none;  /* There would be an outline in some browsers. */
+        border: solid 1px #8e8e8f;
+    }
+
+    * {
+        font: inherit;
+    }
+
+    #out {
+        overflow-x: auto;
+        padding-bottom: 2px;  /* Align #in and #out scrollbars. */
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    tr {
+        height: 26px; /* Empty lines would be ignored. */
+    }
+
+    th, td {
+        border: solid 1px #cbcbcc;
+        letter-spacing: -0.1ex;
+        min-width: 24px;
+        padding: 0 0.4em 0 0.5em;
+    }
+
+    span {
+        color: #626974;
+        font-size: 12px;
+        line-height: 24px; /* Line height would make cells taller. */
+    }
+</style>
+
+<script>
+    function size(s) {
+        if (typeof s != "string") return 0;
+        s = s.toLowerCase();
+        s = s.replace(/([aąęoóu])u/giu, (match, $1) => `${$1}ł`, s);
+        s = s.replace(/i([aéąeęioóu])/giu, (match, $1) => `j${$1}`, s);
+        s = s.replace(/puent/giu, "płent", s);
+        return (s.match(/[aéąeęioóuyаеёиуоыєяюӗӑ]/giu) || []).length;
+    }
+
+    function f() {
+        let lines = [];
+        for (let line of document.getElementById("in").value.split("\n")) {
+            let t = [];
+            let lastComplete = true;
+            for (let word of line.replace(/[­]/g, "").match(/\p{L}+[^\p{L}]*/giu) || []) {
+                if (!lastComplete) t[t.length - 1] += "&nbsp;" + word.trim();
+                else t.push(word.trim());
+                lastComplete = (size(word) > 0);
+            }
+            if(!lastComplete && t.length > 1) t[t.length - 2] += "&nbsp;" + t.pop();
+            lines.push(t);
+        }
+
+        let width = 0;
+        for (let line of lines) {
+            let w = 0;
+            for (let word of line) w += size(word);
+            width = Math.max(width, w);
+        }
+
+        let r = `<table><tr>`;
+        for (let i = 1; i <= width; ++i) r += `<th><span>${i}</span></th>`;
+        r += `</tr>`;
+        for (let line of lines) {
+            r += `<tr>`;
+            for (let word of line) {
+                let n = size(word);
+                r += `<td colspan=${n}>${word}` + (n > 2 ? `<span>&emsp;${n}</span>` : ``) + `</td>`;
+            }
+            r += `</tr>`;
+        }
+        r += `</table>`;
+        document.getElementById("out").innerHTML = r;
+
+        document.getElementById("in").style.height = 26 * lines.length + 2 + 15 /* (scrollbar) */ + "px";
+        g();
+    }
+
+    function g() {
+        const w = Math.max(100, document.body.offsetWidth - document.getElementById("in").offsetWidth - 27 * 3 - 1);
+        document.getElementById("out").style.width = w + "px";
+    }
+</script>
+
+<body onresize="g()" onmouseup="g()" onmousemove="g() /* because onresize doesn't work on textareas */">
+    <textarea id="in" oninput="f()" onresize="g()">
+Litwo! Ojczyzno moja! ty jesteś jak zdrowie:
+Ile cię trzeba cenić, ten tylko się dowie,
+Kto cię stracił. Dziś piękność twą w całej ozdobie
+Widzę i opisuję, bo tęsknię po tobie.
+Panno święta, co Jasnej bronisz Częstochowy
+I w Ostrej świecisz Bramie! Ty, co gród zamkowy
+Nowogródzki ochraniasz z jego wiernym ludem!
+Jak mnie dziecko do zdrowia powróciłaś cudem
+(Gdy od płaczącej matki, pod Twoją opiekę
+Ofiarowany, martwą podniosłem powiekę;
+I zaraz mogłem pieszo, do Twych świątyń progu
+Iść za wrócone życie podziękować Bogu),
+Tak nas powrócisz cudem na Ojczyzny łono.
+Tymczasem przenoś moją duszę utęsknioną
+Do tych pagórków leśnych, do tych łąk zielonych,
+Szeroko nad błękitnym Niemnem rozciągnionych;
+Do tych pól malowanych zbożem rozmaitem,
+Wyzłacanych pszenicą, posrebrzanych żytem;
+Gdzie bursztynowy świerzop, gryka jak śnieg biała,
+Gdzie panieńskim rumieńcem dzięcielina pała,
+A wszystko przepasane jakby wstęgą, miedzą
+Zieloną, na niej z rzadka ciche grusze siedzą.
+</textarea>
+    <div id="out"></div>
+    <script>
+        f();
+    </script>
+</body>
+</html>

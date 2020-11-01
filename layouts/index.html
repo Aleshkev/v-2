@@ -1,3 +1,6 @@
+{{ define "title" }}
+    Strona główna | aleshkev.github.io
+{{ end }}
 {{ define "main" }}
     <main class="layout-index">
         {{ $posts := where .Site.RegularPages ".Section" "eq" "posts" }}

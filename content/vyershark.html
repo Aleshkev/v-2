@@ -74,9 +74,11 @@ layout: none
     function size(s) {
         if (typeof s != "string") return 0;
         s = s.toLowerCase();
+        s = s.replace(/nau(k|cz)/giu, "nałuk", s);  // nauka, nauczyć
         s = s.replace(/([aąęoóu])u/giu, (match, $1) => `${$1}ł`, s);
         s = s.replace(/i([aéąeęioóu])/giu, (match, $1) => `j${$1}`, s);
-        s = s.replace(/puent/giu, "płent", s);
+        s = s.replace(/puent/giu, "płent", s);  // puenta
+        s = s.replace(/([aéąeęioóuyа])'([aéąeęioóuyа])$/giu, "$2", s);  // Rovne'a
         return (s.match(/[aéąeęioóuyаеёиуоыєяюӗӑ]/giu) || []).length;
     }
 
@@ -85,7 +87,7 @@ layout: none
         for (let line of document.getElementById("in").value.split("\n")) {
             let t = [];
             let lastComplete = true;
-            for (let word of line.replace(/[­]/g, "").match(/(^[^\p{L}]*)?\p{L}+[^\p{L}]*/giu) || []) {
+            for (let word of line.replace(/[­]/g, "").match(/(^[^\p{L}']*)?[\p{L}']+[^\p{L}']*/giu) || []) {
                 if (!lastComplete) t[t.length - 1] += "&nbsp;" + word.trim();
                 else t.push(word.trim());
                 lastComplete = (size(word) > 0);

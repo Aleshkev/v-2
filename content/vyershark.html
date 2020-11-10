@@ -28,13 +28,13 @@ layout: none
         width: 33%;
         float: left;
         overflow-x: scroll;
-        white-space: nowrap;
+        white-space: pre; /* Scroll horizontally, but don't make everything one line in Firefox */
         resize: horizontal;
         border: solid 1px #cbcbcc;
     }
 
     textarea:focus {
-        outline: none;  /* There would be an outline in some browsers. */
+        outline: none; /* There would be an outline in some browsers. */
         border: solid 1px #8e8e8f;
     }
 
@@ -44,7 +44,7 @@ layout: none
 
     #out {
         overflow-x: auto;
-        padding-bottom: 2px;  /* Align #in and #out scrollbars. */
+        padding-bottom: 2px; /* Align #in and #out scrollbars. */
     }
 
     table {
@@ -85,12 +85,12 @@ layout: none
         for (let line of document.getElementById("in").value.split("\n")) {
             let t = [];
             let lastComplete = true;
-            for (let word of line.replace(/[­]/g, "").match(/\p{L}+[^\p{L}]*/giu) || []) {
+            for (let word of line.replace(/[­]/g, "").match(/(^[^\p{L}]*)?\p{L}+[^\p{L}]*/giu) || []) {
                 if (!lastComplete) t[t.length - 1] += "&nbsp;" + word.trim();
                 else t.push(word.trim());
                 lastComplete = (size(word) > 0);
             }
-            if(!lastComplete && t.length > 1) t[t.length - 2] += "&nbsp;" + t.pop();
+            if (!lastComplete && t.length > 1) t[t.length - 2] += "&nbsp;" + t.pop();
             lines.push(t);
         }
 

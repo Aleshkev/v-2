@@ -9,7 +9,7 @@ De Norf Łind end de Sen had e kłorel ebałt łicz ow dem łoz de stronger. Ła
 
 --- Let as egri --- sed de Sen --- det hi iz de stronger hu ken strip det Traweler ow hiz klołk.
 
---- Weri łel --- grałld de Norf Łind, end at łens sent e kołld, hałling blast egenst de Traweler.
+--- Weri łel --- grałld de Norf Łind, end at łens sent e kołld, hałling blast egenst de Traweler.<!--more-->
 
 Łif de ferst gest ow łind de endz ow de klołk łipt ebałt de Trawelerz bodi. Bet hi imidietli rapt it klołsli erałnd im, end de horder de Łind blu, de tajter hi held it ti im. De Norf Łind tor angreli at de klołk, bet ol hiz eferts łer in wejn.
 

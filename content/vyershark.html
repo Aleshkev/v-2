@@ -127,7 +127,8 @@ layout: none
     }
 </script>
 
-<body onresize="g()" onmouseup="g()" onmousemove="g() /* because onresize doesn't work on textareas */">
+<!-- Textareas don't have an onresize event, so we catch all mouse events. -->
+<body onresize="g()" onmouseup="g()" onmousemove="g()">
     <textarea id="in" oninput="f()" onresize="g()">
 Litwo! Ojczyzno moja! ty jesteś jak zdrowie:
 Ile cię trzeba cenić, ten tylko się dowie,
@@ -155,6 +156,10 @@ Zieloną, na niej z rzadka ciche grusze siedzą.
     <div id="out"></div>
     <script>
         f();
+
+        // If a browser remembers contents of a text field, it just randomly puts them in without an event.
+        setTimeout(f, 5);
+        setTimeout(f, 10);
     </script>
 </body>
 </html>

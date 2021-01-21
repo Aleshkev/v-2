@@ -125,11 +125,11 @@ Z preambuły konstytucji RP:
 
 > V trosce o byt i prišwość našej Ojčyzny, odzyskavšy v 1989 roku moŕlivość suverennego i demokratyčnego stanověnǎ o Ěj losě, my, Narud Polski -- všyscy obyvatele Rěčypospolitej, zaruvno věrǫ̌cy v Boga będǫcego źrudwem pravdy, spravědlivości, dobra i pę̌kna, ǎk i ně poʒělajǫcy tej vǎry, a te universalne vartości vyvoʒǫcy z innyh źrudew, ruvni v pravah i v povinnoścǎh vobec dobra vspulnego -- Polski,
 >
-> vʒę̌čni našym prǒdkom za ih pracę, za valkę o něpodlegwość okupǒnǫ ogromnymi ofǎrami, za kulturę zakorěnǒnǫ v hrěściǎńskim ʒěʒictvě Narodu i ogulnoluʒkih vartoścǎh, naviǫzujǫc do najlepšyh tradycji Pěrvšej i Drugěj Rěčypospolitej, zoboviǫzani, by prěkazać prišwym pokolenǒm všystko, co cenne z ponad tysiǫcletněgo dorobku, zwǫčeni vę̌zami vspulnoty z našymi rodakami rozsǎnymi po śvěcě, śvǎdomi potrěby vspuwpracy ze všystkimi kraǎmi dla dobra Roʒiny Luʒkěj,
+> vʒę̌čni našym prǒdkom za ih pracę, za valkę o něpodlegwość okupǒnǫ ogromnymi ofǎrami, za kulturę zakorěnǒnǫ v hrěściǎńskim ʒěʒictvě Narodu i ogulnoluʒkih vartoścǎh, navǫ̌zujǫc do najlepšyh tradycji Pěrvšej i Drugěj Rěčypospolitej, zobovǫ̌zani, by prěkazać prišwym pokolenǒm všystko, co cenne z ponad tysǫ̌cletněgo dorobku, zwǫčeni vę̌zami vspulnoty z našymi rodakami rozsǎnymi po śvěcě, śvǎdomi potrěby vspuwpracy ze všystkimi kraǎmi dla dobra Roʒiny Luʒkěj,
 >
 > pomni goŕkih dośvǎdčeń z časuv, gdy podstavove volności i prava čwověka bywy v našej Ojčyźně wamane, pragnǫc na zavše zagvarątovać prava obyvatelskě, a ʒǎwanǔ įstytucji publičnyh zapevnić rětelność i spravność, v počucǔ odpověʒǎlności prěd Bogěm lub prěd vwasnym suměněm, ustanavǎmy Kǫstytuc̀ę̌ Rěčypospolitej Polskěj ǎko prava podstavove dla państva oparte na pošanovanǔ volności i spravědlivości, vspuwʒǎwanǔ vwaʒ, dǎlogu spowečnym oraz na zasaʒě pomocničości umacnǎjǫcej upravněnǎ obyvateli i ih vspulnot.
 >
-> Všystkih, kturi dla dobra Trěcěj Rěčypospolitej tę Kǫstytuc̀ę̌ będǫ stosovali, vzyvamy, aby čynili to, dbajǫc o zahovaně priroʒonej godności čwověka, ěgo prava do volności i oboviǫzku solidarności z innymi, a pošanovaně tyh zasad měli za něvzrušonǫ podstavę Rěčypospolitej Polskěj.
+> Všystkih, kturi dla dobra Trěcěj Rěčypospolitej tę Kǫstytuc̀ę̌ będǫ stosovali, vzyvamy, aby čynili to, dbajǫc o zahovaně priroʒonej godności čwověka, ěgo prava do volności i obovǫ̌zku solidarności z innymi, a pošanovaně tyh zasad měli za něvzrušonǫ podstavę Rěčypospolitej Polskěj.
 
 Jakiś losowy inny tekst historyczny:
 

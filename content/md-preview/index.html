@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs/highlight.pack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/classeur/markdown-it-mathjax/markdown-it-mathjax.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/highlight.js/src/styles/vs.min.css"
+    />
+    <link rel="stylesheet" href="markdown.css" />
+    <style>
+      code {
+        color: rgb(163, 21, 21);
+      }
+
+      body {
+        max-width: 60em;
+        margin: auto;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      th {
+        font-weight: normal;
+        font-style: italic;
+      }
+    </style>
+    <script>
+      "use strict";
+
+      function render(md_text) {
+        const md = window.markdownit({
+          html: true,
+          linkify: true,
+          highlight: function(str, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+              return hljs.highlight(lang, str).value;
+            }
+            return "";
+          }
+        });
+        md.use(window.markdownitMathjax());
+        const rendered = md.render(md_text);
+        $("body").html(rendered);
+        MathJax.typeset();
+      }
+
+      $(function() {
+        const this_url = new URL(window.location.href);
+        const that_url_str = this_url.searchParams.get("p");
+        const that_url = that_url_str
+          ? new URL(this_url.searchParams.get("p"))
+          : null;
+        console.log(that_url);
+        if (that_url) {
+          fetch(that_url)
+            .then(response => response.text())
+            .then(render);
+        } else {
+          navigator.clipboard.readText().then(render);
+        }
+      });
+    </script>
+  </head>
+
+  <body class="vscode-light">
+    If the page doesn't load, check console for errors and bother whoever gave
+    you this link.
+  </body>
+</html>

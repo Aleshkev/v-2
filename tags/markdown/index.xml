@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on aleshkev.github.io</title>
+    <link>https://aleshkev.github.io/v-2/tags/markdown/</link>
+    <description>Recent content in markdown on aleshkev.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl</language>
+    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aleshkev.github.io/v-2/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jeszcze nowsza strona</title>
+      <link>https://aleshkev.github.io/v-2/jeszcze-nowsza-strona/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/jeszcze-nowsza-strona/</guid>
+      <description>&lt;p&gt;Wbrew krążącej wśród niektórych opinii, zdawałem sobie sprawę z tego, że moja strona wyglądała zupełnie inaczej od większości innych w internecie. Nie przeszkadzało mi to zbytnio, ponieważ zawartość też była w niepowtarzalny sposób jakby przeciwna temu, żeby czytało ją dużo osób.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mój system tworzenia strony</title>
+      <link>https://aleshkev.github.io/v-2/m%C3%B3j-system-tworzenia-strony/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/m%C3%B3j-system-tworzenia-strony/</guid>
+      <description>&lt;p&gt;Ponieważ mam blog i odczuwam potrzebę wypełnienia go nieinteresująco specyficznymi postami, zacznę od najprostszego możliwego tematu: programu, który samemu stworzyłem.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on aleshkev.github.io</title>
+    <link>https://aleshkev.github.io/v-2/categories/</link>
+    <description>Recent content in Categories on aleshkev.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl</language>
+    <lastBuildDate>Sat, 02 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aleshkev.github.io/v-2/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lingwistyka</title>
+      <link>https://aleshkev.github.io/v-2/categories/lingwistyka/</link>
+      <pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/categories/lingwistyka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>groteska</title>
+      <link>https://aleshkev.github.io/v-2/categories/groteska/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/categories/groteska/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projekt</title>
+      <link>https://aleshkev.github.io/v-2/categories/projekt/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/categories/projekt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>art</title>
+      <link>https://aleshkev.github.io/v-2/categories/art/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/categories/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meta</title>
+      <link>https://aleshkev.github.io/v-2/categories/meta/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aleshkev.github.io/v-2/categories/meta/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
